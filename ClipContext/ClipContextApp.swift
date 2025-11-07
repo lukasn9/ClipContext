@@ -1,17 +1,15 @@
-//
-//  ClipContextApp.swift
-//  ClipContext
-//
-//  Created by Lukáš Nagy on 06/11/2025.
-//
-
 import SwiftUI
+import AppKit
 
 @main
 struct ClipContextApp: App {
+    @StateObject private var clipboardManager = ClipboardManager()
+    
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView()
         }
     }
 }
