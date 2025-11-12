@@ -1,8 +1,9 @@
 import Foundation
 
-struct ClipboardItem: Identifiable, Equatable {
+struct ClipboardItem: Identifiable, Equatable, Codable {
     let id = UUID()
-    let content: String
+    var content: String
     let sourceApp: String
     let dateCopied: Date
 }
+

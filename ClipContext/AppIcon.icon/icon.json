@@ -1,0 +1,42 @@
+{
+  "fill" : {
+    "solid" : "display-p3:0.24174,0.47384,0.60020,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "copy.png",
+          "name" : "copy",
+          "opacity-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : 0.5
+            }
+          ],
+          "position" : {
+            "scale" : 1.25,
+            "translation-in-points" : [
+              72.1,
+              -24
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : "shared"
+  }
+}
