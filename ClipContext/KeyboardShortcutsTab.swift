@@ -57,6 +57,9 @@ struct KeyboardShortcutsTab: View {
         .onReceive(Timer.publish(every: 1.5, on: .main, in: .common).autoconnect()) { _ in
             isAccessibilityTrusted = AXIsProcessTrusted()
         }
+        .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
+            isAccessibilityTrusted = AXIsProcessTrusted()
+        }
     }
 
     @ViewBuilder

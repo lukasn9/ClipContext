@@ -1,8 +1,8 @@
 import SwiftUI
 
 private let authorName   = "Lukáš Nagy"
-private let contactEmail = "lukinagy96@gmail.com"
-private let contactURL: URL? = nil  // set to a website/GitHub URL if desired
+private let contactEmail = "nagy.lukas50@icloud.com"
+private let contactURL: URL? = nil
 
 private struct ChangelogEntry {
     let version: String
@@ -11,6 +11,10 @@ private struct ChangelogEntry {
 }
 
 private let changelog: [ChangelogEntry] = [
+    ChangelogEntry(version: "1.4", date: "May 2025", changes: [
+        "Added Launch at Login toggle",
+        "Open App shortcut now closes the popover if already open",
+    ]),
     ChangelogEntry(version: "1.3", date: "May 2025", changes: [
         "Added translation via Apple's system Translate",
         "Added per-item Remove to the ⋮ menu",

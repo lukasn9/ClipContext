@@ -1,11 +1,42 @@
+import ServiceManagement
 import SwiftUI
 
 struct BehaviourTab: View {
     @EnvironmentObject var settings: SettingsStore
+    @State private var launchAtLogin = SMAppService.mainApp.status == .enabled
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("General")
+                        .font(.headline)
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 16)
+
+                HStack(spacing: 12) {
+                    Image(systemName: "power")
+                        .frame(width: 20)
+                        .foregroundStyle(.secondary)
+                    Text("Launch at Login")
+                    Spacer()
+                    Toggle("", isOn: $launchAtLogin)
+                        .labelsHidden()
+                        .toggleStyle(.switch)
+                        .onChange(of: launchAtLogin) { _, enabled in
+                            setLaunchAtLogin(enabled)
+                        }
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.regularMaterial)
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white.opacity(0.2), lineWidth: 1))
+                )
+                .padding(.horizontal, 16)
+
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Auto-apply on Copy")
                         .font(.headline)
@@ -18,13 +49,14 @@ struct BehaviourTab: View {
                 .padding(.top, 16)
 
                 VStack(spacing: 0) {
-                    ForEach(Array(allActions.enumerated()), id: \.element.id) { index, action in
+                    let applyableActions = allActions.filter { $0.id != "translate" }
+                    ForEach(Array(applyableActions.enumerated()), id: \.element.id) { index, action in
                         AutoApplyRow(
                             action: action,
                             isEnabled: settings.autoApplyActionIDs.contains(action.id),
                             onToggle: { toggle(action.id) }
                         )
-                        if index < allActions.count - 1 {
+                        if index < applyableActions.count - 1 {
                             Divider().padding(.leading, 52)
                         }
                     }
@@ -69,6 +101,24 @@ struct BehaviourTab: View {
                 .padding(.bottom, 16)
             }
         }
+    }
+
+    private func setLaunchAtLogin(_ enabled: Bool) {
+        do {
+            if enabled {
+                try SMAppService.mainApp.register()
+            } else {
+                try SMAppService.mainApp.unregister()
+            }
+        } catch {
+            // requiresApproval means the user previously removed the item — send them to System Settings
+            if SMAppService.mainApp.status == .requiresApproval {
+                NSWorkspace.shared.open(
+                    URL(string: "x-apple.systempreferences:com.apple.LoginItems-Settings.extension")!
+                )
+            }
+        }
+        launchAtLogin = SMAppService.mainApp.status == .enabled
     }
 
     private func toggle(_ id: String) {

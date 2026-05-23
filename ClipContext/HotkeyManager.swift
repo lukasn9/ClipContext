@@ -8,6 +8,7 @@ final class HotkeyManager {
     var onTriggered: ((String) -> Void)?
 
     private var monitor: Any?
+    private var localMonitor: Any?
     private var shortcutMap: [ShortcutKey: String] = [:]
     private var cancellables = Set<AnyCancellable>()
     private var pollTimer: Timer?
@@ -56,6 +57,16 @@ final class HotkeyManager {
         stopPolling()
         monitor = NSEvent.addGlobalMonitorForEvents(matching: .keyDown) { [weak self] event in
             self?.handle(event)
+        }
+        localMonitor = NSEvent.addLocalMonitorForEvents(matching: .keyDown) { [weak self] event in
+            guard let self else { return event }
+            let relevant = event.modifierFlags.intersection([.command, .shift, .option, .control])
+            let key = ShortcutKey(keyCode: event.keyCode, modifierFlags: relevant.rawValue)
+            if shortcutMap[key] != nil {
+                self.handle(event)
+                return nil  // consume the event so it doesn't propagate
+            }
+            return event
         }
     }
 
