@@ -62,11 +62,11 @@ struct ShortcutRecorderField: View {
             .font(.subheadline)
             .padding(.horizontal, 10)
             .frame(minWidth: 100, minHeight: 28)
-            .background(.regularMaterial)
+            .background(Color(.controlBackgroundColor))
             .clipShape(RoundedRectangle(cornerRadius: 7))
             .overlay(
                 RoundedRectangle(cornerRadius: 7)
-                    .stroke(isRecording ? Color.accentColor : Color.white.opacity(0.2), lineWidth: 1)
+                    .stroke(isRecording ? Color.accentColor : Color.primary.opacity(0.12), lineWidth: 1)
             )
             .contentShape(Rectangle())
             .onTapGesture { isRecording = true }

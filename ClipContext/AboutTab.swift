@@ -11,6 +11,9 @@ private struct ChangelogEntry {
 }
 
 private let changelog: [ChangelogEntry] = [
+    ChangelogEntry(version: "1.5", date: "May 2025", changes: [
+        "Improved light mode appearance with better contrast and visible borders",
+    ]),
     ChangelogEntry(version: "1.4", date: "May 2025", changes: [
         "Added Launch at Login toggle",
         "Open App shortcut now closes the popover if already open",
@@ -122,8 +125,8 @@ struct AboutTab: View {
             }
             .background(
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(.regularMaterial)
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white.opacity(0.2), lineWidth: 1))
+                    .fill(Color(.controlBackgroundColor))
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.primary.opacity(0.08), lineWidth: 1))
             )
             .padding(16)
         }

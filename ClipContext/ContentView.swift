@@ -152,12 +152,12 @@ struct ClipboardRowView: View {
         .padding(8)
         .background(
             RoundedRectangle(cornerRadius: 10)
-                .fill(.regularMaterial)
+                .fill(Color(.controlBackgroundColor))
+                .shadow(color: .black.opacity(0.06), radius: 2, y: 1)
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.white.opacity(0.2), lineWidth: 1)
+                        .stroke(Color.primary.opacity(isHovering ? 0.12 : 0.07), lineWidth: 1)
                 )
-                .opacity(isHovering ? 0.95 : 0.9)
         )
         .contentShape(Rectangle())
         .onTapGesture {

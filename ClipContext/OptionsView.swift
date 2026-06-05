@@ -44,6 +44,7 @@ struct OptionsView: View {
                     }
                 }
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
             .padding(.top, 28) // clear the hidden title bar
@@ -90,7 +91,7 @@ struct OptionsTabButton: View {
                           : (isHovering ? Color.primary.opacity(0.06) : Color.clear))
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
-                            .stroke(isSelected ? Color.accentColor.opacity(0.3) : Color.white.opacity(0.12), lineWidth: 1)
+                            .stroke(isSelected ? Color.accentColor.opacity(0.5) : Color.clear, lineWidth: 1)
                     )
             )
         }

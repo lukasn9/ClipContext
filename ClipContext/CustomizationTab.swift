@@ -58,10 +58,6 @@ struct CustomizationTab: View {
 
             // Styled card containing a List for onMove support
             ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(.regularMaterial)
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white.opacity(0.2), lineWidth: 1))
-
                 if actions.isEmpty {
                     Text("Drag items here")
                         .font(.callout).foregroundStyle(.tertiary)
@@ -84,10 +80,14 @@ struct CustomizationTab: View {
                         }
                     }
                     .listStyle(.plain)
+                    .scrollContentBackground(.hidden)
                     .scrollDisabled(true)
                     .frame(height: CGFloat(actions.count) * 44)
                 }
             }
+            .background(RoundedRectangle(cornerRadius: 10).fill(Color(.controlBackgroundColor)))
+            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.primary.opacity(0.08), lineWidth: 1))
+            .clipShape(RoundedRectangle(cornerRadius: 10))
             // Drop target for cross-section drags
             .dropDestination(for: String.self) { droppedIDs, _ in
                 guard let id = droppedIDs.first else { return false }

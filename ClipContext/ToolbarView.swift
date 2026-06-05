@@ -16,10 +16,10 @@ struct ToolbarView: View {
                     .padding(.vertical, 6)
                     .padding(.horizontal, 4)
             }
-            .background(.regularMaterial)
+            .background(Color(.textBackgroundColor))
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.white.opacity(0.25), lineWidth: 1)
+                    .stroke(Color.primary.opacity(0.12), lineWidth: 1)
             )
             .clipShape(RoundedRectangle(cornerRadius: 10))
 
@@ -30,10 +30,10 @@ struct ToolbarView: View {
                     .foregroundColor(.secondary)
                     .padding(.vertical, 6)
                     .padding(.horizontal, 10)
-                    .background(.regularMaterial)
+                    .background(Color(.textBackgroundColor))
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.white.opacity(0.25), lineWidth: 1)
+                            .stroke(Color.primary.opacity(0.12), lineWidth: 1)
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             }

@@ -32,8 +32,8 @@ struct BehaviourTab: View {
                 .padding(.vertical, 10)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(.regularMaterial)
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white.opacity(0.2), lineWidth: 1))
+                        .fill(Color(.controlBackgroundColor))
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.primary.opacity(0.08), lineWidth: 1))
                 )
                 .padding(.horizontal, 16)
 
@@ -63,8 +63,8 @@ struct BehaviourTab: View {
                 }
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(.regularMaterial)
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white.opacity(0.2), lineWidth: 1))
+                        .fill(Color(.controlBackgroundColor))
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.primary.opacity(0.08), lineWidth: 1))
                 )
                 .padding(.horizontal, 16)
 
@@ -94,8 +94,8 @@ struct BehaviourTab: View {
                 .padding(.vertical, 10)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(.regularMaterial)
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white.opacity(0.2), lineWidth: 1))
+                        .fill(Color(.controlBackgroundColor))
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.primary.opacity(0.08), lineWidth: 1))
                 )
                 .padding(.horizontal, 16)
                 .padding(.bottom, 16)
