@@ -79,7 +79,7 @@ struct OptionsTabButton: View {
             HStack(spacing: 5) {
                 Image(systemName: tab.systemImage)
                     .imageScale(.small)
-                Text(tab.rawValue)
+                Text(LocalizedStringKey(tab.rawValue))
                     .font(.subheadline)
             }
             .padding(.vertical, 5)

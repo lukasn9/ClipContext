@@ -67,6 +67,25 @@ struct ContentView: View {
         }
         .animation(.easeInOut, value: showCopiedMessage)
         .background(.thinMaterial)
+        .contextMenu {
+            Button {
+                NotificationCenter.default.post(name: .openOptionsRequest, object: nil)
+            } label: {
+                Label("Options", systemImage: "gearshape")
+            }
+            Divider()
+            Button {
+                clipboardManager.clearAll()
+            } label: {
+                Label("Clear All", systemImage: "trash")
+            }
+            Divider()
+            Button(role: .destructive) {
+                NSApp.terminate(nil)
+            } label: {
+                Label("Quit ClipContext", systemImage: "power")
+            }
+        }
     }
 }
 
@@ -125,7 +144,7 @@ struct ClipboardRowView: View {
                                 }
                             }
                             Divider().padding(.horizontal, 4).padding(.vertical, 2)
-                            MoreOptionButton(label: "Remove", systemImage: "trash", tint: .red) {
+                            MoreOptionButton(label: String(localized: "Remove"), systemImage: "trash", tint: .red) {
                                 showMoreOptions = false
                                 clipboardManager.remove(itemID: item.id)
                             }

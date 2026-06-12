@@ -1,0 +1,70 @@
+/* Search & toolbar */
+"Search clipboard…" = "Rechercher dans le presse-papiers…";
+"Clear All" = "Tout effacer";
+"Copied to clipboard" = "Copié dans le presse-papiers";
+"Remove" = "Supprimer";
+"None" = "Aucun";
+"Recording…" = "Enregistrement…";
+"%lld words · %lld chars" = "%lld mots · %lld caractères";
+
+/* Actions */
+"Trim Whitespace" = "Supprimer les espaces";
+"Lowercase" = "Minuscules";
+"Capitalize" = "Mettre en majuscule";
+"Extract URL" = "Extraire l'URL";
+"Remove extra spaces" = "Supprimer les espaces supplémentaires";
+"Remove empty lines" = "Supprimer les lignes vides";
+"Join lines into one" = "Fusionner les lignes";
+"Lines to CSV" = "Lignes en CSV";
+"Remove tracking params" = "Supprimer les paramètres de suivi";
+"Translate" = "Traduire";
+
+/* Behaviour tab */
+"General" = "Général";
+"Language" = "Langue";
+"System Default" = "Par défaut du système";
+"Restart ClipContext to apply the language change." = "Redémarrez ClipContext pour appliquer le changement de langue.";
+"Launch at Login" = "Lancer à la connexion";
+"Auto-apply on Copy" = "Appliquer automatiquement lors de la copie";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Les actions sélectionnées sont automatiquement appliquées lors de la copie de texte. Elles s'exécutent dans l'ordre indiqué.";
+"History" = "Historique";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Nombre maximum d'entrées du presse-papiers. Les éléments plus anciens sont supprimés automatiquement.";
+"History limit" = "Limite de l'historique";
+"%lld items" = "%lld éléments";
+
+/* Customization tab */
+"Pinned" = "Épinglé";
+"Shown as icon buttons on each item (max 4)" = "Affiché sous forme de boutons d'icônes (max. 4)";
+"More Options" = "Plus d'options";
+"Shown in the ⋮ menu" = "Affiché dans le menu ⋮";
+"Drag items here" = "Faites glisser des éléments ici";
+"Move to More" = "Déplacer vers « Plus »";
+"Pin" = "Épingler";
+
+/* Shortcuts tab */
+"Global" = "Global";
+"Works system-wide. Requires Accessibility permission." = "Fonctionne sur tout le système. Nécessite l'autorisation d'Accessibilité.";
+"Actions" = "Actions";
+"Applied to the most recently copied item. Works system-wide." = "Appliqué à l'élément le plus récemment copié. Fonctionne sur tout le système.";
+"Open App" = "Ouvrir l'app";
+"Accessibility Permission Required" = "Autorisation d'Accessibilité requise";
+"Global shortcuts need Accessibility access to work system-wide." = "Les raccourcis globaux nécessitent l'accès à l'Accessibilité pour fonctionner sur tout le système.";
+"Grant Access" = "Autoriser l'accès";
+
+/* Options tabs */
+"Customization" = "Personnalisation";
+"Behaviour" = "Comportement";
+"Shortcuts" = "Raccourcis";
+"About" = "À propos";
+
+/* About tab */
+"What's New" = "Nouveautés";
+"Made by %@" = "Créé par %@";
+"Visit website" = "Visiter le site web";
+"Version %@" = "Version %@";
+
+/* Menus */
+"Options" = "Options";
+"Clear Clipboard" = "Vider le presse-papiers";
+"Quit" = "Quitter";
+"Quit ClipContext" = "Quitter ClipContext";

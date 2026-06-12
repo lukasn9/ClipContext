@@ -1,0 +1,70 @@
+/* Search & toolbar */
+"Search clipboard…" = "Hledat ve schránce…";
+"Clear All" = "Vymazat vše";
+"Copied to clipboard" = "Zkopírováno do schránky";
+"Remove" = "Smazat";
+"None" = "Žádné";
+"Recording…" = "Nahrávání…";
+"%lld words · %lld chars" = "%lld slov · %lld znaků";
+
+/* Actions */
+"Trim Whitespace" = "Odstranit mezery";
+"Lowercase" = "Malá písmena";
+"Capitalize" = "Velká počáteční písmena";
+"Extract URL" = "Extrahovat URL";
+"Remove extra spaces" = "Odebrat nadbytečné mezery";
+"Remove empty lines" = "Odebrat prázdné řádky";
+"Join lines into one" = "Spojit řádky do jednoho";
+"Lines to CSV" = "Řádky do CSV";
+"Remove tracking params" = "Odebrat sledovací parametry";
+"Translate" = "Přeložit";
+
+/* Behaviour tab */
+"General" = "Obecné";
+"Language" = "Jazyk";
+"System Default" = "Výchozí systémový";
+"Restart ClipContext to apply the language change." = "Restartujte ClipContext, aby se změna jazyka projevila.";
+"Launch at Login" = "Spustit při přihlášení";
+"Auto-apply on Copy" = "Automaticky použít při kopírování";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Vybrané akce se automaticky použijí při každém zkopírování textu. Provádějí se v uvedeném pořadí.";
+"History" = "Historie";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Maximální počet položek schránky. Starší položky se odstraňují automaticky.";
+"History limit" = "Limit historie";
+"%lld items" = "%lld položek";
+
+/* Customization tab */
+"Pinned" = "Připnuto";
+"Shown as icon buttons on each item (max 4)" = "Zobrazeno jako tlačítka ikon (max. 4)";
+"More Options" = "Další možnosti";
+"Shown in the ⋮ menu" = "Zobrazeno v nabídce ⋮";
+"Drag items here" = "Přetáhněte položky sem";
+"Move to More" = "Přesunout do 'Další'";
+"Pin" = "Připnout";
+
+/* Shortcuts tab */
+"Global" = "Globální";
+"Works system-wide. Requires Accessibility permission." = "Funguje v celém systému. Vyžaduje oprávnění Přístupnosti.";
+"Actions" = "Akce";
+"Applied to the most recently copied item. Works system-wide." = "Použito na naposledy zkopírovanou položku. Funguje v celém systému.";
+"Open App" = "Otevřít aplikaci";
+"Accessibility Permission Required" = "Vyžadováno oprávnění Přístupnosti";
+"Global shortcuts need Accessibility access to work system-wide." = "Globální zkratky potřebují přístup k Přístupnosti, aby fungovaly v celém systému.";
+"Grant Access" = "Udělit přístup";
+
+/* Options tabs */
+"Customization" = "Přizpůsobení";
+"Behaviour" = "Chování";
+"Shortcuts" = "Zkratky";
+"About" = "O aplikaci";
+
+/* About tab */
+"What's New" = "Co je nového";
+"Made by %@" = "Vytvořil %@";
+"Visit website" = "Navštívit webové stránky";
+"Version %@" = "Verze %@";
+
+/* Menus */
+"Options" = "Možnosti";
+"Clear Clipboard" = "Vymazat schránku";
+"Quit" = "Ukončit";
+"Quit ClipContext" = "Ukončit ClipContext";

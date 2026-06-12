@@ -1,0 +1,70 @@
+/* Search & toolbar */
+"Search clipboard…" = "Zwischenablage durchsuchen…";
+"Clear All" = "Alles löschen";
+"Copied to clipboard" = "In Zwischenablage kopiert";
+"Remove" = "Entfernen";
+"None" = "Keine";
+"Recording…" = "Aufzeichnung…";
+"%lld words · %lld chars" = "%lld Wörter · %lld Zeichen";
+
+/* Actions */
+"Trim Whitespace" = "Leerzeichen entfernen";
+"Lowercase" = "Kleinschreibung";
+"Capitalize" = "Ersten Buchstaben großschreiben";
+"Extract URL" = "URL extrahieren";
+"Remove extra spaces" = "Mehrfache Leerzeichen entfernen";
+"Remove empty lines" = "Leerzeilen entfernen";
+"Join lines into one" = "Zeilen zusammenführen";
+"Lines to CSV" = "Zeilen zu CSV";
+"Remove tracking params" = "Tracking-Parameter entfernen";
+"Translate" = "Übersetzen";
+
+/* Behaviour tab */
+"General" = "Allgemein";
+"Language" = "Sprache";
+"System Default" = "Systemstandard";
+"Restart ClipContext to apply the language change." = "ClipContext neu starten, um die Sprachänderung zu übernehmen.";
+"Launch at Login" = "Bei Anmeldung starten";
+"Auto-apply on Copy" = "Automatisch beim Kopieren anwenden";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Ausgewählte Aktionen werden automatisch angewendet, wenn neuer Text kopiert wird. Sie werden in der angezeigten Reihenfolge ausgeführt.";
+"History" = "Verlauf";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Maximale Anzahl der Zwischenablage-Einträge. Ältere Einträge werden automatisch gelöscht.";
+"History limit" = "Verlaufslimit";
+"%lld items" = "%lld Einträge";
+
+/* Customization tab */
+"Pinned" = "Angeheftet";
+"Shown as icon buttons on each item (max 4)" = "Als Symbolschaltflächen angezeigt (max. 4)";
+"More Options" = "Weitere Optionen";
+"Shown in the ⋮ menu" = "Im ⋮-Menü angezeigt";
+"Drag items here" = "Elemente hierher ziehen";
+"Move to More" = "Zu 'Weitere' verschieben";
+"Pin" = "Anheften";
+
+/* Shortcuts tab */
+"Global" = "Global";
+"Works system-wide. Requires Accessibility permission." = "Systemweit verfügbar. Bedienungshilfen-Berechtigung erforderlich.";
+"Actions" = "Aktionen";
+"Applied to the most recently copied item. Works system-wide." = "Auf das zuletzt kopierte Element angewendet. Systemweit verfügbar.";
+"Open App" = "App öffnen";
+"Accessibility Permission Required" = "Bedienungshilfen-Berechtigung erforderlich";
+"Global shortcuts need Accessibility access to work system-wide." = "Globale Kurzbefehle benötigen Bedienungshilfen-Zugriff für systemweite Funktion.";
+"Grant Access" = "Zugriff erlauben";
+
+/* Options tabs */
+"Customization" = "Anpassung";
+"Behaviour" = "Verhalten";
+"Shortcuts" = "Kurzbefehle";
+"About" = "Info";
+
+/* About tab */
+"What's New" = "Was ist neu";
+"Made by %@" = "Erstellt von %@";
+"Visit website" = "Website besuchen";
+"Version %@" = "Version %@";
+
+/* Menus */
+"Options" = "Optionen";
+"Clear Clipboard" = "Zwischenablage leeren";
+"Quit" = "Beenden";
+"Quit ClipContext" = "ClipContext beenden";

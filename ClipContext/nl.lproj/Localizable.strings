@@ -1,0 +1,70 @@
+/* Search & toolbar */
+"Search clipboard…" = "Klembord doorzoeken…";
+"Clear All" = "Alles wissen";
+"Copied to clipboard" = "Gekopieerd naar klembord";
+"Remove" = "Verwijderen";
+"None" = "Geen";
+"Recording…" = "Opnemen…";
+"%lld words · %lld chars" = "%lld woorden · %lld tekens";
+
+/* Actions */
+"Trim Whitespace" = "Witruimte verwijderen";
+"Lowercase" = "Kleine letters";
+"Capitalize" = "Beginletters als hoofdletter";
+"Extract URL" = "URL extraheren";
+"Remove extra spaces" = "Extra spaties verwijderen";
+"Remove empty lines" = "Lege regels verwijderen";
+"Join lines into one" = "Regels samenvoegen";
+"Lines to CSV" = "Regels naar CSV";
+"Remove tracking params" = "Trackingparameters verwijderen";
+"Translate" = "Vertalen";
+
+/* Behaviour tab */
+"General" = "Algemeen";
+"Language" = "Taal";
+"System Default" = "Systeemstandaard";
+"Restart ClipContext to apply the language change." = "Herstart ClipContext om de taalwijziging toe te passen.";
+"Launch at Login" = "Starten bij aanmelden";
+"Auto-apply on Copy" = "Automatisch toepassen bij kopiëren";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Geselecteerde acties worden automatisch toegepast bij het kopiëren van tekst. Ze worden uitgevoerd in de vermelde volgorde.";
+"History" = "Geschiedenis";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Maximum aantal klembordvermeldingen. Oudere items worden automatisch verwijderd.";
+"History limit" = "Geschiedenislimiet";
+"%lld items" = "%lld items";
+
+/* Customization tab */
+"Pinned" = "Vastgemaakt";
+"Shown as icon buttons on each item (max 4)" = "Weergegeven als pictogramknoppen (max. 4)";
+"More Options" = "Meer opties";
+"Shown in the ⋮ menu" = "Weergegeven in het ⋮-menu";
+"Drag items here" = "Sleep items hierheen";
+"Move to More" = "Verplaatsen naar 'Meer'";
+"Pin" = "Vastmaken";
+
+/* Shortcuts tab */
+"Global" = "Globaal";
+"Works system-wide. Requires Accessibility permission." = "Systeembreed beschikbaar. Vereist toegankelijkheidsrechten.";
+"Actions" = "Acties";
+"Applied to the most recently copied item. Works system-wide." = "Toegepast op het meest recent gekopieerde item. Systeembreed beschikbaar.";
+"Open App" = "App openen";
+"Accessibility Permission Required" = "Toegankelijkheidsmachtiging vereist";
+"Global shortcuts need Accessibility access to work system-wide." = "Globale sneltoetsen hebben toegankelijkheidstoegang nodig om systeembreed te werken.";
+"Grant Access" = "Toegang verlenen";
+
+/* Options tabs */
+"Customization" = "Aanpassen";
+"Behaviour" = "Gedrag";
+"Shortcuts" = "Sneltoetsen";
+"About" = "Info";
+
+/* About tab */
+"What's New" = "Wat is er nieuw";
+"Made by %@" = "Gemaakt door %@";
+"Visit website" = "Website bezoeken";
+"Version %@" = "Versie %@";
+
+/* Menus */
+"Options" = "Opties";
+"Clear Clipboard" = "Klembord wissen";
+"Quit" = "Afsluiten";
+"Quit ClipContext" = "ClipContext afsluiten";

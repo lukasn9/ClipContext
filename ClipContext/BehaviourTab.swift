@@ -1,9 +1,25 @@
 import ServiceManagement
 import SwiftUI
 
+private let supportedLanguages: [(code: String, name: String)] = [
+    ("system", "System Default"),
+    ("en", "English"),
+    ("de", "Deutsch"),
+    ("nl", "Nederlands"),
+    ("sk", "Slovenčina"),
+    ("cs", "Čeština"),
+    ("es", "Español"),
+    ("fr", "Français"),
+]
+
 struct BehaviourTab: View {
     @EnvironmentObject var settings: SettingsStore
     @State private var launchAtLogin = SMAppService.mainApp.status == .enabled
+    @State private var selectedLanguage: String = {
+        UserDefaults.standard.string(forKey: "ClipContextLanguage") ?? "system"
+    }()
+    @State private var showRestartNote = false
+
 
     var body: some View {
         ScrollView {
@@ -15,21 +31,67 @@ struct BehaviourTab: View {
                 .padding(.horizontal, 16)
                 .padding(.top, 16)
 
-                HStack(spacing: 12) {
-                    Image(systemName: "power")
-                        .frame(width: 20)
-                        .foregroundStyle(.secondary)
-                    Text("Launch at Login")
-                    Spacer()
-                    Toggle("", isOn: $launchAtLogin)
-                        .labelsHidden()
-                        .toggleStyle(.switch)
-                        .onChange(of: launchAtLogin) { _, enabled in
-                            setLaunchAtLogin(enabled)
+                VStack(spacing: 0) {
+                    HStack(spacing: 12) {
+                        Image(systemName: "power")
+                            .frame(width: 20)
+                            .foregroundStyle(.secondary)
+                        Text("Launch at Login")
+                        Spacer()
+                        Toggle("", isOn: $launchAtLogin)
+                            .labelsHidden()
+                            .toggleStyle(.switch)
+                            .onChange(of: launchAtLogin) { _, enabled in
+                                setLaunchAtLogin(enabled)
+                            }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 10)
+
+                    Divider().padding(.leading, 52)
+
+                    HStack(spacing: 12) {
+                        Image(systemName: "globe")
+                            .frame(width: 20)
+                            .foregroundStyle(.secondary)
+                        Text("Language")
+                        Spacer()
+                        Picker("", selection: $selectedLanguage) {
+                            ForEach(supportedLanguages, id: \.code) { lang in
+                                Text(lang.code == "system" ? String(localized: "System Default") : lang.name)
+                                    .tag(lang.code)
+                            }
                         }
+                        .labelsHidden()
+                        .fixedSize()
+                        .onChange(of: selectedLanguage) { _, newValue in
+                            UserDefaults.standard.set(newValue, forKey: "ClipContextLanguage")
+                            if newValue == "system" {
+                                UserDefaults.standard.removeObject(forKey: "AppleLanguages")
+                            } else {
+                                UserDefaults.standard.set([newValue], forKey: "AppleLanguages")
+                            }
+                            showRestartNote = true
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 10)
+
+                    if showRestartNote {
+                        Divider().padding(.leading, 52)
+                        HStack(spacing: 8) {
+                            Image(systemName: "arrow.counterclockwise.circle")
+                                .foregroundStyle(.orange)
+                                .frame(width: 20)
+                            Text("Restart ClipContext to apply the language change.")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
+                    }
                 }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 10)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color(.controlBackgroundColor))

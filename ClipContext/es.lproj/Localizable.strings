@@ -1,0 +1,70 @@
+/* Search & toolbar */
+"Search clipboard…" = "Buscar en el portapapeles…";
+"Clear All" = "Borrar todo";
+"Copied to clipboard" = "Copiado al portapapeles";
+"Remove" = "Eliminar";
+"None" = "Ninguno";
+"Recording…" = "Grabando…";
+"%lld words · %lld chars" = "%lld palabras · %lld caracteres";
+
+/* Actions */
+"Trim Whitespace" = "Eliminar espacios en blanco";
+"Lowercase" = "Minúsculas";
+"Capitalize" = "Capitalizar";
+"Extract URL" = "Extraer URL";
+"Remove extra spaces" = "Eliminar espacios extra";
+"Remove empty lines" = "Eliminar líneas vacías";
+"Join lines into one" = "Unir líneas en una";
+"Lines to CSV" = "Líneas a CSV";
+"Remove tracking params" = "Eliminar parámetros de seguimiento";
+"Translate" = "Traducir";
+
+/* Behaviour tab */
+"General" = "General";
+"Language" = "Idioma";
+"System Default" = "Predeterminado del sistema";
+"Restart ClipContext to apply the language change." = "Reinicia ClipContext para aplicar el cambio de idioma.";
+"Launch at Login" = "Abrir al iniciar sesión";
+"Auto-apply on Copy" = "Aplicar automáticamente al copiar";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Las acciones seleccionadas se aplican automáticamente al copiar texto nuevo. Se ejecutan en el orden indicado.";
+"History" = "Historial";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Número máximo de entradas del portapapeles. Los elementos más antiguos se eliminan automáticamente.";
+"History limit" = "Límite del historial";
+"%lld items" = "%lld elementos";
+
+/* Customization tab */
+"Pinned" = "Fijado";
+"Shown as icon buttons on each item (max 4)" = "Mostrado como botones de icono (máx. 4)";
+"More Options" = "Más opciones";
+"Shown in the ⋮ menu" = "Mostrado en el menú ⋮";
+"Drag items here" = "Arrastra elementos aquí";
+"Move to More" = "Mover a «Más»";
+"Pin" = "Fijar";
+
+/* Shortcuts tab */
+"Global" = "Global";
+"Works system-wide. Requires Accessibility permission." = "Funciona en todo el sistema. Requiere permiso de Accesibilidad.";
+"Actions" = "Acciones";
+"Applied to the most recently copied item. Works system-wide." = "Aplicado al elemento copiado más recientemente. Funciona en todo el sistema.";
+"Open App" = "Abrir app";
+"Accessibility Permission Required" = "Se requiere permiso de Accesibilidad";
+"Global shortcuts need Accessibility access to work system-wide." = "Los atajos globales necesitan acceso de Accesibilidad para funcionar en todo el sistema.";
+"Grant Access" = "Conceder acceso";
+
+/* Options tabs */
+"Customization" = "Personalización";
+"Behaviour" = "Comportamiento";
+"Shortcuts" = "Atajos";
+"About" = "Acerca de";
+
+/* About tab */
+"What's New" = "Novedades";
+"Made by %@" = "Creado por %@";
+"Visit website" = "Visitar sitio web";
+"Version %@" = "Versión %@";
+
+/* Menus */
+"Options" = "Opciones";
+"Clear Clipboard" = "Borrar portapapeles";
+"Quit" = "Salir";
+"Quit ClipContext" = "Salir de ClipContext";

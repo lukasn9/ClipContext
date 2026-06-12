@@ -8,16 +8,16 @@ struct ClipAction: Identifiable {
 }
 
 let allActions: [ClipAction] = [
-    ClipAction(id: "trimWhitespace",    label: "Trim Whitespace",        systemImage: "arrow.left.and.right",               transform: { $0.trimmingCharacters(in: .whitespacesAndNewlines) }),
-    ClipAction(id: "lowercase",         label: "Lowercase",              systemImage: "textformat.size.smaller",            transform: { $0.lowercased() }),
-    ClipAction(id: "capitalize",        label: "Capitalize",             systemImage: "textformat",                         transform: { $0.capitalized }),
-    ClipAction(id: "extractURL",        label: "Extract URL",            systemImage: "link",                               transform: clipExtractFirstURL),
-    ClipAction(id: "removeExtraSpaces", label: "Remove extra spaces",    systemImage: "space",                              transform: { $0.replacingOccurrences(of: " {2,}", with: " ", options: .regularExpression) }),
-    ClipAction(id: "removeEmptyLines",  label: "Remove empty lines",     systemImage: "minus",                              transform: clipRemoveEmptyLines),
-    ClipAction(id: "joinLines",         label: "Join lines into one",    systemImage: "arrow.down.left.and.arrow.up.right", transform: clipJoinLines),
-    ClipAction(id: "linesToCSV",        label: "Lines to CSV",           systemImage: "tablecells",                         transform: clipLinesToCSV),
-    ClipAction(id: "removeTracking",    label: "Remove tracking params", systemImage: "xmark.shield",                       transform: clipRemoveTrackingParameters),
-    ClipAction(id: "translate",         label: "Translate",              systemImage: "translate",                          transform: { $0 }),
+    ClipAction(id: "trimWhitespace",    label: String(localized: "Trim Whitespace"),        systemImage: "arrow.left.and.right",               transform: { $0.trimmingCharacters(in: .whitespacesAndNewlines) }),
+    ClipAction(id: "lowercase",         label: String(localized: "Lowercase"),              systemImage: "textformat.size.smaller",            transform: { $0.lowercased() }),
+    ClipAction(id: "capitalize",        label: String(localized: "Capitalize"),             systemImage: "textformat",                         transform: { $0.capitalized }),
+    ClipAction(id: "extractURL",        label: String(localized: "Extract URL"),            systemImage: "link",                               transform: clipExtractFirstURL),
+    ClipAction(id: "removeExtraSpaces", label: String(localized: "Remove extra spaces"),    systemImage: "space",                              transform: { $0.replacingOccurrences(of: " {2,}", with: " ", options: .regularExpression) }),
+    ClipAction(id: "removeEmptyLines",  label: String(localized: "Remove empty lines"),     systemImage: "minus",                              transform: clipRemoveEmptyLines),
+    ClipAction(id: "joinLines",         label: String(localized: "Join lines into one"),    systemImage: "arrow.down.left.and.arrow.up.right", transform: clipJoinLines),
+    ClipAction(id: "linesToCSV",        label: String(localized: "Lines to CSV"),           systemImage: "tablecells",                         transform: clipLinesToCSV),
+    ClipAction(id: "removeTracking",    label: String(localized: "Remove tracking params"), systemImage: "xmark.shield",                       transform: clipRemoveTrackingParameters),
+    ClipAction(id: "translate",         label: String(localized: "Translate"),              systemImage: "translate",                          transform: { $0 }),
 ]
 
 extension [ClipAction] {

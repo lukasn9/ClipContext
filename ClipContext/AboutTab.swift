@@ -11,29 +11,35 @@ private struct ChangelogEntry {
 }
 
 private let changelog: [ChangelogEntry] = [
-    ChangelogEntry(version: "1.5", date: "May 2025", changes: [
+    ChangelogEntry(version: "1.6", date: "June 2026", changes: [
+        "Bug fixes",
+        "Added localization",
+        "Added right-click popup",
+        "Fixed menubar icon right-click on macOS 27.0",
+    ]),
+    ChangelogEntry(version: "1.5", date: "May 2026", changes: [
         "Improved light mode appearance with better contrast and visible borders",
     ]),
-    ChangelogEntry(version: "1.4", date: "May 2025", changes: [
+    ChangelogEntry(version: "1.4", date: "May 2026", changes: [
         "Added Launch at Login toggle",
         "Open App shortcut now closes the popover if already open",
     ]),
-    ChangelogEntry(version: "1.3", date: "May 2025", changes: [
+    ChangelogEntry(version: "1.3", date: "May 2026", changes: [
         "Added translation via Apple's system Translate",
         "Added per-item Remove to the ⋮ menu",
         "Added history limit setting (default 200, up to 2000)",
         "Added global & action keyboard shortcuts",
     ]),
-    ChangelogEntry(version: "1.2", date: "May 2025", changes: [
+    ChangelogEntry(version: "1.2", date: "May 2026", changes: [
         "Added word & character count per item",
         "Added ⋮ menu with five additional text-editing functions",
         "Added Options menu",
     ]),
-    ChangelogEntry(version: "1.1", date: "April 2025", changes: [
+    ChangelogEntry(version: "1.1", date: "April 2026", changes: [
         "Clipboard history persistent across launches",
         "Source app and timestamp shown per item",
     ]),
-    ChangelogEntry(version: "1.0", date: "March 2025", changes: [
+    ChangelogEntry(version: "1.0", date: "March 2026", changes: [
         "Initial release",
     ]),
 ]

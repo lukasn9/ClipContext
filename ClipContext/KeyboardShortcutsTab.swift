@@ -15,20 +15,20 @@ struct KeyboardShortcutsTab: View {
 
                 VStack(alignment: .leading, spacing: 20) {
                     shortcutSection(
-                        title: "Global",
-                        subtitle: "Works system-wide. Requires Accessibility permission."
+                        title: String(localized: "Global"),
+                        subtitle: String(localized: "Works system-wide. Requires Accessibility permission.")
                     ) {
                         ShortcutRow(
                             systemImage: "menubar.dock.rectangle",
-                            label: "Open App",
+                            label: String(localized: "Open App"),
                             shortcut: settings.openAppShortcut,
                             onCommit: { settings.openAppShortcut = $0 }
                         )
                     }
 
                     shortcutSection(
-                        title: "Actions",
-                        subtitle: "Applied to the most recently copied item. Works system-wide."
+                        title: String(localized: "Actions"),
+                        subtitle: String(localized: "Applied to the most recently copied item. Works system-wide.")
                     ) {
                         ForEach(Array(allActions.enumerated()), id: \.element.id) { index, action in
                             ShortcutRow(

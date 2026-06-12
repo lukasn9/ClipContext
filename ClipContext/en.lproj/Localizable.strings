@@ -1,0 +1,70 @@
+/* Search & toolbar */
+"Search clipboard…" = "Search clipboard…";
+"Clear All" = "Clear All";
+"Copied to clipboard" = "Copied to clipboard";
+"Remove" = "Remove";
+"None" = "None";
+"Recording…" = "Recording…";
+"%lld words · %lld chars" = "%lld words · %lld chars";
+
+/* Actions */
+"Trim Whitespace" = "Trim Whitespace";
+"Lowercase" = "Lowercase";
+"Capitalize" = "Capitalize";
+"Extract URL" = "Extract URL";
+"Remove extra spaces" = "Remove extra spaces";
+"Remove empty lines" = "Remove empty lines";
+"Join lines into one" = "Join lines into one";
+"Lines to CSV" = "Lines to CSV";
+"Remove tracking params" = "Remove tracking params";
+"Translate" = "Translate";
+
+/* Behaviour tab */
+"General" = "General";
+"Language" = "Language";
+"System Default" = "System Default";
+"Restart ClipContext to apply the language change." = "Restart ClipContext to apply the language change.";
+"Launch at Login" = "Launch at Login";
+"Auto-apply on Copy" = "Auto-apply on Copy";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Selected actions are automatically applied whenever new text is copied. They run in the order listed.";
+"History" = "History";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Maximum number of clipboard entries to keep. Older items are removed automatically.";
+"History limit" = "History limit";
+"%lld items" = "%lld items";
+
+/* Customization tab */
+"Pinned" = "Pinned";
+"Shown as icon buttons on each item (max 4)" = "Shown as icon buttons on each item (max 4)";
+"More Options" = "More Options";
+"Shown in the ⋮ menu" = "Shown in the ⋮ menu";
+"Drag items here" = "Drag items here";
+"Move to More" = "Move to More";
+"Pin" = "Pin";
+
+/* Shortcuts tab */
+"Global" = "Global";
+"Works system-wide. Requires Accessibility permission." = "Works system-wide. Requires Accessibility permission.";
+"Actions" = "Actions";
+"Applied to the most recently copied item. Works system-wide." = "Applied to the most recently copied item. Works system-wide.";
+"Open App" = "Open App";
+"Accessibility Permission Required" = "Accessibility Permission Required";
+"Global shortcuts need Accessibility access to work system-wide." = "Global shortcuts need Accessibility access to work system-wide.";
+"Grant Access" = "Grant Access";
+
+/* Options tabs */
+"Customization" = "Customization";
+"Behaviour" = "Behaviour";
+"Shortcuts" = "Shortcuts";
+"About" = "About";
+
+/* About tab */
+"What's New" = "What's New";
+"Made by %@" = "Made by %@";
+"Visit website" = "Visit website";
+"Version %@" = "Version %@";
+
+/* Menus */
+"Options" = "Options";
+"Clear Clipboard" = "Clear Clipboard";
+"Quit" = "Quit";
+"Quit ClipContext" = "Quit ClipContext";
