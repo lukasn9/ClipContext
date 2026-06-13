@@ -2,7 +2,7 @@
 
 **A lightweight clipboard manager that lives in your menu bar.**
 Every text you copy is saved, searchable, and ready to paste.
-![ClipContext Image](https://github.com/lukasn9/ClipContext/blob/33eb8747dc66f90d27642518c46d4a9cbf00a82f/ClipContext_Populated_PROMO.png)
+![ClipContext Image](https://github.com/lukasn9/ClipContext/blob/9223b22c7fcd9e5390781521cd4c490af2c63514/ClipContext_Populated_PROMO.png)
 ---
 
 ## Clipboard History
