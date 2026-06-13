@@ -41,6 +41,7 @@ struct ContentView: View {
                     ClipboardRowView(item: item, tooltipController: tooltipController) {
                         copyToClipboard(item.content)
                     }
+                    .listRowSeparator(.hidden)
                 }
                 .scrollContentBackground(.hidden)
                 .background(.thinMaterial)

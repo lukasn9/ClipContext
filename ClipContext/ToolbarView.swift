@@ -41,6 +41,5 @@ struct ToolbarView: View {
         }
         .padding(12)
         .background(.thinMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
