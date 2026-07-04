@@ -1,0 +1,9 @@
+{
+  "id" : "5c6f6921-636e-4802-ac4c-02eadabd4215",
+  "targets" : [
+    {
+      "id" : "6a3a3c4f-2992-463e-a064-8f1c33b487db",
+      "name" : "ClipContext"
+    }
+  ]
+}

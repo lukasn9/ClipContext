@@ -57,6 +57,18 @@
 "Shortcuts" = "Sneltoetsen";
 "About" = "Info";
 
+/* Donate section */
+"Support ClipContext" = "ClipContext steunen";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext is een eenmanspproject. Een fooi helpt de ontwikkeling gaande te houden.";
+"Thank you for your support!" = "Bedankt voor je steun!";
+"Thank You!" = "Hartelijk bedankt!";
+"You're welcome!" = "Graag gedaan!";
+"Your support means a lot and helps keep ClipContext going." = "Je steun betekent veel en helpt ClipContext draaiende te houden.";
+"Purchase Failed" = "Aankoop mislukt";
+"Something went wrong. Please try again." = "Er is iets misgegaan. Probeer het opnieuw.";
+"OK" = "OK";
+"Support on Ko-fi" = "Steunen via Ko-fi";
+
 /* About tab */
 "What's New" = "Wat is er nieuw";
 "Made by %@" = "Gemaakt door %@";

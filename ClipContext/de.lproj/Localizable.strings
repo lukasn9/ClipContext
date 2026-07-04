@@ -57,6 +57,18 @@
 "Shortcuts" = "Kurzbefehle";
 "About" = "Info";
 
+/* Donate section */
+"Support ClipContext" = "ClipContext unterstützen";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext ist ein Ein-Personen-Projekt. Ein Trinkgeld hilft, die Entwicklung am Laufen zu halten.";
+"Thank you for your support!" = "Danke für deine Unterstützung!";
+"Thank You!" = "Vielen Dank!";
+"You're welcome!" = "Gern geschehen!";
+"Your support means a lot and helps keep ClipContext going." = "Deine Unterstützung bedeutet mir sehr viel und hilft ClipContext am Leben zu erhalten.";
+"Purchase Failed" = "Kauf fehlgeschlagen";
+"Something went wrong. Please try again." = "Etwas ist schiefgelaufen. Bitte versuche es erneut.";
+"OK" = "OK";
+"Support on Ko-fi" = "Auf Ko-fi unterstützen";
+
 /* About tab */
 "What's New" = "Was ist neu";
 "Made by %@" = "Erstellt von %@";

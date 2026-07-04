@@ -1,3 +1,4 @@
+import StoreKit
 import SwiftUI
 
 private let authorName   = "Lukáš Nagy"
@@ -51,7 +52,10 @@ struct AboutTab: View {
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 0) {
+            VStack(spacing: 12) {
+                DonateSection()
+
+                VStack(spacing: 0) {
                 // App identity
                 VStack(spacing: 8) {
                     if let icon = NSImage(named: NSImage.applicationIconName) {
@@ -129,12 +133,120 @@ struct AboutTab: View {
                 }
                 .padding(.vertical, 20)
             }
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color(.controlBackgroundColor))
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.primary.opacity(0.08), lineWidth: 1))
-            )
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color(.controlBackgroundColor))
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.primary.opacity(0.08), lineWidth: 1))
+                )
+            }
             .padding(16)
+        }
+    }
+}
+
+// MARK: - Donate
+
+struct DonateSection: View {
+    @StateObject private var store = TipStore.shared
+    @State private var showThankYou = false
+    @State private var showError = false
+
+    var body: some View {
+        VStack(spacing: 10) {
+            if store.hasDonated {
+                HStack(spacing: 8) {
+                    Image(systemName: "heart.fill")
+                        .foregroundStyle(.pink)
+                    Text("Thank you for your support!")
+                        .font(.subheadline.weight(.medium))
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 10)
+                .background(
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(Color.pink.opacity(0.10))
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.pink.opacity(0.25), lineWidth: 1))
+                )
+            }
+
+            HStack(alignment: .top, spacing: 10) {
+                Image(systemName: "heart")
+                    .foregroundStyle(.pink)
+                    .frame(width: 20)
+                    .padding(.top, 1)
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Support ClipContext")
+                        .font(.subheadline.weight(.semibold))
+                    Text("ClipContext is a one-person project. A tip helps keep development going.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            if TipStore.isAppStore {
+                if store.products.isEmpty {
+                    ProgressView()
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 4)
+                } else {
+                    HStack(spacing: 8) {
+                        ForEach(store.products, id: \.id) { product in
+                            Button {
+                                Task {
+                                    do {
+                                        if try await store.purchase(product) {
+                                            showThankYou = true
+                                        }
+                                    } catch {
+                                        showError = true
+                                    }
+                                }
+                            } label: {
+                                VStack(spacing: 2) {
+                                    Text(product.displayPrice)
+                                        .font(.subheadline.bold())
+                                    Text(product.displayName)
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                }
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 6)
+                            }
+                            .buttonStyle(.bordered)
+                            .disabled(store.isPurchasing)
+                        }
+                    }
+                }
+            } else {
+                Button {
+                    NSWorkspace.shared.open(TipStore.kofiURL)
+                    store.markDonatedExternally()
+                } label: {
+                    Label("Support on Ko-fi", systemImage: "heart")
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 6)
+                }
+                .buttonStyle(.bordered)
+            }
+        }
+        .padding(14)
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(Color(.controlBackgroundColor))
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.pink.opacity(0.20), lineWidth: 1))
+        )
+        .alert(String(localized: "Thank You!"), isPresented: $showThankYou) {
+            Button(String(localized: "You're welcome!")) { }
+        } message: {
+            Text("Your support means a lot and helps keep ClipContext going.")
+        }
+        .alert(String(localized: "Purchase Failed"), isPresented: $showError) {
+            Button(String(localized: "OK")) { }
+        } message: {
+            Text("Something went wrong. Please try again.")
         }
     }
 }

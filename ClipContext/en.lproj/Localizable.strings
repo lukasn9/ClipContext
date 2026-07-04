@@ -57,6 +57,18 @@
 "Shortcuts" = "Shortcuts";
 "About" = "About";
 
+/* Donate section */
+"Support ClipContext" = "Support ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext is a one-person project. A tip helps keep development going.";
+"Thank you for your support!" = "Thank you for your support!";
+"Thank You!" = "Thank You!";
+"You're welcome!" = "You're welcome!";
+"Your support means a lot and helps keep ClipContext going." = "Your support means a lot and helps keep ClipContext going.";
+"Purchase Failed" = "Purchase Failed";
+"Something went wrong. Please try again." = "Something went wrong. Please try again.";
+"OK" = "OK";
+"Support on Ko-fi" = "Support on Ko-fi";
+
 /* About tab */
 "What's New" = "What's New";
 "Made by %@" = "Made by %@";

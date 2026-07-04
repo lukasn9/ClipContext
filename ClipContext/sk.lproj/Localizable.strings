@@ -57,6 +57,18 @@
 "Shortcuts" = "Skratky";
 "About" = "O aplikácii";
 
+/* Donate section */
+"Support ClipContext" = "Podporte ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext je projekt jednej osoby. Príspevok pomáha udržať vývoj v chode.";
+"Thank you for your support!" = "Ďakujem za vašu podporu!";
+"Thank You!" = "Ďakujem!";
+"You're welcome!" = "Niet za čo!";
+"Your support means a lot and helps keep ClipContext going." = "Vaša podpora pre mňa veľa znamená a pomáha udržať ClipContext v chode.";
+"Purchase Failed" = "Nákup sa nepodaril";
+"Something went wrong. Please try again." = "Niečo sa pokazilo. Skúste to znova.";
+"OK" = "OK";
+"Support on Ko-fi" = "Podporiť cez Ko-fi";
+
 /* About tab */
 "What's New" = "Čo je nové";
 "Made by %@" = "Vytvoril %@";
