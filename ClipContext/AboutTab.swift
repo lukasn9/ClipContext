@@ -188,9 +188,18 @@ struct DonateSection: View {
 
             if TipStore.isAppStore {
                 if store.products.isEmpty {
-                    ProgressView()
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 4)
+                    HStack(spacing: 8) {
+                        ForEach(["€1.99", "€4.99", "€9.99"], id: \.self) { price in
+                            Button { } label: {
+                                Text(price)
+                                    .font(.subheadline.bold())
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 6)
+                            }
+                            .buttonStyle(.bordered)
+                            .disabled(true)
+                        }
+                    }
                 } else {
                     HStack(spacing: 8) {
                         ForEach(store.products, id: \.id) { product in
