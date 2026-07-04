@@ -22,16 +22,12 @@ class TipStore: ObservableObject {
         "com.LukasNagy.ClipContext.tip.large",
     ]
 
-    private var transactionUpdatesTask: Task<Void, Never>?
-
     private init() {
-        transactionUpdatesTask = Task.detached { [weak self] in
+        Task {
             for await result in Transaction.updates {
                 guard let transaction = try? result.payloadValue else { continue }
                 await transaction.finish()
-                await MainActor.run {
-                    self?.markDonated()
-                }
+                markDonated()
             }
         }
         Task { await loadProducts() }
