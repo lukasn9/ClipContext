@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "クリップボードを検索…";
+"Clear All" = "すべて消去";
+"Copied to clipboard" = "クリップボードにコピーしました";
+"Remove" = "削除";
+"None" = "なし";
+"Recording…" = "入力中…";
+"%lld words · %lld chars" = "%lld語 · %lld文字";
+
+/* Actions */
+"Trim Whitespace" = "前後の空白を削除";
+"Lowercase" = "小文字に変換";
+"Capitalize" = "先頭を大文字にする";
+"Extract URL" = "URLを抽出";
+"Remove extra spaces" = "余分な空白を削除";
+"Remove empty lines" = "空行を削除";
+"Join lines into one" = "行を結合";
+"Lines to CSV" = "行をCSVに変換";
+"Remove tracking params" = "トラッキングパラメータを削除";
+"Translate" = "翻訳";
+
+/* Behaviour tab */
+"General" = "一般";
+"Language" = "言語";
+"System Default" = "システムデフォルト";
+"Restart ClipContext to apply the language change." = "言語の変更を適用するにはClipContextを再起動してください。";
+"Launch at Login" = "ログイン時に起動";
+"Auto-apply on Copy" = "コピー時に自動適用";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "新しいテキストをコピーすると、選択したアクションが表示順に自動適用されます。";
+"History" = "履歴";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "保存するクリップボード項目の最大数。古い項目は自動的に削除されます。";
+"History limit" = "履歴の上限";
+"%lld items" = "%lld項目";
+
+/* Customization tab */
+"Pinned" = "ピン留め済み";
+"Shown as icon buttons on each item (max 4)" = "各項目にアイコンボタンとして表示（最大4個）";
+"More Options" = "その他のオプション";
+"Shown in the ⋮ menu" = "⋮メニューに表示";
+"Drag items here" = "項目をここにドラッグ";
+"Move to More" = "その他のオプションに移動";
+"Pin" = "ピン留め";
+
+/* Shortcuts tab */
+"Global" = "グローバル";
+"Works system-wide. Requires Accessibility permission." = "システム全体で動作します。「アクセシビリティ」の許可が必要です。";
+"Actions" = "アクション";
+"Applied to the most recently copied item. Works system-wide." = "最後にコピーした項目に適用されます。システム全体で動作します。";
+"Open App" = "アプリを開く";
+"Accessibility Permission Required" = "アクセシビリティの許可が必要です";
+"Global shortcuts need Accessibility access to work system-wide." = "グローバルショートカットをシステム全体で使うには、アクセシビリティへのアクセスが必要です。";
+"Grant Access" = "アクセスを許可";
+
+/* Options tabs */
+"Customization" = "カスタマイズ";
+"Behaviour" = "動作";
+"Shortcuts" = "ショートカット";
+"About" = "情報";
+
+/* Donate section */
+"Support ClipContext" = "ClipContextを支援";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContextは個人開発のプロジェクトです。チップは開発の継続に役立ちます。";
+"Thank you for your support!" = "ご支援ありがとうございます！";
+"Thank You!" = "ありがとうございます！";
+"You're welcome!" = "どういたしまして！";
+"Your support means a lot and helps keep ClipContext going." = "皆さまのご支援は、ClipContextの開発を続ける大きな力になります。";
+"Purchase Failed" = "購入に失敗しました";
+"Something went wrong. Please try again." = "問題が発生しました。もう一度お試しください。";
+"OK" = "OK";
+"Support on Ko-fi" = "Ko-fiで支援";
+
+/* About tab */
+"What's New" = "新機能";
+"Made by %@" = "開発者：%@";
+"Visit website" = "Webサイトを開く";
+"Version %@" = "バージョン %@";
+
+/* Menus */
+"Options" = "オプション";
+"Clear Clipboard" = "クリップボードを消去";
+"Quit" = "終了";
+"Quit ClipContext" = "ClipContextを終了";
+
+/* Changelog & window title */
+"Localized to more languages" = "多言語に対応しました";
+"Migrated to SQLite database for better performance" = "パフォーマンス向上のためSQLiteデータベースに移行";
+"Implemented multiple memory optimizations" = "メモリ使用量を最適化";
+"Various bug fixes" = "各種バグ修正";
+"Bug fixes" = "バグ修正";
+"Added localization" = "ローカライズを追加";
+"Added right-click popup" = "右クリックのポップアップを追加";
+"Fixed menubar icon right-click on macOS 27.0" = "macOS 27.0でメニューバーアイコンの右クリックの不具合を修正";
+"Improved light mode appearance with better contrast and visible borders" = "ライトモードの外観を改善（コントラストと境界線を見やすく）";
+"Added Launch at Login toggle" = "ログイン時に起動の切り替えを追加";
+"Open App shortcut now closes the popover if already open" = "「アプリを開く」ショートカットで、ポップオーバーが開いている場合は閉じるように変更";
+"Added translation via Apple's system Translate" = "Appleのシステム翻訳による翻訳を追加";
+"Added per-item Remove to the ⋮ menu" = "⋮メニューに項目ごとの削除を追加";
+"Added history limit setting (default 200, up to 2000)" = "履歴の上限設定を追加（既定は200、最大2000）";
+"Added global & action keyboard shortcuts" = "グローバルおよびアクションのキーボードショートカットを追加";
+"Added word & character count per item" = "項目ごとの単語数と文字数を追加";
+"Added ⋮ menu with five additional text-editing functions" = "テキスト編集機能を5つ追加した⋮メニューを追加";
+"Added Options menu" = "オプションメニューを追加";
+"Clipboard history persistent across launches" = "クリップボードの履歴をアプリ再起動後も保持";
+"Source app and timestamp shown per item" = "項目ごとにコピー元のアプリと時刻を表示";
+"Initial release" = "初回リリース";
+"ClipContext Options" = "ClipContextのオプション";

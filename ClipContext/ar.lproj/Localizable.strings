@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "البحث في الحافظة…";
+"Clear All" = "مسح الكل";
+"Copied to clipboard" = "تم النسخ إلى الحافظة";
+"Remove" = "إزالة";
+"None" = "لا شيء";
+"Recording…" = "جارٍ التسجيل…";
+"%lld words · %lld chars" = "%lld كلمة · %lld حرفًا";
+
+/* Actions */
+"Trim Whitespace" = "إزالة المسافات من الأطراف";
+"Lowercase" = "تحويل إلى أحرف صغيرة";
+"Capitalize" = "تكبير الحرف الأول";
+"Extract URL" = "استخراج URL";
+"Remove extra spaces" = "إزالة المسافات الزائدة";
+"Remove empty lines" = "إزالة الأسطر الفارغة";
+"Join lines into one" = "دمج الأسطر في سطر واحد";
+"Lines to CSV" = "تحويل الأسطر إلى CSV";
+"Remove tracking params" = "إزالة معلمات التتبع";
+"Translate" = "ترجمة";
+
+/* Behaviour tab */
+"General" = "عام";
+"Language" = "اللغة";
+"System Default" = "الإعداد الافتراضي للنظام";
+"Restart ClipContext to apply the language change." = "أعد تشغيل ClipContext لتطبيق تغيير اللغة.";
+"Launch at Login" = "التشغيل عند تسجيل الدخول";
+"Auto-apply on Copy" = "تطبيق تلقائي عند النسخ";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "تُطبّق الإجراءات المحددة تلقائيًا عند نسخ نص جديد، وفق الترتيب المعروض.";
+"History" = "السجل";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "الحد الأقصى للعناصر المحفوظة في سجل الحافظة. تُزال العناصر الأقدم تلقائيًا.";
+"History limit" = "حد السجل";
+"%lld items" = "%lld عنصرًا";
+
+/* Customization tab */
+"Pinned" = "المثبتة";
+"Shown as icon buttons on each item (max 4)" = "تظهر كأزرار أيقونات لكل عنصر (بحد أقصى 4)";
+"More Options" = "خيارات إضافية";
+"Shown in the ⋮ menu" = "تظهر في قائمة ⋮";
+"Drag items here" = "اسحب العناصر إلى هنا";
+"Move to More" = "نقل إلى الخيارات الإضافية";
+"Pin" = "تثبيت";
+
+/* Shortcuts tab */
+"Global" = "عامة";
+"Works system-wide. Requires Accessibility permission." = "تعمل على مستوى النظام. تتطلب إذن تسهيلات الاستخدام.";
+"Actions" = "الإجراءات";
+"Applied to the most recently copied item. Works system-wide." = "تُطبّق على العنصر المنسوخ مؤخرًا. تعمل على مستوى النظام.";
+"Open App" = "فتح التطبيق";
+"Accessibility Permission Required" = "يلزم إذن تسهيلات الاستخدام";
+"Global shortcuts need Accessibility access to work system-wide." = "تحتاج الاختصارات العامة إلى الوصول إلى تسهيلات الاستخدام لتعمل على مستوى النظام.";
+"Grant Access" = "منح الوصول";
+
+/* Options tabs */
+"Customization" = "التخصيص";
+"Behaviour" = "السلوك";
+"Shortcuts" = "الاختصارات";
+"About" = "حول";
+
+/* Donate section */
+"Support ClipContext" = "ادعم ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext مشروع يديره شخص واحد. تساعد المساهمة المالية على مواصلة التطوير.";
+"Thank you for your support!" = "شكرًا لدعمك!";
+"Thank You!" = "شكرًا لك!";
+"You're welcome!" = "على الرحب والسعة!";
+"Your support means a lot and helps keep ClipContext going." = "دعمك يعني لنا الكثير ويساعد على استمرار ClipContext.";
+"Purchase Failed" = "فشل الشراء";
+"Something went wrong. Please try again." = "حدث خطأ ما. يُرجى المحاولة مرة أخرى.";
+"OK" = "حسنًا";
+"Support on Ko-fi" = "ادعم عبر Ko-fi";
+
+/* About tab */
+"What's New" = "ما الجديد";
+"Made by %@" = "من تطوير %@";
+"Visit website" = "زيارة الموقع";
+"Version %@" = "الإصدار %@";
+
+/* Menus */
+"Options" = "الخيارات";
+"Clear Clipboard" = "مسح الحافظة";
+"Quit" = "إنهاء";
+"Quit ClipContext" = "إنهاء ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "تمت ترجمة التطبيق إلى لغات أخرى";
+"Migrated to SQLite database for better performance" = "الانتقال إلى قاعدة بيانات SQLite لتحسين الأداء";
+"Implemented multiple memory optimizations" = "تطبيق عدة تحسينات على استخدام الذاكرة";
+"Various bug fixes" = "إصلاحات متنوعة للأخطاء";
+"Bug fixes" = "إصلاحات الأخطاء";
+"Added localization" = "أُضيفت الترجمة المحلية";
+"Added right-click popup" = "أُضيفت نافذة منبثقة عند النقر بالزر الأيمن";
+"Fixed menubar icon right-click on macOS 27.0" = "إصلاح النقر بالزر الأيمن على أيقونة شريط القوائم في macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "تحسين مظهر الوضع الفاتح مع تباين أفضل وحدود أوضح";
+"Added Launch at Login toggle" = "أُضيف مفتاح «التشغيل عند تسجيل الدخول»";
+"Open App shortcut now closes the popover if already open" = "اختصار «فتح التطبيق» يغلق النافذة المنبثقة الآن إذا كانت مفتوحة";
+"Added translation via Apple's system Translate" = "أُضيفت الترجمة عبر ميزة الترجمة في نظام Apple";
+"Added per-item Remove to the ⋮ menu" = "أُضيف خيار «إزالة» لكل عنصر في قائمة ⋮";
+"Added history limit setting (default 200, up to 2000)" = "أُضيف إعداد لحد السجل (الافتراضي 200، بحد أقصى 2000)";
+"Added global & action keyboard shortcuts" = "أُضيفت اختصارات لوحة المفاتيح العامة واختصارات الإجراءات";
+"Added word & character count per item" = "أُضيف عدد الكلمات والأحرف لكل عنصر";
+"Added ⋮ menu with five additional text-editing functions" = "أُضيفت قائمة ⋮ تضم خمس وظائف إضافية لتحرير النص";
+"Added Options menu" = "أُضيفت قائمة «الخيارات»";
+"Clipboard history persistent across launches" = "يُحفظ سجل الحافظة بعد إعادة التشغيل";
+"Source app and timestamp shown per item" = "عرض التطبيق المصدر والوقت لكل عنصر";
+"Initial release" = "الإصدار الأول";
+"ClipContext Options" = "خيارات ClipContext";

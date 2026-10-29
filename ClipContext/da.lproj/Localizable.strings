@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Søg i udklipsholder…";
+"Clear All" = "Ryd alt";
+"Copied to clipboard" = "Kopieret til udklipsholder";
+"Remove" = "Fjern";
+"None" = "Ingen";
+"Recording…" = "Optager…";
+"%lld words · %lld chars" = "%lld ord · %lld tegn";
+
+/* Actions */
+"Trim Whitespace" = "Fjern mellemrum i enderne";
+"Lowercase" = "Små bogstaver";
+"Capitalize" = "Stort begyndelsesbogstav";
+"Extract URL" = "Udtræk URL";
+"Remove extra spaces" = "Fjern ekstra mellemrum";
+"Remove empty lines" = "Fjern tomme linjer";
+"Join lines into one" = "Saml linjer";
+"Lines to CSV" = "Linjer til CSV";
+"Remove tracking params" = "Fjern sporingsparametre";
+"Translate" = "Oversæt";
+
+/* Behaviour tab */
+"General" = "Generelt";
+"Language" = "Sprog";
+"System Default" = "Systemstandard";
+"Restart ClipContext to apply the language change." = "Genstart ClipContext for at anvende sprogændringen.";
+"Launch at Login" = "Start ved login";
+"Auto-apply on Copy" = "Anvend automatisk ved kopiering";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Valgte handlinger anvendes automatisk, når ny tekst kopieres, i den viste rækkefølge.";
+"History" = "Historik";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Maksimalt antal elementer i udklipsholderens historik. Ældre elementer fjernes automatisk.";
+"History limit" = "Historikgrænse";
+"%lld items" = "%lld elementer";
+
+/* Customization tab */
+"Pinned" = "Fastgjorte";
+"Shown as icon buttons on each item (max 4)" = "Vises som ikonknapper på hvert element (maks. 4)";
+"More Options" = "Flere muligheder";
+"Shown in the ⋮ menu" = "Vises i menuen ⋮";
+"Drag items here" = "Træk elementer hertil";
+"Move to More" = "Flyt til Flere muligheder";
+"Pin" = "Fastgør";
+
+/* Shortcuts tab */
+"Global" = "Globale";
+"Works system-wide. Requires Accessibility permission." = "Fungerer i hele systemet. Kræver tilladelse til Tilgængelighed.";
+"Actions" = "Handlinger";
+"Applied to the most recently copied item. Works system-wide." = "Anvendes på det senest kopierede element. Fungerer i hele systemet.";
+"Open App" = "Åbn app";
+"Accessibility Permission Required" = "Tilladelse til Tilgængelighed kræves";
+"Global shortcuts need Accessibility access to work system-wide." = "Globale genveje kræver adgang til Tilgængelighed for at fungere i hele systemet.";
+"Grant Access" = "Giv adgang";
+
+/* Options tabs */
+"Customization" = "Tilpasning";
+"Behaviour" = "Adfærd";
+"Shortcuts" = "Genveje";
+"About" = "Om";
+
+/* Donate section */
+"Support ClipContext" = "Støt ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext er et enmandsprojekt. Et bidrag hjælper med at holde udviklingen i gang.";
+"Thank you for your support!" = "Tak for din støtte!";
+"Thank You!" = "Tak!";
+"You're welcome!" = "Velbekomme!";
+"Your support means a lot and helps keep ClipContext going." = "Din støtte betyder meget og hjælper med at holde ClipContext i gang.";
+"Purchase Failed" = "Købet mislykkedes";
+"Something went wrong. Please try again." = "Noget gik galt. Prøv igen.";
+"OK" = "OK";
+"Support on Ko-fi" = "Støt på Ko-fi";
+
+/* About tab */
+"What's New" = "Nyheder";
+"Made by %@" = "Lavet af %@";
+"Visit website" = "Besøg websted";
+"Version %@" = "Version %@";
+
+/* Menus */
+"Options" = "Indstillinger";
+"Clear Clipboard" = "Ryd udklipsholder";
+"Quit" = "Slut";
+"Quit ClipContext" = "Afslut ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Lokaliseret til flere sprog";
+"Migrated to SQLite database for better performance" = "Flyttet til SQLite-database for bedre ydeevne";
+"Implemented multiple memory optimizations" = "Flere hukommelsesoptimeringer implementeret";
+"Various bug fixes" = "Forskellige fejlrettelser";
+"Bug fixes" = "Fejlrettelser";
+"Added localization" = "Lokalisering tilføjet";
+"Added right-click popup" = "Højreklik-pop op-menu tilføjet";
+"Fixed menubar icon right-click on macOS 27.0" = "Rettet højreklik på menulinjeikonet i macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Forbedret udseende i lys tilstand med bedre kontrast og synlige kanter";
+"Added Launch at Login toggle" = "Tilføjet kontakt til Start ved login";
+"Open App shortcut now closes the popover if already open" = "Genvejen Åbn app lukker nu pop op-vinduet, hvis det allerede er åbent";
+"Added translation via Apple's system Translate" = "Tilføjet oversættelse via Apples systemfunktion Oversæt";
+"Added per-item Remove to the ⋮ menu" = "Tilføjet Fjern pr. element i ⋮-menuen";
+"Added history limit setting (default 200, up to 2000)" = "Tilføjet indstilling for historikgrænse (standard 200, op til 2000)";
+"Added global & action keyboard shortcuts" = "Tilføjet globale tastaturgenveje og genveje til handlinger";
+"Added word & character count per item" = "Tilføjet ord- og tegntælling pr. element";
+"Added ⋮ menu with five additional text-editing functions" = "Tilføjet ⋮-menu med fem ekstra redigeringsfunktioner";
+"Added Options menu" = "Tilføjet menuen Indstillinger";
+"Clipboard history persistent across launches" = "Udklipsholderhistorik bevares efter genstart";
+"Source app and timestamp shown per item" = "Viser kildeappen og tidspunktet pr. element";
+"Initial release" = "Første udgivelse";
+"ClipContext Options" = "ClipContext-indstillinger";

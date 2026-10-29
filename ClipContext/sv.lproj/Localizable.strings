@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Sök i urklipp…";
+"Clear All" = "Rensa allt";
+"Copied to clipboard" = "Kopierat till urklipp";
+"Remove" = "Ta bort";
+"None" = "Ingen";
+"Recording…" = "Spelar in…";
+"%lld words · %lld chars" = "%lld ord · %lld tecken";
+
+/* Actions */
+"Trim Whitespace" = "Ta bort blanksteg i början och slutet";
+"Lowercase" = "Gemener";
+"Capitalize" = "Stor begynnelsebokstav";
+"Extract URL" = "Hämta URL";
+"Remove extra spaces" = "Ta bort extra blanksteg";
+"Remove empty lines" = "Ta bort tomma rader";
+"Join lines into one" = "Slå ihop rader";
+"Lines to CSV" = "Rader till CSV";
+"Remove tracking params" = "Ta bort spårningsparametrar";
+"Translate" = "Översätt";
+
+/* Behaviour tab */
+"General" = "Allmänt";
+"Language" = "Språk";
+"System Default" = "Systemstandard";
+"Restart ClipContext to apply the language change." = "Starta om ClipContext för att tillämpa språkändringen.";
+"Launch at Login" = "Starta vid inloggning";
+"Auto-apply on Copy" = "Tillämpa automatiskt vid kopiering";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Valda åtgärder tillämpas automatiskt när ny text kopieras, i angiven ordning.";
+"History" = "Historik";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Maximalt antal objekt som sparas i urklippshistoriken. Äldre objekt tas bort automatiskt.";
+"History limit" = "Historikgräns";
+"%lld items" = "%lld objekt";
+
+/* Customization tab */
+"Pinned" = "Fästa";
+"Shown as icon buttons on each item (max 4)" = "Visas som ikonknappar på varje objekt (max 4)";
+"More Options" = "Fler alternativ";
+"Shown in the ⋮ menu" = "Visas i menyn ⋮";
+"Drag items here" = "Dra objekt hit";
+"Move to More" = "Flytta till Fler alternativ";
+"Pin" = "Fäst";
+
+/* Shortcuts tab */
+"Global" = "Globala";
+"Works system-wide. Requires Accessibility permission." = "Fungerar i hela systemet. Kräver behörighet för Hjälpmedel.";
+"Actions" = "Åtgärder";
+"Applied to the most recently copied item. Works system-wide." = "Tillämpas på det senast kopierade objektet. Fungerar i hela systemet.";
+"Open App" = "Öppna app";
+"Accessibility Permission Required" = "Behörighet för Hjälpmedel krävs";
+"Global shortcuts need Accessibility access to work system-wide." = "Globala kortkommandon behöver åtkomst till Hjälpmedel för att fungera i hela systemet.";
+"Grant Access" = "Ge åtkomst";
+
+/* Options tabs */
+"Customization" = "Anpassning";
+"Behaviour" = "Beteende";
+"Shortcuts" = "Kortkommandon";
+"About" = "Om";
+
+/* Donate section */
+"Support ClipContext" = "Stöd ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext är ett enmansprojekt. Ett bidrag hjälper till att hålla utvecklingen igång.";
+"Thank you for your support!" = "Tack för ditt stöd!";
+"Thank You!" = "Tack!";
+"You're welcome!" = "Varsågod!";
+"Your support means a lot and helps keep ClipContext going." = "Ditt stöd betyder mycket och hjälper ClipContext att fortsätta utvecklas.";
+"Purchase Failed" = "Köpet misslyckades";
+"Something went wrong. Please try again." = "Något gick fel. Försök igen.";
+"OK" = "OK";
+"Support on Ko-fi" = "Stöd på Ko-fi";
+
+/* About tab */
+"What's New" = "Nyheter";
+"Made by %@" = "Skapad av %@";
+"Visit website" = "Besök webbplatsen";
+"Version %@" = "Version %@";
+
+/* Menus */
+"Options" = "Alternativ";
+"Clear Clipboard" = "Rensa urklipp";
+"Quit" = "Avsluta";
+"Quit ClipContext" = "Avsluta ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Lokaliserad till fler språk";
+"Migrated to SQLite database for better performance" = "Flyttad till SQLite-databas för bättre prestanda";
+"Implemented multiple memory optimizations" = "Flera minnesoptimeringar genomförda";
+"Various bug fixes" = "Diverse felrättningar";
+"Bug fixes" = "Felrättningar";
+"Added localization" = "Lokalisering tillagd";
+"Added right-click popup" = "Snabbmeny med högerklick tillagd";
+"Fixed menubar icon right-click on macOS 27.0" = "Åtgärdat högerklick på menyradsikonen i macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Förbättrat utseende i ljust läge med bättre kontrast och synliga kanter";
+"Added Launch at Login toggle" = "Lagt till växeln Starta vid inloggning";
+"Open App shortcut now closes the popover if already open" = "Genvägen Öppna app stänger nu popover-fönstret om det redan är öppet";
+"Added translation via Apple's system Translate" = "Lagt till översättning via Apples systemfunktion Översätt";
+"Added per-item Remove to the ⋮ menu" = "Lagt till Ta bort per objekt i ⋮-menyn";
+"Added history limit setting (default 200, up to 2000)" = "Lagt till inställning för historikgräns (standard 200, högst 2000)";
+"Added global & action keyboard shortcuts" = "Lagt till globala och åtgärdsbaserade tangentbordsgenvägar";
+"Added word & character count per item" = "Lagt till antal ord och tecken per objekt";
+"Added ⋮ menu with five additional text-editing functions" = "Lagt till ⋮-menyn med fem extra textredigeringsfunktioner";
+"Added Options menu" = "Lagt till menyn Alternativ";
+"Clipboard history persistent across launches" = "Urklippshistoriken sparas även efter omstart";
+"Source app and timestamp shown per item" = "Visar källappen och tidpunkten för varje objekt";
+"Initial release" = "Första utgåvan";
+"ClipContext Options" = "ClipContext-alternativ";

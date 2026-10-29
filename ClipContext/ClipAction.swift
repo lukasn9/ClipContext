@@ -2,22 +2,23 @@ import Foundation
 
 struct ClipAction: Identifiable {
     let id: String
-    let label: String
+    let labelKey: String
+    var label: String { loc(labelKey) }
     let systemImage: String
     let transform: (String) -> String
 }
 
 let allActions: [ClipAction] = [
-    ClipAction(id: "trimWhitespace",    label: String(localized: "Trim Whitespace"),        systemImage: "arrow.left.and.right",               transform: { $0.trimmingCharacters(in: .whitespacesAndNewlines) }),
-    ClipAction(id: "lowercase",         label: String(localized: "Lowercase"),              systemImage: "textformat.size.smaller",            transform: { $0.lowercased() }),
-    ClipAction(id: "capitalize",        label: String(localized: "Capitalize"),             systemImage: "textformat",                         transform: { $0.capitalized }),
-    ClipAction(id: "extractURL",        label: String(localized: "Extract URL"),            systemImage: "link",                               transform: clipExtractFirstURL),
-    ClipAction(id: "removeExtraSpaces", label: String(localized: "Remove extra spaces"),    systemImage: "space",                              transform: { $0.replacingOccurrences(of: " {2,}", with: " ", options: .regularExpression) }),
-    ClipAction(id: "removeEmptyLines",  label: String(localized: "Remove empty lines"),     systemImage: "minus",                              transform: clipRemoveEmptyLines),
-    ClipAction(id: "joinLines",         label: String(localized: "Join lines into one"),    systemImage: "arrow.down.left.and.arrow.up.right", transform: clipJoinLines),
-    ClipAction(id: "linesToCSV",        label: String(localized: "Lines to CSV"),           systemImage: "tablecells",                         transform: clipLinesToCSV),
-    ClipAction(id: "removeTracking",    label: String(localized: "Remove tracking params"), systemImage: "xmark.shield",                       transform: clipRemoveTrackingParameters),
-    ClipAction(id: "translate",         label: String(localized: "Translate"),              systemImage: "translate",                          transform: { $0 }),
+    ClipAction(id: "trimWhitespace",    labelKey: "Trim Whitespace",        systemImage: "arrow.left.and.right",               transform: { $0.trimmingCharacters(in: .whitespacesAndNewlines) }),
+    ClipAction(id: "lowercase",         labelKey: "Lowercase",              systemImage: "textformat.size.smaller",            transform: { $0.lowercased() }),
+    ClipAction(id: "capitalize",        labelKey: "Capitalize",             systemImage: "textformat",                         transform: { $0.capitalized }),
+    ClipAction(id: "extractURL",        labelKey: "Extract URL",            systemImage: "link",                               transform: clipExtractFirstURL),
+    ClipAction(id: "removeExtraSpaces", labelKey: "Remove extra spaces",    systemImage: "space",                              transform: { $0.replacingOccurrences(of: " {2,}", with: " ", options: .regularExpression) }),
+    ClipAction(id: "removeEmptyLines",  labelKey: "Remove empty lines",     systemImage: "minus",                              transform: clipRemoveEmptyLines),
+    ClipAction(id: "joinLines",         labelKey: "Join lines into one",    systemImage: "arrow.down.left.and.arrow.up.right", transform: clipJoinLines),
+    ClipAction(id: "linesToCSV",        labelKey: "Lines to CSV",           systemImage: "tablecells",                         transform: clipLinesToCSV),
+    ClipAction(id: "removeTracking",    labelKey: "Remove tracking params", systemImage: "xmark.shield",                       transform: clipRemoveTrackingParameters),
+    ClipAction(id: "translate",         labelKey: "Translate",              systemImage: "translate",                          transform: { $0 }),
 ]
 
 extension [ClipAction] {

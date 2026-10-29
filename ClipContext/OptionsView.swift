@@ -32,7 +32,7 @@ enum OptionsTab: String, CaseIterable {
 
 struct OptionsView: View {
     @EnvironmentObject var settings: SettingsStore
-    @State private var selectedTab: OptionsTab = .customization
+    private var selectedTab: OptionsTab { settings.optionsTab }
 
     var body: some View {
         VStack(spacing: 0) {
@@ -40,7 +40,7 @@ struct OptionsView: View {
             HStack(spacing: 4) {
                 ForEach(OptionsTab.allCases, id: \.self) { tab in
                     OptionsTabButton(tab: tab, isSelected: selectedTab == tab) {
-                        selectedTab = tab
+                        settings.optionsTab = tab
                     }
                 }
             }

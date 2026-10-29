@@ -5,24 +5,23 @@ import Translation
 struct ContentView: View {
     @EnvironmentObject var clipboardManager: ClipboardManager
     @State private var searchText = ""
+    @State private var activeQuery = ""
+    @State private var searchResults: [ClipboardItem] = []
     @State private var showCopiedMessage = false
-    @State private var copiedText = ""
     @StateObject private var tooltipController = TooltipController()
 
     var filteredItems: [ClipboardItem] {
-        if searchText.isEmpty {
-            return clipboardManager.clipboardItems
-        } else {
-            return clipboardManager.clipboardItems.filter {
-                $0.content.localizedCaseInsensitiveContains(searchText)
-            }
-        }
+        activeQuery.isEmpty ? clipboardManager.clipboardItems : searchResults
+    }
+
+    private struct SearchTrigger: Equatable {
+        let query: String
+        let revision: Int
     }
 
     func copyToClipboard(_ text: String) {
         NSPasteboard.general.clearContents()
         NSPasteboard.general.setString(text, forType: .string)
-        copiedText = text
         showCopiedMessage = true
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
@@ -39,7 +38,7 @@ struct ContentView: View {
 
                 List(filteredItems) { item in
                     ClipboardRowView(item: item, tooltipController: tooltipController) {
-                        copyToClipboard(item.content)
+                        copyToClipboard(clipboardManager.content(for: item.id) ?? item.preview)
                     }
                     .listRowSeparator(.hidden)
                 }
@@ -67,6 +66,17 @@ struct ContentView: View {
             }
         }
         .animation(.easeInOut, value: showCopiedMessage)
+        .task(id: searchText) {
+            // Debounce: only filter once typing pauses
+            if !searchText.isEmpty { try? await Task.sleep(for: .milliseconds(150)) }
+            guard !Task.isCancelled else { return }
+            activeQuery = searchText
+        }
+        .task(id: SearchTrigger(query: activeQuery, revision: clipboardManager.revision)) {
+            guard !activeQuery.isEmpty else { searchResults = []; return }
+            let results = await clipboardManager.search(activeQuery)
+            if !Task.isCancelled { searchResults = results }
+        }
         .background(.thinMaterial)
         .contextMenu {
             Button {
@@ -97,21 +107,20 @@ struct ClipboardRowView: View {
     @EnvironmentObject var settings: SettingsStore
     @EnvironmentObject var clipboardManager: ClipboardManager
     @State private var isHovering = false
-    @State private var currentText: String
     @State private var showMoreOptions = false
     @State private var showTranslation = false
+    @State private var translationText = ""
 
     init(item: ClipboardItem, tooltipController: TooltipController, onClick: @escaping () -> Void) {
         self.item = item
         self.onClick = onClick
         self.tooltipController = tooltipController
-        _currentText = State(initialValue: item.content)
     }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack(alignment: .top, spacing: 8) {
-                Text(currentText)
+                Text(item.preview)
                     .lineLimit(3)
 
                 Spacer()
@@ -145,7 +154,7 @@ struct ClipboardRowView: View {
                                 }
                             }
                             Divider().padding(.horizontal, 4).padding(.vertical, 2)
-                            MoreOptionButton(label: String(localized: "Remove"), systemImage: "trash", tint: .red) {
+                            MoreOptionButton(label: loc("Remove"), systemImage: "trash", tint: .red) {
                                 showMoreOptions = false
                                 clipboardManager.remove(itemID: item.id)
                             }
@@ -161,7 +170,7 @@ struct ClipboardRowView: View {
                 Text(item.sourceApp)
                     .foregroundStyle(.secondary)
                 Spacer()
-                Text("\(wordCount) words · \(currentText.count) chars")
+                Text("\(item.wordCount) words · \(item.charCount) chars")
                     .foregroundStyle(.secondary)
                     .monospacedDigit()
                 Text(item.dateCopied, style: .time)
@@ -188,23 +197,27 @@ struct ClipboardRowView: View {
                 isHovering = hovering
             }
         }
-        .translationPresentation(isPresented: $showTranslation, text: currentText) { translatedText in
-            currentText = translatedText
+        .translationPresentation(isPresented: $showTranslation, text: translationText) { translatedText in
+            clipboardManager.updateContent(itemID: item.id, newText: translatedText)
+            translationText = ""
         }
-        .onChange(of: currentText) { _, newText in
-            clipboardManager.updateContent(itemID: item.id, newText: newText)
+        .onReceive(clipboardManager.$translationRequest) { id in
+            guard id == item.id else { return }
+            beginTranslation()
+            DispatchQueue.main.async { clipboardManager.translationRequest = nil }
         }
     }
 
-    private var wordCount: Int {
-        currentText.components(separatedBy: .whitespacesAndNewlines).filter { !$0.isEmpty }.count
+    private func beginTranslation() {
+        translationText = clipboardManager.content(for: item.id) ?? item.preview
+        showTranslation = true
     }
 
     private func handleAction(_ action: ClipAction) {
         if action.id == "translate" {
-            showTranslation = true
+            beginTranslation()
         } else {
-            currentText = action.transform(currentText)
+            clipboardManager.apply(action, to: item.id)
         }
     }
 }

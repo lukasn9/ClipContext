@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Hae leikepöydältä…";
+"Clear All" = "Tyhjennä kaikki";
+"Copied to clipboard" = "Kopioitu leikepöydälle";
+"Remove" = "Poista";
+"None" = "Ei mitään";
+"Recording…" = "Tallennetaan…";
+"%lld words · %lld chars" = "%lld sanaa · %lld merkkiä";
+
+/* Actions */
+"Trim Whitespace" = "Poista reuna- ja loppuvälit";
+"Lowercase" = "Pienet kirjaimet";
+"Capitalize" = "Iso alkukirjain";
+"Extract URL" = "Poimi URL";
+"Remove extra spaces" = "Poista ylimääräiset välilyönnit";
+"Remove empty lines" = "Poista tyhjät rivit";
+"Join lines into one" = "Yhdistä rivit";
+"Lines to CSV" = "Rivit CSV-muotoon";
+"Remove tracking params" = "Poista seurantaparametrit";
+"Translate" = "Käännä";
+
+/* Behaviour tab */
+"General" = "Yleiset";
+"Language" = "Kieli";
+"System Default" = "Järjestelmän oletus";
+"Restart ClipContext to apply the language change." = "Käynnistä ClipContext uudelleen ottaaksesi kielimuutoksen käyttöön.";
+"Launch at Login" = "Käynnistä sisäänkirjautumisen yhteydessä";
+"Auto-apply on Copy" = "Käytä automaattisesti kopioitaessa";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Valitut toiminnot suoritetaan automaattisesti aina, kun uutta tekstiä kopioidaan, luetellussa järjestyksessä.";
+"History" = "Historia";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Säilytettävien leikepöytämerkintöjen enimmäismäärä. Vanhimmat poistetaan automaattisesti.";
+"History limit" = "Historian raja";
+"%lld items" = "%lld kohdetta";
+
+/* Customization tab */
+"Pinned" = "Kiinnitetyt";
+"Shown as icon buttons on each item (max 4)" = "Näytetään kuvakepainikkeina kunkin kohteen yhteydessä (enintään 4)";
+"More Options" = "Lisää vaihtoehtoja";
+"Shown in the ⋮ menu" = "Näytetään ⋮-valikossa";
+"Drag items here" = "Vedä kohteet tähän";
+"Move to More" = "Siirrä kohtaan Lisää vaihtoehtoja";
+"Pin" = "Kiinnitä";
+
+/* Shortcuts tab */
+"Global" = "Yleiset";
+"Works system-wide. Requires Accessibility permission." = "Toimii koko järjestelmässä. Vaatii Käyttöapu-oikeuden.";
+"Actions" = "Toiminnot";
+"Applied to the most recently copied item. Works system-wide." = "Käytetään viimeksi kopioituun kohteeseen. Toimii koko järjestelmässä.";
+"Open App" = "Avaa appi";
+"Accessibility Permission Required" = "Käyttöapu-oikeus vaaditaan";
+"Global shortcuts need Accessibility access to work system-wide." = "Yleiset pikanäppäimet tarvitsevat Käyttöapu-oikeuden toimiakseen koko järjestelmässä.";
+"Grant Access" = "Myönnä käyttöoikeus";
+
+/* Options tabs */
+"Customization" = "Mukautus";
+"Behaviour" = "Toiminta";
+"Shortcuts" = "Pikanäppäimet";
+"About" = "Tietoja";
+
+/* Donate section */
+"Support ClipContext" = "Tue ClipContextia";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext on yhden henkilön projekti. Vapaaehtoinen tuki auttaa jatkamaan kehitystä.";
+"Thank you for your support!" = "Kiitos tuestasi!";
+"Thank You!" = "Kiitos!";
+"You're welcome!" = "Ole hyvä!";
+"Your support means a lot and helps keep ClipContext going." = "Tukesi merkitsee paljon ja auttaa pitämään ClipContextin kehityksen käynnissä.";
+"Purchase Failed" = "Osto epäonnistui";
+"Something went wrong. Please try again." = "Jokin meni pieleen. Yritä uudelleen.";
+"OK" = "OK";
+"Support on Ko-fi" = "Tue Ko-fi-palvelussa";
+
+/* About tab */
+"What's New" = "Uutta";
+"Made by %@" = "Tekijä: %@";
+"Visit website" = "Siirry verkkosivustolle";
+"Version %@" = "Versio %@";
+
+/* Menus */
+"Options" = "Valinnat";
+"Clear Clipboard" = "Tyhjennä leikepöytä";
+"Quit" = "Lopeta";
+"Quit ClipContext" = "Lopeta ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Lokalisoitu useammalle kielelle";
+"Migrated to SQLite database for better performance" = "Siirretty SQLite-tietokantaan paremman suorituskyvyn takia";
+"Implemented multiple memory optimizations" = "Toteutettu useita muistin optimointeja";
+"Various bug fixes" = "Useita virhekorjauksia";
+"Bug fixes" = "Virhekorjauksia";
+"Added localization" = "Lisätty lokalisointi";
+"Added right-click popup" = "Lisätty hiiren oikealla painikkeella avattava ikkuna";
+"Fixed menubar icon right-click on macOS 27.0" = "Korjattu hiiren oikean painikkeen toiminta valikkopalkin kuvakkeessa macOS 27.0:ssa";
+"Improved light mode appearance with better contrast and visible borders" = "Vaalean tilan ulkoasua parannettu paremmalla kontrastilla ja näkyvillä reunoilla";
+"Added Launch at Login toggle" = "Lisätty Käynnistä kirjautuessa -valinta";
+"Open App shortcut now closes the popover if already open" = "Avaa sovellus -pikanäppäin sulkee nyt ponnahdusikkunan, jos se on jo auki";
+"Added translation via Apple's system Translate" = "Lisätty käännös Applen järjestelmän Käännä-toiminnolla";
+"Added per-item Remove to the ⋮ menu" = "Lisätty Poista-toiminto kohdekohtaisesti ⋮-valikkoon";
+"Added history limit setting (default 200, up to 2000)" = "Lisätty historian rajan asetus (oletus 200, enintään 2000)";
+"Added global & action keyboard shortcuts" = "Lisätty yleiset ja toimintokohtaiset pikanäppäimet";
+"Added word & character count per item" = "Lisätty sanojen ja merkkien laskenta kohdekohtaisesti";
+"Added ⋮ menu with five additional text-editing functions" = "Lisätty ⋮-valikko, jossa on viisi lisätekstinmuokkaustoimintoa";
+"Added Options menu" = "Lisätty Asetukset-valikko";
+"Clipboard history persistent across launches" = "Leikepöydän historia säilyy uudelleenkäynnistyksen jälkeen";
+"Source app and timestamp shown per item" = "Näytetään lähdesovellus ja aikaleima kohdekohtaisesti";
+"Initial release" = "Ensimmäinen julkaisu";
+"ClipContext Options" = "ClipContext-asetukset";

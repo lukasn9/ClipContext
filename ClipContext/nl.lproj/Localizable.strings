@@ -80,3 +80,27 @@
 "Clear Clipboard" = "Klembord wissen";
 "Quit" = "Afsluiten";
 "Quit ClipContext" = "ClipContext afsluiten";
+
+/* Changelog & window title */
+"Localized to more languages" = "Gelokaliseerd in meer talen";
+"Migrated to SQLite database for better performance" = "Overgezet naar SQLite-database voor betere prestaties";
+"Implemented multiple memory optimizations" = "Meerdere geheugenoptimalisaties doorgevoerd";
+"Various bug fixes" = "Diverse bugfixes";
+"Bug fixes" = "Bugfixes";
+"Added localization" = "Lokalisatie toegevoegd";
+"Added right-click popup" = "Rechtsklikpop-up toegevoegd";
+"Fixed menubar icon right-click on macOS 27.0" = "Rechtsklik op het menubalkpictogram op macOS 27.0 hersteld";
+"Improved light mode appearance with better contrast and visible borders" = "Lichte modus verbeterd met beter contrast en zichtbare randen";
+"Added Launch at Login toggle" = "Schakelaar „Starten bij inloggen“ toegevoegd";
+"Open App shortcut now closes the popover if already open" = "Sneltoets „App openen“ sluit het venster nu als het al open is";
+"Added translation via Apple's system Translate" = "Vertalen via de systeemeigen Vertalen-functie van Apple toegevoegd";
+"Added per-item Remove to the ⋮ menu" = "Verwijderen per item toegevoegd aan het ⋮-menu";
+"Added history limit setting (default 200, up to 2000)" = "Instelling voor geschiedenislimiet toegevoegd (standaard 200, maximaal 2000)";
+"Added global & action keyboard shortcuts" = "Globale sneltoetsen en actiesneltoetsen toegevoegd";
+"Added word & character count per item" = "Woord- en tekentelling per item toegevoegd";
+"Added ⋮ menu with five additional text-editing functions" = "⋮-menu met vijf extra tekstbewerkingsfuncties toegevoegd";
+"Added Options menu" = "Menu Opties toegevoegd";
+"Clipboard history persistent across launches" = "Klembordgeschiedenis blijft bewaard na het opnieuw starten";
+"Source app and timestamp shown per item" = "Bron-app en tijdstempel per item getoond";
+"Initial release" = "Eerste release";
+"ClipContext Options" = "ClipContext-opties";

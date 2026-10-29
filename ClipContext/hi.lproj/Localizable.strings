@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "क्लिपबोर्ड में खोजें…";
+"Clear All" = "सभी साफ़ करें";
+"Copied to clipboard" = "क्लिपबोर्ड पर कॉपी किया गया";
+"Remove" = "हटाएँ";
+"None" = "कोई नहीं";
+"Recording…" = "रिकॉर्ड हो रहा है…";
+"%lld words · %lld chars" = "%lld शब्द · %lld अक्षर";
+
+/* Actions */
+"Trim Whitespace" = "शुरू और अंत के खाली स्थान हटाएँ";
+"Lowercase" = "छोटे अक्षरों में बदलें";
+"Capitalize" = "पहला अक्षर बड़ा करें";
+"Extract URL" = "URL निकालें";
+"Remove extra spaces" = "अतिरिक्त रिक्त स्थान हटाएँ";
+"Remove empty lines" = "खाली पंक्तियाँ हटाएँ";
+"Join lines into one" = "पंक्तियाँ जोड़ें";
+"Lines to CSV" = "पंक्तियों को CSV में बदलें";
+"Remove tracking params" = "ट्रैकिंग पैरामीटर हटाएँ";
+"Translate" = "अनुवाद करें";
+
+/* Behaviour tab */
+"General" = "सामान्य";
+"Language" = "भाषा";
+"System Default" = "सिस्टम डिफ़ॉल्ट";
+"Restart ClipContext to apply the language change." = "भाषा परिवर्तन लागू करने के लिए ClipContext को पुनः शुरू करें।";
+"Launch at Login" = "लॉगिन पर शुरू करें";
+"Auto-apply on Copy" = "कॉपी करने पर अपने आप लागू करें";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "नया टेक्स्ट कॉपी होने पर चुनी गई कार्रवाइयाँ सूची के क्रम में अपने आप लागू होती हैं।";
+"History" = "इतिहास";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "इतिहास में रखे जाने वाले क्लिपबोर्ड आइटम की अधिकतम संख्या। पुराने आइटम अपने आप हट जाते हैं।";
+"History limit" = "इतिहास सीमा";
+"%lld items" = "%lld आइटम";
+
+/* Customization tab */
+"Pinned" = "पिन किए गए";
+"Shown as icon buttons on each item (max 4)" = "हर आइटम पर आइकन बटन के रूप में दिखाएँ (अधिकतम 4)";
+"More Options" = "अधिक विकल्प";
+"Shown in the ⋮ menu" = "⋮ मेनू में दिखाए जाते हैं";
+"Drag items here" = "आइटम यहाँ खींचें";
+"Move to More" = "अधिक विकल्पों में ले जाएँ";
+"Pin" = "पिन करें";
+
+/* Shortcuts tab */
+"Global" = "वैश्विक";
+"Works system-wide. Requires Accessibility permission." = "पूरे सिस्टम में काम करता है। एक्सेसिबिलिटी अनुमति आवश्यक है।";
+"Actions" = "कार्रवाइयाँ";
+"Applied to the most recently copied item. Works system-wide." = "सबसे हाल में कॉपी किए गए आइटम पर लागू होता है। पूरे सिस्टम में काम करता है।";
+"Open App" = "ऐप खोलें";
+"Accessibility Permission Required" = "एक्सेसिबिलिटी अनुमति आवश्यक";
+"Global shortcuts need Accessibility access to work system-wide." = "वैश्विक शॉर्टकट को पूरे सिस्टम में काम करने के लिए एक्सेसिबिलिटी की अनुमति चाहिए।";
+"Grant Access" = "पहुँच की अनुमति दें";
+
+/* Options tabs */
+"Customization" = "अनुकूलन";
+"Behaviour" = "व्यवहार";
+"Shortcuts" = "शॉर्टकट";
+"About" = "परिचय";
+
+/* Donate section */
+"Support ClipContext" = "ClipContext का समर्थन करें";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext एक व्यक्ति द्वारा बनाया गया प्रोजेक्ट है। आपका योगदान विकास जारी रखने में मदद करता है।";
+"Thank you for your support!" = "आपके समर्थन के लिए धन्यवाद!";
+"Thank You!" = "धन्यवाद!";
+"You're welcome!" = "आपका स्वागत है!";
+"Your support means a lot and helps keep ClipContext going." = "आपका समर्थन बहुत मायने रखता है और ClipContext को आगे बढ़ाने में मदद करता है।";
+"Purchase Failed" = "खरीद विफल";
+"Something went wrong. Please try again." = "कुछ गड़बड़ हुई। कृपया फिर से प्रयास करें।";
+"OK" = "ठीक है";
+"Support on Ko-fi" = "Ko-fi पर समर्थन करें";
+
+/* About tab */
+"What's New" = "नया क्या है";
+"Made by %@" = "%@ द्वारा बनाया गया";
+"Visit website" = "वेबसाइट पर जाएँ";
+"Version %@" = "संस्करण %@";
+
+/* Menus */
+"Options" = "विकल्प";
+"Clear Clipboard" = "क्लिपबोर्ड साफ़ करें";
+"Quit" = "बंद करें";
+"Quit ClipContext" = "ClipContext बंद करें";
+
+/* Changelog & window title */
+"Localized to more languages" = "अधिक भाषाओं में स्थानीयकृत";
+"Migrated to SQLite database for better performance" = "बेहतर प्रदर्शन के लिए SQLite डेटाबेस में माइग्रेट किया गया";
+"Implemented multiple memory optimizations" = "कई मेमोरी अनुकूलन लागू किए गए";
+"Various bug fixes" = "विभिन्न बग सुधार";
+"Bug fixes" = "बग सुधार";
+"Added localization" = "स्थानीयकरण जोड़ा गया";
+"Added right-click popup" = "राइट-क्लिक पॉपअप जोड़ा गया";
+"Fixed menubar icon right-click on macOS 27.0" = "macOS 27.0 पर मेन्यू बार आइकन पर राइट-क्लिक ठीक किया गया";
+"Improved light mode appearance with better contrast and visible borders" = "लाइट मोड की दिखावट सुधारी गई, बेहतर कॉन्ट्रास्ट और दिखने वाली सीमाओं के साथ";
+"Added Launch at Login toggle" = "लॉगिन पर लॉन्च करने का टॉगल जोड़ा गया";
+"Open App shortcut now closes the popover if already open" = "ऐप खोलें शॉर्टकट अब पॉपओवर पहले से खुला होने पर उसे बंद कर देता है";
+"Added translation via Apple's system Translate" = "Apple के सिस्टम अनुवाद से अनुवाद जोड़ा गया";
+"Added per-item Remove to the ⋮ menu" = "⋮ मेन्यू में प्रत्येक आइटम के लिए हटाएँ विकल्प जोड़ा गया";
+"Added history limit setting (default 200, up to 2000)" = "इतिहास सीमा सेटिंग जोड़ी गई (डिफ़ॉल्ट 200, अधिकतम 2000)";
+"Added global & action keyboard shortcuts" = "वैश्विक और क्रिया कीबोर्ड शॉर्टकट जोड़े गए";
+"Added word & character count per item" = "प्रत्येक आइटम के लिए शब्द और अक्षर गणना जोड़ी गई";
+"Added ⋮ menu with five additional text-editing functions" = "पाँच अतिरिक्त टेक्स्ट संपादन फ़ंक्शन वाला ⋮ मेन्यू जोड़ा गया";
+"Added Options menu" = "विकल्प मेन्यू जोड़ा गया";
+"Clipboard history persistent across launches" = "क्लिपबोर्ड इतिहास ऐप पुनः लॉन्च करने के बाद भी सुरक्षित रहता है";
+"Source app and timestamp shown per item" = "प्रत्येक आइटम के लिए स्रोत ऐप और समय दिखाया गया";
+"Initial release" = "पहला रिलीज़";
+"ClipContext Options" = "ClipContext विकल्प";

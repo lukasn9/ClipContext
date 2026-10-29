@@ -71,6 +71,11 @@ final class SettingsStore: ObservableObject {
     @Published var actionShortcuts: [String: KeyShortcut]
     @Published var openAppShortcut: KeyShortcut?
     @Published var historyLimit: Int
+    @Published var languageCode: String
+    /// Options window tab; kept here so it survives the view rebuild on a language change. Not persisted.
+    @Published var optionsTab: OptionsTab = .customization
+
+    var locale: Locale { Locale(identifier: AppLanguage.resolvedCode(for: languageCode)) }
 
     private init() {
         let defaultPinned = Array(allActions.prefix(4).map(\.id))
@@ -83,6 +88,8 @@ final class SettingsStore: ObservableObject {
         openAppShortcut    = Self.decodeValue(from: defaults, key: prefix + "openAppShortcut")
         let saved = defaults.integer(forKey: prefix + "historyLimit")
         historyLimit = saved > 0 ? saved : 200
+        languageCode = defaults.string(forKey: "ClipContextLanguage") ?? "system"
+        AppLanguage.apply(languageCode)
 
         // Migrate: append any action IDs added since the user's last launch
         let placed = Set(pinnedActionIDs + moreActionIDs)
@@ -95,6 +102,17 @@ final class SettingsStore: ObservableObject {
         $actionShortcuts   .dropFirst().sink { [weak self] _ in self?.save() }.store(in: &cancellables)
         $openAppShortcut   .dropFirst().sink { [weak self] _ in self?.save() }.store(in: &cancellables)
         $historyLimit      .dropFirst().sink { [weak self] _ in self?.save() }.store(in: &cancellables)
+        $languageCode      .dropFirst().sink { [weak self] code in self?.languageDidChange(code) }.store(in: &cancellables)
+    }
+
+    private func languageDidChange(_ code: String) {
+        defaults.set(code, forKey: "ClipContextLanguage")
+        if code == "system" {
+            defaults.removeObject(forKey: "AppleLanguages")
+        } else {
+            defaults.set([code], forKey: "AppleLanguages")
+        }
+        AppLanguage.apply(code)
     }
 
     func save() {

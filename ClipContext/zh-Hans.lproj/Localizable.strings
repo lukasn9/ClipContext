@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "搜索剪贴板…";
+"Clear All" = "全部清除";
+"Copied to clipboard" = "已复制到剪贴板";
+"Remove" = "移除";
+"None" = "无";
+"Recording…" = "正在录制…";
+"%lld words · %lld chars" = "%lld 个词 · %lld 个字符";
+
+/* Actions */
+"Trim Whitespace" = "删除首尾空白";
+"Lowercase" = "转换为小写";
+"Capitalize" = "首字母大写";
+"Extract URL" = "提取 URL";
+"Remove extra spaces" = "删除多余空格";
+"Remove empty lines" = "删除空行";
+"Join lines into one" = "合并为一行";
+"Lines to CSV" = "将行转换为 CSV";
+"Remove tracking params" = "删除跟踪参数";
+"Translate" = "翻译";
+
+/* Behaviour tab */
+"General" = "通用";
+"Language" = "语言";
+"System Default" = "系统默认";
+"Restart ClipContext to apply the language change." = "重新启动 ClipContext 以应用语言更改。";
+"Launch at Login" = "登录时启动";
+"Auto-apply on Copy" = "复制时自动应用";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "每次复制新文本时，都会按列表顺序自动执行所选操作。";
+"History" = "历史记录";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "保留的剪贴板条目数量上限。较早的条目会自动删除。";
+"History limit" = "历史记录上限";
+"%lld items" = "%lld 个项目";
+
+/* Customization tab */
+"Pinned" = "已固定";
+"Shown as icon buttons on each item (max 4)" = "以图标按钮形式显示在每个项目上（最多 4 个）";
+"More Options" = "更多选项";
+"Shown in the ⋮ menu" = "显示在 ⋮ 菜单中";
+"Drag items here" = "将项目拖到这里";
+"Move to More" = "移至更多选项";
+"Pin" = "固定";
+
+/* Shortcuts tab */
+"Global" = "全局";
+"Works system-wide. Requires Accessibility permission." = "在整个系统中生效。需要“辅助功能”权限。";
+"Actions" = "操作";
+"Applied to the most recently copied item. Works system-wide." = "应用于最近复制的项目。在整个系统中生效。";
+"Open App" = "打开应用";
+"Accessibility Permission Required" = "需要“辅助功能”权限";
+"Global shortcuts need Accessibility access to work system-wide." = "全局快捷键需要访问“辅助功能”才能在整个系统中生效。";
+"Grant Access" = "授予访问权限";
+
+/* Options tabs */
+"Customization" = "自定义";
+"Behaviour" = "行为";
+"Shortcuts" = "快捷键";
+"About" = "关于";
+
+/* Donate section */
+"Support ClipContext" = "支持 ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext 是一个个人项目。您的打赏有助于持续开发。";
+"Thank you for your support!" = "感谢您的支持！";
+"Thank You!" = "谢谢！";
+"You're welcome!" = "不客气！";
+"Your support means a lot and helps keep ClipContext going." = "您的支持意义重大，有助于 ClipContext 持续发展。";
+"Purchase Failed" = "购买失败";
+"Something went wrong. Please try again." = "出了点问题，请重试。";
+"OK" = "好";
+"Support on Ko-fi" = "在 Ko-fi 上支持";
+
+/* About tab */
+"What's New" = "更新内容";
+"Made by %@" = "作者：%@";
+"Visit website" = "访问网站";
+"Version %@" = "版本 %@";
+
+/* Menus */
+"Options" = "选项";
+"Clear Clipboard" = "清空剪贴板";
+"Quit" = "退出";
+"Quit ClipContext" = "退出 ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "已本地化为更多语言";
+"Migrated to SQLite database for better performance" = "迁移至 SQLite 数据库以提升性能";
+"Implemented multiple memory optimizations" = "实施多项内存优化";
+"Various bug fixes" = "多项错误修复";
+"Bug fixes" = "错误修复";
+"Added localization" = "添加本地化支持";
+"Added right-click popup" = "添加右键弹出菜单";
+"Fixed menubar icon right-click on macOS 27.0" = "修复 macOS 27.0 上菜单栏图标的右键问题";
+"Improved light mode appearance with better contrast and visible borders" = "改进浅色模式外观，提高对比度并使边框更清晰";
+"Added Launch at Login toggle" = "添加“登录时启动”开关";
+"Open App shortcut now closes the popover if already open" = "“打开应用”快捷键现在会在弹出窗口已打开时将其关闭";
+"Added translation via Apple's system Translate" = "添加通过 Apple 系统翻译进行翻译的功能";
+"Added per-item Remove to the ⋮ menu" = "在 ⋮ 菜单中添加单项删除";
+"Added history limit setting (default 200, up to 2000)" = "添加历史记录数量上限设置（默认 200，最多 2000）";
+"Added global & action keyboard shortcuts" = "添加全局和操作键盘快捷键";
+"Added word & character count per item" = "为每项添加字数和字符数统计";
+"Added ⋮ menu with five additional text-editing functions" = "添加包含五项额外文本编辑功能的 ⋮ 菜单";
+"Added Options menu" = "添加“选项”菜单";
+"Clipboard history persistent across launches" = "剪贴板历史记录在重新启动后保留";
+"Source app and timestamp shown per item" = "为每项显示来源应用和时间戳";
+"Initial release" = "首次发布";
+"ClipContext Options" = "ClipContext 选项";

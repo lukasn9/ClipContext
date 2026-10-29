@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Keresés a vágólapon…";
+"Clear All" = "Összes törlése";
+"Copied to clipboard" = "Vágólapra másolva";
+"Remove" = "Eltávolítás";
+"None" = "Nincs";
+"Recording…" = "Rögzítés…";
+"%lld words · %lld chars" = "%lld szó · %lld karakter";
+
+/* Actions */
+"Trim Whitespace" = "Szóközök eltávolítása a szélekről";
+"Lowercase" = "Kisbetűs";
+"Capitalize" = "Kezdőbetű nagyítása";
+"Extract URL" = "URL kinyerése";
+"Remove extra spaces" = "Felesleges szóközök eltávolítása";
+"Remove empty lines" = "Üres sorok eltávolítása";
+"Join lines into one" = "Sorok egyesítése";
+"Lines to CSV" = "Sorok CSV-vé alakítása";
+"Remove tracking params" = "Követési paraméterek eltávolítása";
+"Translate" = "Fordítás";
+
+/* Behaviour tab */
+"General" = "Általános";
+"Language" = "Nyelv";
+"System Default" = "Rendszer alapértelmezése";
+"Restart ClipContext to apply the language change." = "A nyelv módosításának alkalmazásához indítsa újra a ClipContext alkalmazást.";
+"Launch at Login" = "Indítás bejelentkezéskor";
+"Auto-apply on Copy" = "Automatikus alkalmazás másoláskor";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "A kiválasztott műveletek új szöveg másolásakor automatikusan, a felsorolt sorrendben futnak.";
+"History" = "Előzmények";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "A megőrzendő vágólapelemek maximális száma. A régebbi elemek automatikusan törlődnek.";
+"History limit" = "Előzmények korlátja";
+"%lld items" = "%lld elem";
+
+/* Customization tab */
+"Pinned" = "Kitűzve";
+"Shown as icon buttons on each item (max 4)" = "Ikongombként jelennek meg minden elemnél (max. 4)";
+"More Options" = "További lehetőségek";
+"Shown in the ⋮ menu" = "A ⋮ menüben jelenik meg";
+"Drag items here" = "Húzza ide az elemeket";
+"Move to More" = "Áthelyezés a További lehetőségek közé";
+"Pin" = "Kitűzés";
+
+/* Shortcuts tab */
+"Global" = "Globális";
+"Works system-wide. Requires Accessibility permission." = "A teljes rendszerben működik. Kisegítő lehetőségek engedély szükséges.";
+"Actions" = "Műveletek";
+"Applied to the most recently copied item. Works system-wide." = "A legutóbb másolt elemre alkalmazza. A teljes rendszerben működik.";
+"Open App" = "Alkalmazás megnyitása";
+"Accessibility Permission Required" = "Kisegítő lehetőségek engedély szükséges";
+"Global shortcuts need Accessibility access to work system-wide." = "A globális billentyűparancsok teljes rendszerű működéséhez hozzáférés szükséges a Kisegítő lehetőségekhez.";
+"Grant Access" = "Hozzáférés engedélyezése";
+
+/* Options tabs */
+"Customization" = "Testreszabás";
+"Behaviour" = "Működés";
+"Shortcuts" = "Billentyűparancsok";
+"About" = "Névjegy";
+
+/* Donate section */
+"Support ClipContext" = "ClipContext támogatása";
+"ClipContext is a one-person project. A tip helps keep development going." = "A ClipContext egyszemélyes projekt. Egy kis adomány segíti a fejlesztés folytatását.";
+"Thank you for your support!" = "Köszönjük a támogatást!";
+"Thank You!" = "Köszönjük!";
+"You're welcome!" = "Szívesen!";
+"Your support means a lot and helps keep ClipContext going." = "A támogatása sokat jelent, és segít a ClipContext fejlesztésének folytatásában.";
+"Purchase Failed" = "A vásárlás nem sikerült";
+"Something went wrong. Please try again." = "Hiba történt. Próbálja újra.";
+"OK" = "OK";
+"Support on Ko-fi" = "Támogatás a Ko-fi oldalon";
+
+/* About tab */
+"What's New" = "Újdonságok";
+"Made by %@" = "Készítette: %@";
+"Visit website" = "Webhely felkeresése";
+"Version %@" = "Verzió %@";
+
+/* Menus */
+"Options" = "Beállítások";
+"Clear Clipboard" = "Vágólap törlése";
+"Quit" = "Kilépés";
+"Quit ClipContext" = "Kilépés a ClipContext alkalmazásból";
+
+/* Changelog & window title */
+"Localized to more languages" = "Több nyelvre lokalizálva";
+"Migrated to SQLite database for better performance" = "Átállás SQLite-adatbázisra a jobb teljesítmény érdekében";
+"Implemented multiple memory optimizations" = "Több memóriaoptimalizálás megvalósítva";
+"Various bug fixes" = "Különféle hibajavítások";
+"Bug fixes" = "Hibajavítások";
+"Added localization" = "Lokalizáció hozzáadva";
+"Added right-click popup" = "Jobb kattintásra megjelenő felugró menü hozzáadva";
+"Fixed menubar icon right-click on macOS 27.0" = "Javítva a menüsori ikon jobb kattintása macOS 27.0 alatt";
+"Improved light mode appearance with better contrast and visible borders" = "A világos mód megjelenése javult: jobb kontraszt és látható szegélyek";
+"Added Launch at Login toggle" = "Bejelentkezéskor indítás kapcsoló hozzáadva";
+"Open App shortcut now closes the popover if already open" = "Az Alkalmazás megnyitása gyorsbillentyű most bezárja a felugró ablakot, ha már nyitva van";
+"Added translation via Apple's system Translate" = "Fordítás hozzáadva az Apple rendszerfordító funkcióján keresztül";
+"Added per-item Remove to the ⋮ menu" = "Elemenkénti Eltávolítás hozzáadva a ⋮ menübe";
+"Added history limit setting (default 200, up to 2000)" = "Előzménykorlát beállítás hozzáadva (alapértelmezett 200, legfeljebb 2000)";
+"Added global & action keyboard shortcuts" = "Globális és művelet-gyorsbillentyűk hozzáadva";
+"Added word & character count per item" = "Szó- és karakterszámláló elemenként hozzáadva";
+"Added ⋮ menu with five additional text-editing functions" = "⋮ menü hozzáadva öt további szövegszerkesztési funkcióval";
+"Added Options menu" = "Beállítások menü hozzáadva";
+"Clipboard history persistent across launches" = "A vágólap előzménye újraindítás után is megmarad";
+"Source app and timestamp shown per item" = "Forrásalkalmazás és időbélyeg megjelenítése elemenként";
+"Initial release" = "Első kiadás";
+"ClipContext Options" = "ClipContext beállítások";

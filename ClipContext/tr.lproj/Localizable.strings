@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Panoda ara…";
+"Clear All" = "Tümünü Sil";
+"Copied to clipboard" = "Panoya kopyalandı";
+"Remove" = "Kaldır";
+"None" = "Yok";
+"Recording…" = "Kaydediliyor…";
+"%lld words · %lld chars" = "%lld kelime · %lld karakter";
+
+/* Actions */
+"Trim Whitespace" = "Baştaki ve sondaki boşlukları sil";
+"Lowercase" = "Küçük harf";
+"Capitalize" = "İlk harfi büyüt";
+"Extract URL" = "URL'yi çıkar";
+"Remove extra spaces" = "Fazla boşlukları sil";
+"Remove empty lines" = "Boş satırları sil";
+"Join lines into one" = "Satırları birleştir";
+"Lines to CSV" = "Satırları CSV'ye dönüştür";
+"Remove tracking params" = "İzleme parametrelerini kaldır";
+"Translate" = "Çevir";
+
+/* Behaviour tab */
+"General" = "Genel";
+"Language" = "Dil";
+"System Default" = "Sistem varsayılanı";
+"Restart ClipContext to apply the language change." = "Dil değişikliğini uygulamak için ClipContext'i yeniden başlatın.";
+"Launch at Login" = "Girişte başlat";
+"Auto-apply on Copy" = "Kopyalayınca otomatik uygula";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Seçilen işlemler yeni metin kopyalandığında listelenen sırayla otomatik uygulanır.";
+"History" = "Geçmiş";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Tutulacak pano kaydı sayısı. Eski kayıtlar otomatik silinir.";
+"History limit" = "Geçmiş sınırı";
+"%lld items" = "%lld öğe";
+
+/* Customization tab */
+"Pinned" = "Sabitlenenler";
+"Shown as icon buttons on each item (max 4)" = "Her öğede simge düğmeleri olarak gösterilir (en fazla 4)";
+"More Options" = "Diğer Seçenekler";
+"Shown in the ⋮ menu" = "⋮ menüsünde gösterilir";
+"Drag items here" = "Öğeleri buraya sürükleyin";
+"Move to More" = "Diğer Seçenekler'e taşı";
+"Pin" = "Sabitle";
+
+/* Shortcuts tab */
+"Global" = "Genel";
+"Works system-wide. Requires Accessibility permission." = "Sistem genelinde çalışır. Erişilebilirlik izni gerekir.";
+"Actions" = "İşlemler";
+"Applied to the most recently copied item. Works system-wide." = "En son kopyalanan öğeye uygulanır. Sistem genelinde çalışır.";
+"Open App" = "Uygulamayı Aç";
+"Accessibility Permission Required" = "Erişilebilirlik İzni Gerekli";
+"Global shortcuts need Accessibility access to work system-wide." = "Genel kısayolların sistem genelinde çalışması için Erişilebilirlik erişimi gerekir.";
+"Grant Access" = "Erişim Ver";
+
+/* Options tabs */
+"Customization" = "Özelleştirme";
+"Behaviour" = "Davranış";
+"Shortcuts" = "Kısayollar";
+"About" = "Hakkında";
+
+/* Donate section */
+"Support ClipContext" = "ClipContext'i Destekle";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext tek kişilik bir projedir. Bahşişiniz geliştirmeye devam etmemize yardımcı olur.";
+"Thank you for your support!" = "Desteğiniz için teşekkürler!";
+"Thank You!" = "Teşekkürler!";
+"You're welcome!" = "Rica ederiz!";
+"Your support means a lot and helps keep ClipContext going." = "Desteğiniz bizim için çok değerli ve ClipContext'in gelişmesine yardımcı oluyor.";
+"Purchase Failed" = "Satın Alma Başarısız";
+"Something went wrong. Please try again." = "Bir şeyler ters gitti. Lütfen tekrar deneyin.";
+"OK" = "Tamam";
+"Support on Ko-fi" = "Ko-fi'de Destek Ol";
+
+/* About tab */
+"What's New" = "Yenilikler";
+"Made by %@" = "%@ tarafından yapıldı";
+"Visit website" = "Web sitesini ziyaret et";
+"Version %@" = "Sürüm %@";
+
+/* Menus */
+"Options" = "Seçenekler";
+"Clear Clipboard" = "Panoyu Temizle";
+"Quit" = "Çık";
+"Quit ClipContext" = "ClipContext'ten Çık";
+
+/* Changelog & window title */
+"Localized to more languages" = "Daha fazla dile yerelleştirildi";
+"Migrated to SQLite database for better performance" = "Daha iyi performans için SQLite veritabanına geçildi";
+"Implemented multiple memory optimizations" = "Birden fazla bellek optimizasyonu uygulandı";
+"Various bug fixes" = "Çeşitli hata düzeltmeleri";
+"Bug fixes" = "Hata düzeltmeleri";
+"Added localization" = "Yerelleştirme eklendi";
+"Added right-click popup" = "Sağ tıklamayla açılan pencere eklendi";
+"Fixed menubar icon right-click on macOS 27.0" = "macOS 27.0'da menü çubuğu simgesine sağ tıklama düzeltildi";
+"Improved light mode appearance with better contrast and visible borders" = "Açık modun görünümü, daha iyi kontrast ve görünür kenarlıklarla geliştirildi";
+"Added Launch at Login toggle" = "Oturum açıldığında başlat seçeneği eklendi";
+"Open App shortcut now closes the popover if already open" = "Uygulamayı Aç kısayolu artık zaten açıksa açılır pencereyi kapatır";
+"Added translation via Apple's system Translate" = "Apple'ın sistem Çeviri özelliği üzerinden çeviri eklendi";
+"Added per-item Remove to the ⋮ menu" = "⋮ menüsüne öğe başına Kaldır seçeneği eklendi";
+"Added history limit setting (default 200, up to 2000)" = "Geçmiş sınırı ayarı eklendi (varsayılan 200, en fazla 2000)";
+"Added global & action keyboard shortcuts" = "Genel ve eylem klavye kısayolları eklendi";
+"Added word & character count per item" = "Her öğe için kelime ve karakter sayısı eklendi";
+"Added ⋮ menu with five additional text-editing functions" = "Beş ek metin düzenleme işlevi içeren ⋮ menüsü eklendi";
+"Added Options menu" = "Seçenekler menüsü eklendi";
+"Clipboard history persistent across launches" = "Pano geçmişi uygulama yeniden başlatıldıktan sonra da korunur";
+"Source app and timestamp shown per item" = "Her öğe için kaynak uygulama ve zaman damgası gösterildi";
+"Initial release" = "İlk sürüm";
+"ClipContext Options" = "ClipContext Seçenekleri";

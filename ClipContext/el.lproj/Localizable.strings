@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Αναζήτηση στο πρόχειρο…";
+"Clear All" = "Εκκαθάριση όλων";
+"Copied to clipboard" = "Αντιγράφηκε στο πρόχειρο";
+"Remove" = "Αφαίρεση";
+"None" = "Καμία";
+"Recording…" = "Καταγραφή…";
+"%lld words · %lld chars" = "%lld λέξεις · %lld χαρακτήρες";
+
+/* Actions */
+"Trim Whitespace" = "Αφαίρεση κενών στα άκρα";
+"Lowercase" = "Πεζά";
+"Capitalize" = "Κεφαλαίο αρχικό";
+"Extract URL" = "Εξαγωγή URL";
+"Remove extra spaces" = "Αφαίρεση επιπλέον κενών";
+"Remove empty lines" = "Αφαίρεση κενών γραμμών";
+"Join lines into one" = "Συγχώνευση γραμμών";
+"Lines to CSV" = "Γραμμές σε CSV";
+"Remove tracking params" = "Αφαίρεση παραμέτρων παρακολούθησης";
+"Translate" = "Μετάφραση";
+
+/* Behaviour tab */
+"General" = "Γενικά";
+"Language" = "Γλώσσα";
+"System Default" = "Προεπιλογή συστήματος";
+"Restart ClipContext to apply the language change." = "Επανεκκινήστε το ClipContext για να εφαρμοστεί η αλλαγή γλώσσας.";
+"Launch at Login" = "Εκκίνηση κατά τη σύνδεση";
+"Auto-apply on Copy" = "Αυτόματη εφαρμογή κατά την αντιγραφή";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Οι επιλεγμένες ενέργειες εφαρμόζονται αυτόματα κάθε φορά που αντιγράφεται νέο κείμενο, με τη σειρά που εμφανίζονται.";
+"History" = "Ιστορικό";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Μέγιστος αριθμός στοιχείων στο ιστορικό του προχείρου. Τα παλαιότερα στοιχεία αφαιρούνται αυτόματα.";
+"History limit" = "Όριο ιστορικού";
+"%lld items" = "%lld στοιχεία";
+
+/* Customization tab */
+"Pinned" = "Καρφιτσωμένα";
+"Shown as icon buttons on each item (max 4)" = "Εμφανίζονται ως κουμπιά εικονιδίων σε κάθε στοιχείο (έως 4)";
+"More Options" = "Περισσότερες επιλογές";
+"Shown in the ⋮ menu" = "Εμφανίζονται στο μενού ⋮";
+"Drag items here" = "Σύρετε στοιχεία εδώ";
+"Move to More" = "Μετακίνηση στις Περισσότερες επιλογές";
+"Pin" = "Καρφίτσωμα";
+
+/* Shortcuts tab */
+"Global" = "Καθολικές";
+"Works system-wide. Requires Accessibility permission." = "Λειτουργεί σε όλο το σύστημα. Απαιτείται άδεια για την Προσβασιμότητα.";
+"Actions" = "Ενέργειες";
+"Applied to the most recently copied item. Works system-wide." = "Εφαρμόζονται στο πιο πρόσφατο αντιγραμμένο στοιχείο. Λειτουργούν σε όλο το σύστημα.";
+"Open App" = "Άνοιγμα εφαρμογής";
+"Accessibility Permission Required" = "Απαιτείται άδεια Προσβασιμότητας";
+"Global shortcuts need Accessibility access to work system-wide." = "Οι καθολικές συντομεύσεις χρειάζονται πρόσβαση στην Προσβασιμότητα για να λειτουργούν σε όλο το σύστημα.";
+"Grant Access" = "Παροχή πρόσβασης";
+
+/* Options tabs */
+"Customization" = "Προσαρμογή";
+"Behaviour" = "Συμπεριφορά";
+"Shortcuts" = "Συντομεύσεις";
+"About" = "Πληροφορίες";
+
+/* Donate section */
+"Support ClipContext" = "Υποστηρίξτε το ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "Το ClipContext είναι έργο ενός ατόμου. Μια μικρή δωρεά βοηθά να συνεχιστεί η ανάπτυξη.";
+"Thank you for your support!" = "Ευχαριστούμε για την υποστήριξή σας!";
+"Thank You!" = "Ευχαριστούμε!";
+"You're welcome!" = "Παρακαλώ!";
+"Your support means a lot and helps keep ClipContext going." = "Η υποστήριξή σας σημαίνει πολλά και βοηθά να συνεχιστεί η ανάπτυξη του ClipContext.";
+"Purchase Failed" = "Η αγορά απέτυχε";
+"Something went wrong. Please try again." = "Κάτι πήγε στραβά. Δοκιμάστε ξανά.";
+"OK" = "OK";
+"Support on Ko-fi" = "Υποστήριξη μέσω Ko-fi";
+
+/* About tab */
+"What's New" = "Τι νέο υπάρχει";
+"Made by %@" = "Δημιουργήθηκε από %@";
+"Visit website" = "Επισκεφθείτε τον ιστότοπο";
+"Version %@" = "Έκδοση %@";
+
+/* Menus */
+"Options" = "Επιλογές";
+"Clear Clipboard" = "Εκκαθάριση προχείρου";
+"Quit" = "Τερματισμός";
+"Quit ClipContext" = "Τερματισμός ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Μεταφράστηκε σε περισσότερες γλώσσες";
+"Migrated to SQLite database for better performance" = "Μετάβαση σε βάση δεδομένων SQLite για καλύτερες επιδόσεις";
+"Implemented multiple memory optimizations" = "Υλοποιήθηκαν πολλαπλές βελτιστοποιήσεις μνήμης";
+"Various bug fixes" = "Διάφορες διορθώσεις σφαλμάτων";
+"Bug fixes" = "Διορθώσεις σφαλμάτων";
+"Added localization" = "Προστέθηκε τοπικοποίηση";
+"Added right-click popup" = "Προστέθηκε αναδυόμενο μενού με δεξί κλικ";
+"Fixed menubar icon right-click on macOS 27.0" = "Διορθώθηκε το δεξί κλικ στο εικονίδιο της γραμμής μενού στο macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Βελτιωμένη εμφάνιση φωτεινής λειτουργίας με καλύτερη αντίθεση και ορατά περιγράμματα";
+"Added Launch at Login toggle" = "Προστέθηκε η επιλογή Εκκίνηση κατά τη σύνδεση";
+"Open App shortcut now closes the popover if already open" = "Η συντόμευση Άνοιγμα εφαρμογής κλείνει πλέον το αναδυόμενο παράθυρο αν είναι ήδη ανοιχτό";
+"Added translation via Apple's system Translate" = "Προστέθηκε μετάφραση μέσω της λειτουργίας Μετάφραση του συστήματος της Apple";
+"Added per-item Remove to the ⋮ menu" = "Προστέθηκε Αφαίρεση ανά στοιχείο στο μενού ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Προστέθηκε ρύθμιση ορίου ιστορικού (προεπιλογή 200, έως 2000)";
+"Added global & action keyboard shortcuts" = "Προστέθηκαν καθολικές συντομεύσεις πληκτρολογίου και συντομεύσεις ενεργειών";
+"Added word & character count per item" = "Προστέθηκε καταμέτρηση λέξεων και χαρακτήρων ανά στοιχείο";
+"Added ⋮ menu with five additional text-editing functions" = "Προστέθηκε μενού ⋮ με πέντε επιπλέον λειτουργίες επεξεργασίας κειμένου";
+"Added Options menu" = "Προστέθηκε μενού Επιλογές";
+"Clipboard history persistent across launches" = "Το ιστορικό του προχείρου διατηρείται μετά την επανεκκίνηση";
+"Source app and timestamp shown per item" = "Εμφάνιση εφαρμογής προέλευσης και ώρας για κάθε στοιχείο";
+"Initial release" = "Πρώτη κυκλοφορία";
+"ClipContext Options" = "Επιλογές του ClipContext";

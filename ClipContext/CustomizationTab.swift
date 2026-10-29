@@ -14,15 +14,15 @@ struct CustomizationTab: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 sectionView(
-                    title: String(localized: "Pinned"),
-                    subtitle: String(localized: "Shown as icon buttons on each item (max 4)"),
+                    title: loc("Pinned"),
+                    subtitle: loc("Shown as icon buttons on each item (max 4)"),
                     ids: $settings.pinnedActionIDs,
                     actions: pinnedActions,
                     isPinned: true
                 )
                 sectionView(
-                    title: String(localized: "More Options"),
-                    subtitle: String(localized: "Shown in the ⋮ menu"),
+                    title: loc("More Options"),
+                    subtitle: loc("Shown in the ⋮ menu"),
                     ids: $settings.moreActionIDs,
                     actions: moreActions,
                     isPinned: false
@@ -129,7 +129,7 @@ struct ActionDragRow: View {
             Spacer()
 
             Button(action: onMoveToOther) {
-                Text(isPinned ? String(localized: "Move to More") : String(localized: "Pin"))
+                Text(isPinned ? loc("Move to More") : loc("Pin"))
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }

@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Caută în clipboard…";
+"Clear All" = "Șterge tot";
+"Copied to clipboard" = "Copiat în clipboard";
+"Remove" = "Elimină";
+"None" = "Niciuna";
+"Recording…" = "Se înregistrează…";
+"%lld words · %lld chars" = "%lld cuvinte · %lld caractere";
+
+/* Actions */
+"Trim Whitespace" = "Elimină spațiile de la margini";
+"Lowercase" = "Litere mici";
+"Capitalize" = "Majusculă inițială";
+"Extract URL" = "Extrage URL";
+"Remove extra spaces" = "Elimină spațiile suplimentare";
+"Remove empty lines" = "Elimină liniile goale";
+"Join lines into one" = "Unește liniile";
+"Lines to CSV" = "Linii în CSV";
+"Remove tracking params" = "Elimină parametrii de urmărire";
+"Translate" = "Tradu";
+
+/* Behaviour tab */
+"General" = "General";
+"Language" = "Limbă";
+"System Default" = "Implicit în sistem";
+"Restart ClipContext to apply the language change." = "Repornește ClipContext pentru a aplica schimbarea limbii.";
+"Launch at Login" = "Deschide la autentificare";
+"Auto-apply on Copy" = "Aplică automat la copiere";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Acțiunile selectate se aplică automat la copierea unui text nou, în ordinea afișată.";
+"History" = "Istoric";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Numărul maxim de elemente păstrate în istoricul clipboardului. Cele mai vechi sunt eliminate automat.";
+"History limit" = "Limită istoric";
+"%lld items" = "%lld elemente";
+
+/* Customization tab */
+"Pinned" = "Fixate";
+"Shown as icon buttons on each item (max 4)" = "Afișate ca butoane cu pictograme pentru fiecare element (max. 4)";
+"More Options" = "Mai multe opțiuni";
+"Shown in the ⋮ menu" = "Afișate în meniul ⋮";
+"Drag items here" = "Trage elementele aici";
+"Move to More" = "Mută la Mai multe opțiuni";
+"Pin" = "Fixează";
+
+/* Shortcuts tab */
+"Global" = "Globale";
+"Works system-wide. Requires Accessibility permission." = "Funcționează în întregul sistem. Necesită permisiunea Accesibilitate.";
+"Actions" = "Acțiuni";
+"Applied to the most recently copied item. Works system-wide." = "Se aplică ultimului element copiat. Funcționează în întregul sistem.";
+"Open App" = "Deschide aplicația";
+"Accessibility Permission Required" = "Este necesară permisiunea Accesibilitate";
+"Global shortcuts need Accessibility access to work system-wide." = "Scurtăturile globale necesită acces la Accesibilitate pentru a funcționa în întregul sistem.";
+"Grant Access" = "Acordă acces";
+
+/* Options tabs */
+"Customization" = "Personalizare";
+"Behaviour" = "Comportament";
+"Shortcuts" = "Scurtături";
+"About" = "Despre";
+
+/* Donate section */
+"Support ClipContext" = "Susține ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext este un proiect dezvoltat de o singură persoană. O contribuție ajută la continuarea dezvoltării.";
+"Thank you for your support!" = "Îți mulțumim pentru sprijin!";
+"Thank You!" = "Mulțumim!";
+"You're welcome!" = "Cu plăcere!";
+"Your support means a lot and helps keep ClipContext going." = "Sprijinul tău contează mult și ajută la continuarea dezvoltării ClipContext.";
+"Purchase Failed" = "Achiziția a eșuat";
+"Something went wrong. Please try again." = "Ceva nu a funcționat. Încearcă din nou.";
+"OK" = "OK";
+"Support on Ko-fi" = "Susține pe Ko-fi";
+
+/* About tab */
+"What's New" = "Noutăți";
+"Made by %@" = "Creat de %@";
+"Visit website" = "Vizitează site-ul";
+"Version %@" = "Versiunea %@";
+
+/* Menus */
+"Options" = "Opțiuni";
+"Clear Clipboard" = "Golește clipboardul";
+"Quit" = "Închide";
+"Quit ClipContext" = "Închide ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Localizat în mai multe limbi";
+"Migrated to SQLite database for better performance" = "Migrat la baza de date SQLite pentru performanțe mai bune";
+"Implemented multiple memory optimizations" = "Implementate mai multe optimizări ale memoriei";
+"Various bug fixes" = "Diverse remedieri de erori";
+"Bug fixes" = "Remedieri de erori";
+"Added localization" = "Adăugată localizarea";
+"Added right-click popup" = "Adăugat meniul pop-up la clic dreapta";
+"Fixed menubar icon right-click on macOS 27.0" = "Remediat clicul dreapta pe pictograma din bara de meniu în macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Aspect îmbunătățit al modului luminos, cu contrast mai bun și margini vizibile";
+"Added Launch at Login toggle" = "Adăugat comutatorul Pornește la autentificare";
+"Open App shortcut now closes the popover if already open" = "Scurtătura Deschide aplicația închide acum fereastra pop-up dacă este deja deschisă";
+"Added translation via Apple's system Translate" = "Adăugată traducerea prin funcția Traducere de sistem Apple";
+"Added per-item Remove to the ⋮ menu" = "Adăugat Elimină per element în meniul ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Adăugată setarea limitei istoricului (implicit 200, maximum 2000)";
+"Added global & action keyboard shortcuts" = "Adăugate scurtături globale de la tastatură și pentru acțiuni";
+"Added word & character count per item" = "Adăugat numărul de cuvinte și caractere pentru fiecare element";
+"Added ⋮ menu with five additional text-editing functions" = "Adăugat meniul ⋮ cu cinci funcții suplimentare de editare a textului";
+"Added Options menu" = "Adăugat meniul Opțiuni";
+"Clipboard history persistent across launches" = "Istoricul clipboardului se păstrează după repornire";
+"Source app and timestamp shown per item" = "Afișarea aplicației sursă și a orei pentru fiecare element";
+"Initial release" = "Prima versiune";
+"ClipContext Options" = "Opțiuni ClipContext";

@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "ค้นหาในคลิปบอร์ด…";
+"Clear All" = "ล้างทั้งหมด";
+"Copied to clipboard" = "คัดลอกไปยังคลิปบอร์ดแล้ว";
+"Remove" = "นำออก";
+"None" = "ไม่มี";
+"Recording…" = "กำลังบันทึก…";
+"%lld words · %lld chars" = "%lld คำ · %lld อักขระ";
+
+/* Actions */
+"Trim Whitespace" = "ลบช่องว่างหัวท้าย";
+"Lowercase" = "แปลงเป็นตัวพิมพ์เล็ก";
+"Capitalize" = "ทำอักษรตัวแรกเป็นตัวพิมพ์ใหญ่";
+"Extract URL" = "แยก URL";
+"Remove extra spaces" = "ลบช่องว่างส่วนเกิน";
+"Remove empty lines" = "ลบบรรทัดว่าง";
+"Join lines into one" = "รวมบรรทัด";
+"Lines to CSV" = "แปลงบรรทัดเป็น CSV";
+"Remove tracking params" = "ลบพารามิเตอร์ติดตาม";
+"Translate" = "แปล";
+
+/* Behaviour tab */
+"General" = "ทั่วไป";
+"Language" = "ภาษา";
+"System Default" = "ค่าเริ่มต้นของระบบ";
+"Restart ClipContext to apply the language change." = "เริ่ม ClipContext ใหม่เพื่อใช้การเปลี่ยนภาษา";
+"Launch at Login" = "เปิดเมื่อเข้าสู่ระบบ";
+"Auto-apply on Copy" = "ใช้โดยอัตโนมัติเมื่อคัดลอก";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "การดำเนินการที่เลือกจะทำงานโดยอัตโนมัติทุกครั้งที่คัดลอกข้อความใหม่ ตามลำดับที่แสดง";
+"History" = "ประวัติ";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "จำนวนรายการคลิปบอร์ดสูงสุดที่เก็บไว้ รายการเก่าจะถูกลบโดยอัตโนมัติ";
+"History limit" = "ขีดจำกัดประวัติ";
+"%lld items" = "%lld รายการ";
+
+/* Customization tab */
+"Pinned" = "ปักหมุดแล้ว";
+"Shown as icon buttons on each item (max 4)" = "แสดงเป็นปุ่มไอคอนในแต่ละรายการ (สูงสุด 4)";
+"More Options" = "ตัวเลือกเพิ่มเติม";
+"Shown in the ⋮ menu" = "แสดงในเมนู ⋮";
+"Drag items here" = "ลากรายการมาที่นี่";
+"Move to More" = "ย้ายไปยังตัวเลือกเพิ่มเติม";
+"Pin" = "ปักหมุด";
+
+/* Shortcuts tab */
+"Global" = "ทั่วทั้งระบบ";
+"Works system-wide. Requires Accessibility permission." = "ทำงานทั่วทั้งระบบ ต้องได้รับอนุญาตการช่วยการเข้าถึง";
+"Actions" = "การดำเนินการ";
+"Applied to the most recently copied item. Works system-wide." = "ใช้กับรายการที่คัดลอกล่าสุด ทำงานทั่วทั้งระบบ";
+"Open App" = "เปิดแอป";
+"Accessibility Permission Required" = "ต้องได้รับอนุญาตการช่วยการเข้าถึง";
+"Global shortcuts need Accessibility access to work system-wide." = "ปุ่มลัดทั่วทั้งระบบต้องเข้าถึงการช่วยการเข้าถึงเพื่อให้ทำงานได้";
+"Grant Access" = "อนุญาตการเข้าถึง";
+
+/* Options tabs */
+"Customization" = "การปรับแต่ง";
+"Behaviour" = "ลักษณะการทำงาน";
+"Shortcuts" = "ปุ่มลัด";
+"About" = "เกี่ยวกับ";
+
+/* Donate section */
+"Support ClipContext" = "สนับสนุน ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext เป็นโปรเจ็กต์ที่พัฒนาโดยคนคนเดียว เงินสนับสนุนช่วยให้พัฒนาต่อไปได้";
+"Thank you for your support!" = "ขอบคุณสำหรับการสนับสนุน!";
+"Thank You!" = "ขอบคุณ!";
+"You're welcome!" = "ยินดี!";
+"Your support means a lot and helps keep ClipContext going." = "การสนับสนุนของคุณมีความหมายมากและช่วยให้ ClipContext พัฒนาต่อไปได้";
+"Purchase Failed" = "การซื้อไม่สำเร็จ";
+"Something went wrong. Please try again." = "เกิดข้อผิดพลาด โปรดลองอีกครั้ง";
+"OK" = "ตกลง";
+"Support on Ko-fi" = "สนับสนุนผ่าน Ko-fi";
+
+/* About tab */
+"What's New" = "มีอะไรใหม่";
+"Made by %@" = "สร้างโดย %@";
+"Visit website" = "เยี่ยมชมเว็บไซต์";
+"Version %@" = "เวอร์ชัน %@";
+
+/* Menus */
+"Options" = "ตัวเลือก";
+"Clear Clipboard" = "ล้างคลิปบอร์ด";
+"Quit" = "ออก";
+"Quit ClipContext" = "ออกจาก ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "แปลเป็นภาษาอื่นเพิ่มเติมแล้ว";
+"Migrated to SQLite database for better performance" = "ย้ายไปยังฐานข้อมูล SQLite เพื่อประสิทธิภาพที่ดีขึ้น";
+"Implemented multiple memory optimizations" = "ปรับปรุงการใช้หน่วยความจำหลายส่วน";
+"Various bug fixes" = "แก้ไขข้อบกพร่องต่างๆ";
+"Bug fixes" = "แก้ไขข้อบกพร่อง";
+"Added localization" = "เพิ่มการแปลเป็นภาษาท้องถิ่น";
+"Added right-click popup" = "เพิ่มป๊อปอัปเมื่อคลิกขวา";
+"Fixed menubar icon right-click on macOS 27.0" = "แก้ไขการคลิกขวาที่ไอคอนแถบเมนูบน macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "ปรับปรุงลักษณะโหมดสว่าง ด้วยคอนทราสต์ที่ดีขึ้นและเส้นขอบที่มองเห็นได้";
+"Added Launch at Login toggle" = "เพิ่มตัวเลือกเปิดเมื่อเข้าสู่ระบบ";
+"Open App shortcut now closes the popover if already open" = "ทางลัดเปิดแอปจะปิดป๊อปโอเวอร์ทันทีหากเปิดอยู่แล้ว";
+"Added translation via Apple's system Translate" = "เพิ่มการแปลผ่านฟีเจอร์แปลของระบบ Apple";
+"Added per-item Remove to the ⋮ menu" = "เพิ่มลบรายการทีละรายการในเมนู ⋮";
+"Added history limit setting (default 200, up to 2000)" = "เพิ่มการตั้งค่าขีดจำกัดประวัติ (ค่าเริ่มต้น 200 สูงสุด 2000)";
+"Added global & action keyboard shortcuts" = "เพิ่มทางลัดแป้นพิมพ์ทั่วไปและทางลัดของการดำเนินการ";
+"Added word & character count per item" = "เพิ่มการนับคำและอักขระในแต่ละรายการ";
+"Added ⋮ menu with five additional text-editing functions" = "เพิ่มเมนู ⋮ พร้อมฟังก์ชันแก้ไขข้อความเพิ่มเติมห้ารายการ";
+"Added Options menu" = "เพิ่มเมนูตัวเลือก";
+"Clipboard history persistent across launches" = "ประวัติคลิปบอร์ดยังคงอยู่หลังรีสตาร์ท";
+"Source app and timestamp shown per item" = "แสดงแอปต้นทางและเวลาในแต่ละรายการ";
+"Initial release" = "รุ่นแรก";
+"ClipContext Options" = "ตัวเลือกของ ClipContext";

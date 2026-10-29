@@ -7,13 +7,13 @@ Every text you copy is saved, searchable, and ready to paste.
 
 ## Clipboard History
 
-ClipContext silently captures everything you copy and stores it in a clean, searchable list. Each entry shows the source app, timestamp, and word and character count, so nothing is ever lost and everything is easy to find.
+ClipContext captures everything you copy and stores it in a clean, searchable list. Each entry shows the source app, timestamp, and word and character count.
 
 ---
 
 ## Text Actions
 
-Transform any clipboard item instantly with one tap:
+Transform any clipboard item:
 
 | Action | Description |
 |---|---|
@@ -31,25 +31,25 @@ Transform any clipboard item instantly with one tap:
 
 ## Auto-Apply on Copy
 
-Set any action to run automatically every time you copy. Trim whitespace, strip tracking parameters, or normalize formatting without thinking about it.
+Set any action to run automatically every time you copy. Trim whitespace, strip tracking parameters, or normalize formatting without having to do it manually.
 
 ---
 
 ## Global Keyboard Shortcuts
 
-Assign system-wide shortcuts to open ClipContext or trigger any action on your most recent clipboard item. No need to switch windows or touch your mouse.
+Assign system-wide shortcuts to open ClipContext or trigger any action on your most recent clipboard item.
 
 ---
 
 ## Privacy First
 
-Everything stays on your Mac. ClipContext never connects to the internet and never shares your clipboard data with anyone. No telemetry, no cloud sync, no exceptions.
+Everything stays on your Mac. ClipContext never connects to the internet and never shares your clipboard data with anyone.
 
 ---
 
-## Designed for macOS 26
+## Native macOS
 
-A native SwiftUI app built specifically for macOS 26. Minimal design, fast performance, and a tiny memory footprint.
+A native SwiftUI app for macOS 14.6 and later, with full support for macOS 27. Minimal design, fast performance, and memory efficient.
 
 ---
 
@@ -65,7 +65,7 @@ A native SwiftUI app built specifically for macOS 26. Minimal design, fast perfo
 2. Drag **ClipContext.app** to your Applications folder
 3. Launch it and grant clipboard access when prompted
 
-**Requirements:** macOS 14 or later
+**Requirements:** macOS 14.6 or later
 
 ---
 

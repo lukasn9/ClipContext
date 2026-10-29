@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Szukaj w schowku…";
+"Clear All" = "Wyczyść wszystko";
+"Copied to clipboard" = "Skopiowano do schowka";
+"Remove" = "Usuń";
+"None" = "Brak";
+"Recording…" = "Nagrywanie…";
+"%lld words · %lld chars" = "%lld słów · %lld znaków";
+
+/* Actions */
+"Trim Whitespace" = "Usuń białe znaki na końcach";
+"Lowercase" = "Małe litery";
+"Capitalize" = "Wielkie litery na początku";
+"Extract URL" = "Wyodrębnij URL";
+"Remove extra spaces" = "Usuń nadmiarowe spacje";
+"Remove empty lines" = "Usuń puste wiersze";
+"Join lines into one" = "Połącz wiersze";
+"Lines to CSV" = "Wiersze do CSV";
+"Remove tracking params" = "Usuń parametry śledzące";
+"Translate" = "Tłumacz";
+
+/* Behaviour tab */
+"General" = "Ogólne";
+"Language" = "Język";
+"System Default" = "Domyślny systemowy";
+"Restart ClipContext to apply the language change." = "Uruchom ponownie ClipContext, aby zastosować zmianę języka.";
+"Launch at Login" = "Uruchamiaj po zalogowaniu";
+"Auto-apply on Copy" = "Stosuj automatycznie przy kopiowaniu";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Wybrane akcje są automatycznie stosowane po skopiowaniu nowego tekstu, w podanej kolejności.";
+"History" = "Historia";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Maksymalna liczba wpisów w historii schowka. Starsze elementy są usuwane automatycznie.";
+"History limit" = "Limit historii";
+"%lld items" = "%lld elementów";
+
+/* Customization tab */
+"Pinned" = "Przypięte";
+"Shown as icon buttons on each item (max 4)" = "Wyświetlane jako przyciski ikon przy każdym elemencie (maks. 4)";
+"More Options" = "Więcej opcji";
+"Shown in the ⋮ menu" = "Wyświetlane w menu ⋮";
+"Drag items here" = "Przeciągnij tutaj elementy";
+"Move to More" = "Przenieś do Więcej opcji";
+"Pin" = "Przypnij";
+
+/* Shortcuts tab */
+"Global" = "Globalne";
+"Works system-wide. Requires Accessibility permission." = "Działa w całym systemie. Wymaga uprawnień Dostępności.";
+"Actions" = "Akcje";
+"Applied to the most recently copied item. Works system-wide." = "Stosowane do ostatnio skopiowanego elementu. Działają w całym systemie.";
+"Open App" = "Otwórz aplikację";
+"Accessibility Permission Required" = "Wymagane uprawnienia Dostępności";
+"Global shortcuts need Accessibility access to work system-wide." = "Skróty globalne wymagają dostępu do funkcji Dostępność, aby działać w całym systemie.";
+"Grant Access" = "Przyznaj dostęp";
+
+/* Options tabs */
+"Customization" = "Dostosowywanie";
+"Behaviour" = "Zachowanie";
+"Shortcuts" = "Skróty";
+"About" = "Informacje";
+
+/* Donate section */
+"Support ClipContext" = "Wesprzyj ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext to projekt jednej osoby. Napiwek pomaga kontynuować rozwój.";
+"Thank you for your support!" = "Dziękujemy za wsparcie!";
+"Thank You!" = "Dziękujemy!";
+"You're welcome!" = "Nie ma za co!";
+"Your support means a lot and helps keep ClipContext going." = "Twoje wsparcie wiele znaczy i pomaga rozwijać ClipContext.";
+"Purchase Failed" = "Zakup nie powiódł się";
+"Something went wrong. Please try again." = "Coś poszło nie tak. Spróbuj ponownie.";
+"OK" = "OK";
+"Support on Ko-fi" = "Wesprzyj na Ko-fi";
+
+/* About tab */
+"What's New" = "Co nowego";
+"Made by %@" = "Autor: %@";
+"Visit website" = "Odwiedź stronę";
+"Version %@" = "Wersja %@";
+
+/* Menus */
+"Options" = "Opcje";
+"Clear Clipboard" = "Wyczyść schowek";
+"Quit" = "Zakończ";
+"Quit ClipContext" = "Zakończ ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Zlokalizowano na więcej języków";
+"Migrated to SQLite database for better performance" = "Przeniesiono do bazy danych SQLite dla lepszej wydajności";
+"Implemented multiple memory optimizations" = "Wprowadzono liczne optymalizacje pamięci";
+"Various bug fixes" = "Różne poprawki błędów";
+"Bug fixes" = "Poprawki błędów";
+"Added localization" = "Dodano lokalizację";
+"Added right-click popup" = "Dodano wyskakujące menu po kliknięciu prawym przyciskiem";
+"Fixed menubar icon right-click on macOS 27.0" = "Naprawiono kliknięcie prawym przyciskiem ikony na pasku menu w macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Ulepszono wygląd trybu jasnego: lepszy kontrast i widoczne obramowania";
+"Added Launch at Login toggle" = "Dodano przełącznik Uruchamiaj przy logowaniu";
+"Open App shortcut now closes the popover if already open" = "Skrót Otwórz aplikację zamyka teraz okno, jeśli jest już otwarte";
+"Added translation via Apple's system Translate" = "Dodano tłumaczenie za pomocą systemowego narzędzia Tłumacz firmy Apple";
+"Added per-item Remove to the ⋮ menu" = "Dodano opcję Usuń dla pojedynczych elementów w menu ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Dodano ustawienie limitu historii (domyślnie 200, maksymalnie 2000)";
+"Added global & action keyboard shortcuts" = "Dodano globalne skróty klawiszowe i skróty dla działań";
+"Added word & character count per item" = "Dodano licznik słów i znaków dla każdego elementu";
+"Added ⋮ menu with five additional text-editing functions" = "Dodano menu ⋮ z pięcioma dodatkowymi funkcjami edycji tekstu";
+"Added Options menu" = "Dodano menu Opcje";
+"Clipboard history persistent across launches" = "Historia schowka jest zachowywana po ponownym uruchomieniu";
+"Source app and timestamp shown per item" = "Wyświetlanie aplikacji źródłowej i czasu dla każdego elementu";
+"Initial release" = "Pierwsza wersja";
+"ClipContext Options" = "Opcje ClipContext";

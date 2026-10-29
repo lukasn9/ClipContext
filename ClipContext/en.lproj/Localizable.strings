@@ -80,3 +80,27 @@
 "Clear Clipboard" = "Clear Clipboard";
 "Quit" = "Quit";
 "Quit ClipContext" = "Quit ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Localized to more languages";
+"Migrated to SQLite database for better performance" = "Migrated to SQLite database for better performance";
+"Implemented multiple memory optimizations" = "Implemented multiple memory optimizations";
+"Various bug fixes" = "Various bug fixes";
+"Bug fixes" = "Bug fixes";
+"Added localization" = "Added localization";
+"Added right-click popup" = "Added right-click popup";
+"Fixed menubar icon right-click on macOS 27.0" = "Fixed menubar icon right-click on macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Improved light mode appearance with better contrast and visible borders";
+"Added Launch at Login toggle" = "Added Launch at Login toggle";
+"Open App shortcut now closes the popover if already open" = "Open App shortcut now closes the popover if already open";
+"Added translation via Apple's system Translate" = "Added translation via Apple's system Translate";
+"Added per-item Remove to the ⋮ menu" = "Added per-item Remove to the ⋮ menu";
+"Added history limit setting (default 200, up to 2000)" = "Added history limit setting (default 200, up to 2000)";
+"Added global & action keyboard shortcuts" = "Added global & action keyboard shortcuts";
+"Added word & character count per item" = "Added word & character count per item";
+"Added ⋮ menu with five additional text-editing functions" = "Added ⋮ menu with five additional text-editing functions";
+"Added Options menu" = "Added Options menu";
+"Clipboard history persistent across launches" = "Clipboard history persistent across launches";
+"Source app and timestamp shown per item" = "Source app and timestamp shown per item";
+"Initial release" = "Initial release";
+"ClipContext Options" = "ClipContext Options";

@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Tìm kiếm khay nhớ tạm…";
+"Clear All" = "Xóa tất cả";
+"Copied to clipboard" = "Đã sao chép vào khay nhớ tạm";
+"Remove" = "Xóa";
+"None" = "Không";
+"Recording…" = "Đang ghi…";
+"%lld words · %lld chars" = "%lld từ · %lld ký tự";
+
+/* Actions */
+"Trim Whitespace" = "Xóa khoảng trắng ở đầu và cuối";
+"Lowercase" = "Chuyển thành chữ thường";
+"Capitalize" = "Viết hoa chữ cái đầu";
+"Extract URL" = "Trích xuất URL";
+"Remove extra spaces" = "Xóa khoảng trắng thừa";
+"Remove empty lines" = "Xóa dòng trống";
+"Join lines into one" = "Gộp các dòng";
+"Lines to CSV" = "Chuyển dòng thành CSV";
+"Remove tracking params" = "Xóa tham số theo dõi";
+"Translate" = "Dịch";
+
+/* Behaviour tab */
+"General" = "Chung";
+"Language" = "Ngôn ngữ";
+"System Default" = "Mặc định hệ thống";
+"Restart ClipContext to apply the language change." = "Khởi động lại ClipContext để áp dụng thay đổi ngôn ngữ.";
+"Launch at Login" = "Mở khi đăng nhập";
+"Auto-apply on Copy" = "Tự động áp dụng khi sao chép";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Các thao tác đã chọn sẽ tự động áp dụng mỗi khi sao chép văn bản mới, theo thứ tự trong danh sách.";
+"History" = "Lịch sử";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Số mục tối đa được lưu trong lịch sử khay nhớ tạm. Các mục cũ hơn sẽ tự động bị xóa.";
+"History limit" = "Giới hạn lịch sử";
+"%lld items" = "%lld mục";
+
+/* Customization tab */
+"Pinned" = "Đã ghim";
+"Shown as icon buttons on each item (max 4)" = "Hiển thị dưới dạng nút biểu tượng trên mỗi mục (tối đa 4)";
+"More Options" = "Tùy chọn khác";
+"Shown in the ⋮ menu" = "Hiển thị trong menu ⋮";
+"Drag items here" = "Kéo mục vào đây";
+"Move to More" = "Chuyển vào Tùy chọn khác";
+"Pin" = "Ghim";
+
+/* Shortcuts tab */
+"Global" = "Toàn hệ thống";
+"Works system-wide. Requires Accessibility permission." = "Hoạt động trên toàn hệ thống. Cần quyền Trợ năng.";
+"Actions" = "Thao tác";
+"Applied to the most recently copied item. Works system-wide." = "Áp dụng cho mục vừa sao chép gần nhất. Hoạt động trên toàn hệ thống.";
+"Open App" = "Mở ứng dụng";
+"Accessibility Permission Required" = "Cần quyền Trợ năng";
+"Global shortcuts need Accessibility access to work system-wide." = "Phím tắt toàn hệ thống cần quyền Trợ năng để hoạt động.";
+"Grant Access" = "Cấp quyền truy cập";
+
+/* Options tabs */
+"Customization" = "Tùy chỉnh";
+"Behaviour" = "Hành vi";
+"Shortcuts" = "Phím tắt";
+"About" = "Giới thiệu";
+
+/* Donate section */
+"Support ClipContext" = "Ủng hộ ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext là dự án do một người phát triển. Khoản ủng hộ giúp duy trì quá trình phát triển.";
+"Thank you for your support!" = "Cảm ơn bạn đã ủng hộ!";
+"Thank You!" = "Cảm ơn!";
+"You're welcome!" = "Không có gì!";
+"Your support means a lot and helps keep ClipContext going." = "Sự ủng hộ của bạn rất có ý nghĩa và giúp ClipContext tiếp tục phát triển.";
+"Purchase Failed" = "Mua không thành công";
+"Something went wrong. Please try again." = "Đã xảy ra lỗi. Vui lòng thử lại.";
+"OK" = "OK";
+"Support on Ko-fi" = "Ủng hộ trên Ko-fi";
+
+/* About tab */
+"What's New" = "Có gì mới";
+"Made by %@" = "Được tạo bởi %@";
+"Visit website" = "Truy cập trang web";
+"Version %@" = "Phiên bản %@";
+
+/* Menus */
+"Options" = "Tùy chọn";
+"Clear Clipboard" = "Xóa khay nhớ tạm";
+"Quit" = "Thoát";
+"Quit ClipContext" = "Thoát ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Đã bản địa hóa sang nhiều ngôn ngữ hơn";
+"Migrated to SQLite database for better performance" = "Chuyển sang cơ sở dữ liệu SQLite để tăng hiệu năng";
+"Implemented multiple memory optimizations" = "Triển khai nhiều tối ưu hóa bộ nhớ";
+"Various bug fixes" = "Nhiều bản sửa lỗi khác nhau";
+"Bug fixes" = "Sửa lỗi";
+"Added localization" = "Đã thêm bản địa hóa";
+"Added right-click popup" = "Đã thêm cửa sổ bật lên khi nhấp chuột phải";
+"Fixed menubar icon right-click on macOS 27.0" = "Đã sửa thao tác nhấp chuột phải trên biểu tượng thanh menu trên macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Cải thiện giao diện chế độ sáng với độ tương phản tốt hơn và viền rõ ràng";
+"Added Launch at Login toggle" = "Đã thêm tùy chọn Mở khi đăng nhập";
+"Open App shortcut now closes the popover if already open" = "Phím tắt Mở ứng dụng giờ sẽ đóng cửa sổ bật lên nếu đang mở";
+"Added translation via Apple's system Translate" = "Đã thêm chức năng dịch qua tính năng Dịch của hệ thống Apple";
+"Added per-item Remove to the ⋮ menu" = "Đã thêm Xóa cho từng mục trong menu ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Đã thêm cài đặt giới hạn lịch sử (mặc định 200, tối đa 2000)";
+"Added global & action keyboard shortcuts" = "Đã thêm phím tắt toàn cục và phím tắt thao tác";
+"Added word & character count per item" = "Đã thêm số từ và ký tự cho từng mục";
+"Added ⋮ menu with five additional text-editing functions" = "Đã thêm menu ⋮ với năm chức năng chỉnh sửa văn bản bổ sung";
+"Added Options menu" = "Đã thêm menu Tùy chọn";
+"Clipboard history persistent across launches" = "Lịch sử clipboard được giữ lại sau khi khởi động lại";
+"Source app and timestamp shown per item" = "Hiển thị ứng dụng nguồn và thời gian cho từng mục";
+"Initial release" = "Phiên bản đầu tiên";
+"ClipContext Options" = "Tùy chọn ClipContext";

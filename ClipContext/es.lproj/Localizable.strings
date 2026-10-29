@@ -80,3 +80,27 @@
 "Clear Clipboard" = "Borrar portapapeles";
 "Quit" = "Salir";
 "Quit ClipContext" = "Salir de ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Localizado en más idiomas";
+"Migrated to SQLite database for better performance" = "Migrado a base de datos SQLite para un mejor rendimiento";
+"Implemented multiple memory optimizations" = "Implementadas múltiples optimizaciones de memoria";
+"Various bug fixes" = "Varias correcciones de errores";
+"Bug fixes" = "Correcciones de errores";
+"Added localization" = "Añadida localización";
+"Added right-click popup" = "Añadida ventana emergente con clic derecho";
+"Fixed menubar icon right-click on macOS 27.0" = "Corregido el clic derecho en el icono de la barra de menús en macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Mejorada la apariencia en modo claro con más contraste y bordes visibles";
+"Added Launch at Login toggle" = "Añadido el interruptor Abrir al iniciar sesión";
+"Open App shortcut now closes the popover if already open" = "El atajo Abrir app ahora cierra la ventana emergente si ya está abierta";
+"Added translation via Apple's system Translate" = "Añadida traducción mediante la función Traducir del sistema de Apple";
+"Added per-item Remove to the ⋮ menu" = "Añadido Eliminar por elemento en el menú ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Añadido ajuste del límite del historial (por defecto 200, hasta 2000)";
+"Added global & action keyboard shortcuts" = "Añadidos atajos de teclado globales y de acciones";
+"Added word & character count per item" = "Añadido recuento de palabras y caracteres por elemento";
+"Added ⋮ menu with five additional text-editing functions" = "Añadido menú ⋮ con cinco funciones adicionales de edición de texto";
+"Added Options menu" = "Añadido menú Opciones";
+"Clipboard history persistent across launches" = "El historial del portapapeles se mantiene al reiniciar";
+"Source app and timestamp shown per item" = "Mostrado el nombre de la app de origen y la hora por elemento";
+"Initial release" = "Versión inicial";
+"ClipContext Options" = "Opciones de ClipContext";

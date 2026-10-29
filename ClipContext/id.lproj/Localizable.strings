@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Cari papan klip…";
+"Clear All" = "Hapus Semua";
+"Copied to clipboard" = "Disalin ke papan klip";
+"Remove" = "Hapus";
+"None" = "Tidak ada";
+"Recording…" = "Merekam…";
+"%lld words · %lld chars" = "%lld kata · %lld karakter";
+
+/* Actions */
+"Trim Whitespace" = "Hapus spasi di awal dan akhir";
+"Lowercase" = "Huruf kecil";
+"Capitalize" = "Jadikan huruf awal kapital";
+"Extract URL" = "Ekstrak URL";
+"Remove extra spaces" = "Hapus spasi berlebih";
+"Remove empty lines" = "Hapus baris kosong";
+"Join lines into one" = "Gabungkan baris";
+"Lines to CSV" = "Ubah baris menjadi CSV";
+"Remove tracking params" = "Hapus parameter pelacakan";
+"Translate" = "Terjemahkan";
+
+/* Behaviour tab */
+"General" = "Umum";
+"Language" = "Bahasa";
+"System Default" = "Default sistem";
+"Restart ClipContext to apply the language change." = "Mulai ulang ClipContext untuk menerapkan perubahan bahasa.";
+"Launch at Login" = "Buka saat login";
+"Auto-apply on Copy" = "Terapkan otomatis saat menyalin";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Tindakan yang dipilih otomatis diterapkan setiap kali teks baru disalin, sesuai urutan yang tercantum.";
+"History" = "Riwayat";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Jumlah maksimum item riwayat papan klip. Item lama akan dihapus secara otomatis.";
+"History limit" = "Batas riwayat";
+"%lld items" = "%lld item";
+
+/* Customization tab */
+"Pinned" = "Disematkan";
+"Shown as icon buttons on each item (max 4)" = "Ditampilkan sebagai tombol ikon pada setiap item (maks. 4)";
+"More Options" = "Opsi Lainnya";
+"Shown in the ⋮ menu" = "Ditampilkan di menu ⋮";
+"Drag items here" = "Seret item ke sini";
+"Move to More" = "Pindahkan ke Opsi Lainnya";
+"Pin" = "Sematkan";
+
+/* Shortcuts tab */
+"Global" = "Global";
+"Works system-wide. Requires Accessibility permission." = "Berfungsi di seluruh sistem. Memerlukan izin Aksesibilitas.";
+"Actions" = "Tindakan";
+"Applied to the most recently copied item. Works system-wide." = "Diterapkan pada item yang terakhir disalin. Berfungsi di seluruh sistem.";
+"Open App" = "Buka App";
+"Accessibility Permission Required" = "Izin Aksesibilitas Diperlukan";
+"Global shortcuts need Accessibility access to work system-wide." = "Pintasan global memerlukan akses Aksesibilitas agar berfungsi di seluruh sistem.";
+"Grant Access" = "Berikan Akses";
+
+/* Options tabs */
+"Customization" = "Kustomisasi";
+"Behaviour" = "Perilaku";
+"Shortcuts" = "Pintasan";
+"About" = "Tentang";
+
+/* Donate section */
+"Support ClipContext" = "Dukung ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext adalah proyek yang dikerjakan satu orang. Tip membantu pengembangan terus berjalan.";
+"Thank you for your support!" = "Terima kasih atas dukungan Anda!";
+"Thank You!" = "Terima kasih!";
+"You're welcome!" = "Sama-sama!";
+"Your support means a lot and helps keep ClipContext going." = "Dukungan Anda sangat berarti dan membantu ClipContext terus dikembangkan.";
+"Purchase Failed" = "Pembelian Gagal";
+"Something went wrong. Please try again." = "Terjadi kesalahan. Silakan coba lagi.";
+"OK" = "Oke";
+"Support on Ko-fi" = "Dukung melalui Ko-fi";
+
+/* About tab */
+"What's New" = "Yang Baru";
+"Made by %@" = "Dibuat oleh %@";
+"Visit website" = "Kunjungi situs web";
+"Version %@" = "Versi %@";
+
+/* Menus */
+"Options" = "Opsi";
+"Clear Clipboard" = "Bersihkan Papan Klip";
+"Quit" = "Keluar";
+"Quit ClipContext" = "Keluar dari ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Dilokalisasi ke lebih banyak bahasa";
+"Migrated to SQLite database for better performance" = "Dipindahkan ke database SQLite untuk performa yang lebih baik";
+"Implemented multiple memory optimizations" = "Menerapkan berbagai optimalisasi memori";
+"Various bug fixes" = "Berbagai perbaikan bug";
+"Bug fixes" = "Perbaikan bug";
+"Added localization" = "Menambahkan lokalisasi";
+"Added right-click popup" = "Menambahkan popup klik kanan";
+"Fixed menubar icon right-click on macOS 27.0" = "Memperbaiki klik kanan pada ikon bilah menu di macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Tampilan mode terang ditingkatkan dengan kontras yang lebih baik dan batas yang terlihat";
+"Added Launch at Login toggle" = "Menambahkan opsi Buka saat login";
+"Open App shortcut now closes the popover if already open" = "Pintasan Buka App sekarang menutup popover jika sudah terbuka";
+"Added translation via Apple's system Translate" = "Menambahkan terjemahan melalui fitur Terjemahan sistem Apple";
+"Added per-item Remove to the ⋮ menu" = "Menambahkan Hapus per item di menu ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Menambahkan pengaturan batas riwayat (default 200, maksimal 2000)";
+"Added global & action keyboard shortcuts" = "Menambahkan pintasan keyboard global dan pintasan aksi";
+"Added word & character count per item" = "Menambahkan jumlah kata dan karakter per item";
+"Added ⋮ menu with five additional text-editing functions" = "Menambahkan menu ⋮ dengan lima fungsi pengeditan teks tambahan";
+"Added Options menu" = "Menambahkan menu Opsi";
+"Clipboard history persistent across launches" = "Riwayat clipboard tetap tersimpan setelah aplikasi dimulai ulang";
+"Source app and timestamp shown per item" = "Menampilkan aplikasi sumber dan waktu untuk setiap item";
+"Initial release" = "Rilis awal";
+"ClipContext Options" = "Opsi ClipContext";

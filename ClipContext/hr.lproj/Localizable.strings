@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Pretraži međuspremnik…";
+"Clear All" = "Izbriši sve";
+"Copied to clipboard" = "Kopirano u međuspremnik";
+"Remove" = "Ukloni";
+"None" = "Nijedno";
+"Recording…" = "Snimanje…";
+"%lld words · %lld chars" = "%lld riječi · %lld znakova";
+
+/* Actions */
+"Trim Whitespace" = "Ukloni razmake s rubova";
+"Lowercase" = "Mala slova";
+"Capitalize" = "Veliko početno slovo";
+"Extract URL" = "Izdvoji URL";
+"Remove extra spaces" = "Ukloni suvišne razmake";
+"Remove empty lines" = "Ukloni prazne retke";
+"Join lines into one" = "Spoji retke";
+"Lines to CSV" = "Pretvori retke u CSV";
+"Remove tracking params" = "Ukloni parametre praćenja";
+"Translate" = "Prevedi";
+
+/* Behaviour tab */
+"General" = "Općenito";
+"Language" = "Jezik";
+"System Default" = "Zadano u sustavu";
+"Restart ClipContext to apply the language change." = "Ponovno pokrenite ClipContext da biste primijenili promjenu jezika.";
+"Launch at Login" = "Pokreni pri prijavi";
+"Auto-apply on Copy" = "Automatski primijeni pri kopiranju";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Odabrane radnje automatski se primjenjuju svaki put kada se kopira novi tekst, navedenim redoslijedom.";
+"History" = "Povijest";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Maksimalan broj stavki u povijesti međuspremnika. Starije se stavke automatski uklanjaju.";
+"History limit" = "Ograničenje povijesti";
+"%lld items" = "%lld stavki";
+
+/* Customization tab */
+"Pinned" = "Prikvačeno";
+"Shown as icon buttons on each item (max 4)" = "Prikazuje se kao gumbi s ikonama uz svaku stavku (najviše 4)";
+"More Options" = "Dodatne opcije";
+"Shown in the ⋮ menu" = "Prikazuje se u izborniku ⋮";
+"Drag items here" = "Povucite stavke ovdje";
+"Move to More" = "Premjesti u Dodatne opcije";
+"Pin" = "Prikvači";
+
+/* Shortcuts tab */
+"Global" = "Globalno";
+"Works system-wide. Requires Accessibility permission." = "Radi u cijelom sustavu. Potrebno je dopuštenje za Pristupačnost.";
+"Actions" = "Radnje";
+"Applied to the most recently copied item. Works system-wide." = "Primjenjuje se na posljednju kopiranu stavku. Radi u cijelom sustavu.";
+"Open App" = "Otvori aplikaciju";
+"Accessibility Permission Required" = "Potrebno je dopuštenje za Pristupačnost";
+"Global shortcuts need Accessibility access to work system-wide." = "Globalni prečaci zahtijevaju pristup značajci Pristupačnost kako bi radili u cijelom sustavu.";
+"Grant Access" = "Dopusti pristup";
+
+/* Options tabs */
+"Customization" = "Prilagodba";
+"Behaviour" = "Ponašanje";
+"Shortcuts" = "Prečaci";
+"About" = "O aplikaciji";
+
+/* Donate section */
+"Support ClipContext" = "Podržite ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext je projekt jedne osobe. Napojnica pomaže u nastavku razvoja.";
+"Thank you for your support!" = "Hvala na podršci!";
+"Thank You!" = "Hvala!";
+"You're welcome!" = "Nema na čemu!";
+"Your support means a lot and helps keep ClipContext going." = "Vaša podrška mnogo znači i pomaže da se razvoj ClipContexta nastavi.";
+"Purchase Failed" = "Kupnja nije uspjela";
+"Something went wrong. Please try again." = "Došlo je do pogreške. Pokušajte ponovno.";
+"OK" = "U redu";
+"Support on Ko-fi" = "Podržite na Ko-fi";
+
+/* About tab */
+"What's New" = "Novosti";
+"Made by %@" = "Izradio %@";
+"Visit website" = "Posjetite web-stranicu";
+"Version %@" = "Verzija %@";
+
+/* Menus */
+"Options" = "Opcije";
+"Clear Clipboard" = "Očisti međuspremnik";
+"Quit" = "Zatvori";
+"Quit ClipContext" = "Zatvori ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Lokalizirano na više jezika";
+"Migrated to SQLite database for better performance" = "Prijelaz na SQLite bazu podataka radi boljih performansi";
+"Implemented multiple memory optimizations" = "Implementirane brojne optimizacije memorije";
+"Various bug fixes" = "Razne ispravke grešaka";
+"Bug fixes" = "Ispravke grešaka";
+"Added localization" = "Dodana lokalizacija";
+"Added right-click popup" = "Dodan skočni izbornik na desni klik";
+"Fixed menubar icon right-click on macOS 27.0" = "Ispravljen desni klik na ikonu u traci izbornika u macOS-u 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Poboljšan izgled svijetlog načina rada, s boljim kontrastom i vidljivim rubovima";
+"Added Launch at Login toggle" = "Dodan prekidač Pokreni pri prijavi";
+"Open App shortcut now closes the popover if already open" = "Prečac Otvori aplikaciju sada zatvara skočni prozor ako je već otvoren";
+"Added translation via Apple's system Translate" = "Dodano prevođenje putem Appleove sistemske funkcije Prijevod";
+"Added per-item Remove to the ⋮ menu" = "Dodano Ukloni po stavci u izborniku ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Dodana postavka ograničenja povijesti (zadano 200, najviše 2000)";
+"Added global & action keyboard shortcuts" = "Dodani globalni tipkovnički prečaci i prečaci za radnje";
+"Added word & character count per item" = "Dodan brojač riječi i znakova po stavci";
+"Added ⋮ menu with five additional text-editing functions" = "Dodan izbornik ⋮ s pet dodatnih funkcija za uređivanje teksta";
+"Added Options menu" = "Dodan izbornik Opcije";
+"Clipboard history persistent across launches" = "Povijest međuspremnika ostaje sačuvana nakon ponovnog pokretanja";
+"Source app and timestamp shown per item" = "Prikaz izvorne aplikacije i vremenske oznake za svaku stavku";
+"Initial release" = "Prvo izdanje";
+"ClipContext Options" = "Opcije programa ClipContext";

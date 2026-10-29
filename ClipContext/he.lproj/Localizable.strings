@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "חיפוש בלוח הגזירים…";
+"Clear All" = "ניקוי הכול";
+"Copied to clipboard" = "הועתק ללוח הגזירים";
+"Remove" = "הסרה";
+"None" = "ללא";
+"Recording…" = "מקליט…";
+"%lld words · %lld chars" = "%lld מילים · %lld תווים";
+
+/* Actions */
+"Trim Whitespace" = "הסרת רווחים מהקצוות";
+"Lowercase" = "המרה לאותיות קטנות";
+"Capitalize" = "הפיכת האות הראשונה לגדולה";
+"Extract URL" = "חילוץ URL";
+"Remove extra spaces" = "הסרת רווחים מיותרים";
+"Remove empty lines" = "הסרת שורות ריקות";
+"Join lines into one" = "איחוד שורות";
+"Lines to CSV" = "המרת שורות ל-CSV";
+"Remove tracking params" = "הסרת פרמטרים למעקב";
+"Translate" = "תרגום";
+
+/* Behaviour tab */
+"General" = "כללי";
+"Language" = "שפה";
+"System Default" = "ברירת מחדל של המערכת";
+"Restart ClipContext to apply the language change." = "יש להפעיל מחדש את ClipContext כדי להחיל את שינוי השפה.";
+"Launch at Login" = "הפעלה בעת ההתחברות";
+"Auto-apply on Copy" = "החלה אוטומטית בעת העתקה";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "הפעולות שנבחרו מוחלות אוטומטית בכל העתקת טקסט חדש, לפי הסדר ברשימה.";
+"History" = "היסטוריה";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "מספר הפריטים המרבי שיש לשמור בהיסטוריה. פריטים ישנים יותר מוסרים אוטומטית.";
+"History limit" = "מגבלת היסטוריה";
+"%lld items" = "%lld פריטים";
+
+/* Customization tab */
+"Pinned" = "מוצמדים";
+"Shown as icon buttons on each item (max 4)" = "מוצגים כלחצני סמלים בכל פריט (עד 4)";
+"More Options" = "אפשרויות נוספות";
+"Shown in the ⋮ menu" = "מוצגים בתפריט ⋮";
+"Drag items here" = "גרירת פריטים לכאן";
+"Move to More" = "העברה לאפשרויות נוספות";
+"Pin" = "הצמדה";
+
+/* Shortcuts tab */
+"Global" = "כלליים";
+"Works system-wide. Requires Accessibility permission." = "פועל בכל המערכת. נדרשת הרשאת נגישות.";
+"Actions" = "פעולות";
+"Applied to the most recently copied item. Works system-wide." = "מוחלות על הפריט שהועתק לאחרונה. פועלות בכל המערכת.";
+"Open App" = "פתיחת היישום";
+"Accessibility Permission Required" = "נדרשת הרשאת נגישות";
+"Global shortcuts need Accessibility access to work system-wide." = "קיצורי דרך כלליים זקוקים לגישה לנגישות כדי לפעול בכל המערכת.";
+"Grant Access" = "מתן גישה";
+
+/* Options tabs */
+"Customization" = "התאמה אישית";
+"Behaviour" = "התנהגות";
+"Shortcuts" = "קיצורי דרך";
+"About" = "מידע";
+
+/* Donate section */
+"Support ClipContext" = "תמיכה ב-ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext הוא פרויקט של אדם אחד. תרומה קטנה עוזרת להמשיך בפיתוח.";
+"Thank you for your support!" = "תודה על התמיכה!";
+"Thank You!" = "תודה!";
+"You're welcome!" = "בשמחה!";
+"Your support means a lot and helps keep ClipContext going." = "התמיכה שלך חשובה מאוד ועוזרת להמשיך לפתח את ClipContext.";
+"Purchase Failed" = "הרכישה נכשלה";
+"Something went wrong. Please try again." = "משהו השתבש. יש לנסות שוב.";
+"OK" = "אישור";
+"Support on Ko-fi" = "תמיכה ב-Ko-fi";
+
+/* About tab */
+"What's New" = "מה חדש";
+"Made by %@" = "נוצר על ידי %@";
+"Visit website" = "ביקור באתר";
+"Version %@" = "גרסה %@";
+
+/* Menus */
+"Options" = "אפשרויות";
+"Clear Clipboard" = "ניקוי לוח הגזירים";
+"Quit" = "יציאה";
+"Quit ClipContext" = "יציאה מ-ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "תורגם לשפות נוספות";
+"Migrated to SQLite database for better performance" = "מעבר למסד נתונים SQLite לביצועים טובים יותר";
+"Implemented multiple memory optimizations" = "יושמו מספר אופטימיזציות לשימוש בזיכרון";
+"Various bug fixes" = "תיקוני באגים שונים";
+"Bug fixes" = "תיקוני באגים";
+"Added localization" = "נוספה לוקליזציה";
+"Added right-click popup" = "נוסף חלון קופץ בלחיצה ימנית";
+"Fixed menubar icon right-click on macOS 27.0" = "תוקנה לחיצה ימנית על סמל שורת התפריטים ב-macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "שיפור המראה של מצב בהיר: ניגודיות טובה יותר וגבולות גלויים";
+"Added Launch at Login toggle" = "נוסף מתג «הפעל בכניסה למערכת»";
+"Open App shortcut now closes the popover if already open" = "קיצור הדרך «פתח אפליקציה» סוגר כעת את החלון הקופץ אם הוא כבר פתוח";
+"Added translation via Apple's system Translate" = "נוספה תרגום באמצעות תכונת התרגום של מערכת Apple";
+"Added per-item Remove to the ⋮ menu" = "נוספה הסרה לכל פריט בתפריט ⋮";
+"Added history limit setting (default 200, up to 2000)" = "נוספה הגדרת מגבלת היסטוריה (ברירת מחדל 200, עד 2000)";
+"Added global & action keyboard shortcuts" = "נוספו קיצורי מקלדת גלובליים ולפעולות";
+"Added word & character count per item" = "נוספה ספירת מילים ותווים לכל פריט";
+"Added ⋮ menu with five additional text-editing functions" = "נוסף תפריט ⋮ עם חמש פונקציות נוספות לעריכת טקסט";
+"Added Options menu" = "נוסף תפריט אפשרויות";
+"Clipboard history persistent across launches" = "היסטוריית הלוח נשמרת גם לאחר הפעלה מחדש";
+"Source app and timestamp shown per item" = "הצגת האפליקציה המקורית והחותמת הזמן לכל פריט";
+"Initial release" = "גרסה ראשונה";
+"ClipContext Options" = "אפשרויות של ClipContext";

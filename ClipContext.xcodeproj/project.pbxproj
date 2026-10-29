@@ -97,6 +97,33 @@
 				cs,
 				es,
 				fr,
+				tr,
+				hi,
+				el,
+				nb,
+				id,
+				ro,
+				hu,
+				th,
+				he,
+				ca,
+				ja,
+				ko,
+				sv,
+				"pt-BR",
+				vi,
+				it,
+				ru,
+				da,
+				"zh-Hant",
+				"zh-Hans",
+				fi,
+				"pt-PT",
+				uk,
+				ar,
+				hr,
+				pl,
+				bg,
 			);
 			mainGroup = 9A743E6B2EBCDEDE002DAECF;
 			minimizedProjectReferenceProxies = 1;
@@ -281,7 +308,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LukasNagy.ClipContext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -332,7 +359,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LukasNagy.ClipContext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;

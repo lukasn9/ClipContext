@@ -80,3 +80,27 @@
 "Clear Clipboard" = "Vymazať schránku";
 "Quit" = "Ukončiť";
 "Quit ClipContext" = "Ukončiť ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Lokalizované do ďalších jazykov";
+"Migrated to SQLite database for better performance" = "Prechod na databázu SQLite pre lepší výkon";
+"Implemented multiple memory optimizations" = "Implementované viaceré optimalizácie pamäte";
+"Various bug fixes" = "Rôzne opravy chýb";
+"Bug fixes" = "Opravy chýb";
+"Added localization" = "Pridaná lokalizácia";
+"Added right-click popup" = "Pridané vyskakovacie okno pravým tlačidlom";
+"Fixed menubar icon right-click on macOS 27.0" = "Opravené pravé kliknutie na ikonu v lište s ponukami v macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Vylepšený vzhľad svetlého režimu s lepším kontrastom a viditeľnými okrajmi";
+"Added Launch at Login toggle" = "Pridaný prepínač Spustiť pri prihlásení";
+"Open App shortcut now closes the popover if already open" = "Skratka Otvoriť aplikáciu teraz zatvorí vyskakovacie okno, ak je už otvorené";
+"Added translation via Apple's system Translate" = "Pridaný preklad pomocou systémového prekladača Apple";
+"Added per-item Remove to the ⋮ menu" = "Pridané odstránenie jednotlivej položky do ponuky ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Pridané nastavenie limitu histórie (predvolene 200, najviac 2000)";
+"Added global & action keyboard shortcuts" = "Pridané globálne a akčné klávesové skratky";
+"Added word & character count per item" = "Pridané počítanie slov a znakov pre každú položku";
+"Added ⋮ menu with five additional text-editing functions" = "Pridaná ponuka ⋮ s piatimi ďalšími funkciami úpravy textu";
+"Added Options menu" = "Pridaná ponuka Možnosti";
+"Clipboard history persistent across launches" = "História schránky sa zachováva aj po reštarte";
+"Source app and timestamp shown per item" = "Zobrazenie zdrojovej aplikácie a časovej pečiatky pre každú položku";
+"Initial release" = "Prvé vydanie";
+"ClipContext Options" = "Možnosti ClipContext";

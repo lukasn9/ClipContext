@@ -7,45 +7,57 @@ private let contactURL: URL? = nil
 
 private struct ChangelogEntry {
     let version: String
-    let date: String
+    let date: Date
     let changes: [String]
 }
 
+private func monthYear(_ year: Int, _ month: Int) -> Date {
+    Calendar(identifier: .gregorian).date(from: DateComponents(year: year, month: month, day: 1)) ?? .now
+}
+
 private let changelog: [ChangelogEntry] = [
-    ChangelogEntry(version: "1.6", date: "June 2026", changes: [
+    ChangelogEntry(version: "1.7", date: monthYear(2026, 10), changes: [
+        "Localized to more languages",
+        "Migrated to SQLite database for better performance",
+        "Implemented multiple memory optimizations",
+        "Various bug fixes",
+    ]),
+    ChangelogEntry(version: "1.6", date: monthYear(2026, 6), changes: [
         "Bug fixes",
         "Added localization",
         "Added right-click popup",
         "Fixed menubar icon right-click on macOS 27.0",
     ]),
-    ChangelogEntry(version: "1.5", date: "May 2026", changes: [
+    ChangelogEntry(version: "1.5", date: monthYear(2026, 5), changes: [
         "Improved light mode appearance with better contrast and visible borders",
     ]),
-    ChangelogEntry(version: "1.4", date: "May 2026", changes: [
+    ChangelogEntry(version: "1.4", date: monthYear(2026, 5), changes: [
         "Added Launch at Login toggle",
         "Open App shortcut now closes the popover if already open",
     ]),
-    ChangelogEntry(version: "1.3", date: "May 2026", changes: [
+    ChangelogEntry(version: "1.3", date: monthYear(2026, 5), changes: [
         "Added translation via Apple's system Translate",
         "Added per-item Remove to the ⋮ menu",
         "Added history limit setting (default 200, up to 2000)",
         "Added global & action keyboard shortcuts",
     ]),
-    ChangelogEntry(version: "1.2", date: "May 2026", changes: [
+    ChangelogEntry(version: "1.2", date: monthYear(2026, 5), changes: [
         "Added word & character count per item",
         "Added ⋮ menu with five additional text-editing functions",
         "Added Options menu",
     ]),
-    ChangelogEntry(version: "1.1", date: "April 2026", changes: [
+    ChangelogEntry(version: "1.1", date: monthYear(2026, 4), changes: [
         "Clipboard history persistent across launches",
         "Source app and timestamp shown per item",
     ]),
-    ChangelogEntry(version: "1.0", date: "March 2026", changes: [
+    ChangelogEntry(version: "1.0", date: monthYear(2026, 3), changes: [
         "Initial release",
     ]),
 ]
 
 struct AboutTab: View {
+    @Environment(\.locale) private var locale
+
     private var appVersion: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "–"
     }
@@ -87,7 +99,7 @@ struct AboutTab: View {
                             HStack(spacing: 6) {
                                 Text("v\(entry.version)")
                                     .font(.subheadline.bold())
-                                Text("— \(entry.date)")
+                                Text("— \(entry.date.formatted(.dateTime.month(.wide).year().locale(locale)))")
                                     .font(.subheadline)
                                     .foregroundStyle(.secondary)
                             }
@@ -95,7 +107,7 @@ struct AboutTab: View {
                                 HStack(alignment: .top, spacing: 6) {
                                     Text("•")
                                         .foregroundStyle(.secondary)
-                                    Text(change)
+                                    Text(LocalizedStringKey(change))
                                         .foregroundStyle(.secondary)
                                         .fixedSize(horizontal: false, vertical: true)
                                 }
@@ -247,13 +259,13 @@ struct DonateSection: View {
                 .fill(Color(.controlBackgroundColor))
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.pink.opacity(0.20), lineWidth: 1))
         )
-        .alert(String(localized: "Thank You!"), isPresented: $showThankYou) {
-            Button(String(localized: "You're welcome!")) { }
+        .alert(loc("Thank You!"), isPresented: $showThankYou) {
+            Button(loc("You're welcome!")) { }
         } message: {
             Text("Your support means a lot and helps keep ClipContext going.")
         }
-        .alert(String(localized: "Purchase Failed"), isPresented: $showError) {
-            Button(String(localized: "OK")) { }
+        .alert(loc("Purchase Failed"), isPresented: $showError) {
+            Button(loc("OK")) { }
         } message: {
             Text("Something went wrong. Please try again.")
         }

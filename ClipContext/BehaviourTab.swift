@@ -10,15 +10,38 @@ private let supportedLanguages: [(code: String, name: String)] = [
     ("cs", "Čeština"),
     ("es", "Español"),
     ("fr", "Français"),
+    ("it", "Italiano"),
+    ("pt-BR", "Português (Brasil)"),
+    ("pt-PT", "Português (Portugal)"),
+    ("pl", "Polski"),
+    ("ru", "Русский"),
+    ("uk", "Українська"),
+    ("tr", "Türkçe"),
+    ("ja", "日本語"),
+    ("ko", "한국어"),
+    ("zh-Hans", "简体中文"),
+    ("zh-Hant", "繁體中文"),
+    ("ar", "العربية"),
+    ("he", "עברית"),
+    ("sv", "Svenska"),
+    ("da", "Dansk"),
+    ("nb", "Norsk bokmål"),
+    ("fi", "Suomi"),
+    ("hu", "Magyar"),
+    ("ro", "Română"),
+    ("el", "Ελληνικά"),
+    ("id", "Bahasa Indonesia"),
+    ("hi", "हिन्दी"),
+    ("th", "ไทย"),
+    ("vi", "Tiếng Việt"),
+    ("hr", "Hrvatski"),
+    ("bg", "Български"),
+    ("ca", "Català"),
 ]
 
 struct BehaviourTab: View {
     @EnvironmentObject var settings: SettingsStore
     @State private var launchAtLogin = SMAppService.mainApp.status == .enabled
-    @State private var selectedLanguage: String = {
-        UserDefaults.standard.string(forKey: "ClipContextLanguage") ?? "system"
-    }()
-    @State private var showRestartNote = false
 
 
     var body: some View {
@@ -56,41 +79,18 @@ struct BehaviourTab: View {
                             .foregroundStyle(.secondary)
                         Text("Language")
                         Spacer()
-                        Picker("", selection: $selectedLanguage) {
+                        Picker("", selection: $settings.languageCode) {
                             ForEach(supportedLanguages, id: \.code) { lang in
-                                Text(lang.code == "system" ? String(localized: "System Default") : lang.name)
+                                Text(lang.code == "system" ? loc("System Default") : lang.name)
                                     .tag(lang.code)
                             }
                         }
                         .labelsHidden()
                         .fixedSize()
-                        .onChange(of: selectedLanguage) { _, newValue in
-                            UserDefaults.standard.set(newValue, forKey: "ClipContextLanguage")
-                            if newValue == "system" {
-                                UserDefaults.standard.removeObject(forKey: "AppleLanguages")
-                            } else {
-                                UserDefaults.standard.set([newValue], forKey: "AppleLanguages")
-                            }
-                            showRestartNote = true
-                        }
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 10)
 
-                    if showRestartNote {
-                        Divider().padding(.leading, 52)
-                        HStack(spacing: 8) {
-                            Image(systemName: "arrow.counterclockwise.circle")
-                                .foregroundStyle(.orange)
-                                .frame(width: 20)
-                            Text("Restart ClipContext to apply the language change.")
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                                .fixedSize(horizontal: false, vertical: true)
-                        }
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 8)
-                    }
                 }
                 .background(
                     RoundedRectangle(cornerRadius: 10)

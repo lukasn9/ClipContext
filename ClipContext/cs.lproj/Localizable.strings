@@ -80,3 +80,27 @@
 "Clear Clipboard" = "Vymazat schránku";
 "Quit" = "Ukončit";
 "Quit ClipContext" = "Ukončit ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Lokalizováno do dalších jazyků";
+"Migrated to SQLite database for better performance" = "Přechod na databázi SQLite pro lepší výkon";
+"Implemented multiple memory optimizations" = "Přidány další optimalizace paměti";
+"Various bug fixes" = "Různé opravy chyb";
+"Bug fixes" = "Opravy chyb";
+"Added localization" = "Přidána lokalizace";
+"Added right-click popup" = "Přidáno vyskakovací okno po pravém kliknutí";
+"Fixed menubar icon right-click on macOS 27.0" = "Opraveno pravé kliknutí na ikonu v liště nabídek na macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Vylepšen vzhled světlého režimu s lepším kontrastem a viditelnými okraji";
+"Added Launch at Login toggle" = "Přidán přepínač Spustit při přihlášení";
+"Open App shortcut now closes the popover if already open" = "Zkratka Otevřít aplikaci nyní zavře vyskakovací okno, pokud je již otevřené";
+"Added translation via Apple's system Translate" = "Přidán překlad pomocí systémového překladače Apple";
+"Added per-item Remove to the ⋮ menu" = "Přidáno odebrat jednotlivou položku v nabídce ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Přidáno nastavení limitu historie (výchozí 200, nejvýše 2000)";
+"Added global & action keyboard shortcuts" = "Přidány globální a akční klávesové zkratky";
+"Added word & character count per item" = "Přidán počet slov a znaků u každé položky";
+"Added ⋮ menu with five additional text-editing functions" = "Přidána nabídka ⋮ s pěti dalšími funkcemi úprav textu";
+"Added Options menu" = "Přidána nabídka Možnosti";
+"Clipboard history persistent across launches" = "Historie schránky se zachovává i po restartu";
+"Source app and timestamp shown per item" = "Zobrazení zdrojové aplikace a času u každé položky";
+"Initial release" = "První vydání";
+"ClipContext Options" = "Možnosti ClipContext";

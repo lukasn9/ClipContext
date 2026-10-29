@@ -80,3 +80,27 @@
 "Clear Clipboard" = "Vider le presse-papiers";
 "Quit" = "Quitter";
 "Quit ClipContext" = "Quitter ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Traduit dans davantage de langues";
+"Migrated to SQLite database for better performance" = "Passage à une base de données SQLite pour de meilleures performances";
+"Implemented multiple memory optimizations" = "Plusieurs optimisations de la mémoire ajoutées";
+"Various bug fixes" = "Diverses corrections de bugs";
+"Bug fixes" = "Corrections de bugs";
+"Added localization" = "Ajout de la localisation";
+"Added right-click popup" = "Ajout d’un menu contextuel par clic droit";
+"Fixed menubar icon right-click on macOS 27.0" = "Correction du clic droit sur l’icône de la barre des menus sous macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Apparence du mode clair améliorée avec un meilleur contraste et des bordures visibles";
+"Added Launch at Login toggle" = "Ajout de l’option Ouvrir au démarrage de session";
+"Open App shortcut now closes the popover if already open" = "Le raccourci Ouvrir l’app ferme désormais le panneau s’il est déjà ouvert";
+"Added translation via Apple's system Translate" = "Ajout de la traduction via la fonction Traduction système d’Apple";
+"Added per-item Remove to the ⋮ menu" = "Ajout de Supprimer par élément dans le menu ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Ajout d’un réglage de la limite d’historique (200 par défaut, 2000 au maximum)";
+"Added global & action keyboard shortcuts" = "Ajout de raccourcis clavier globaux et d’actions";
+"Added word & character count per item" = "Ajout du nombre de mots et de caractères par élément";
+"Added ⋮ menu with five additional text-editing functions" = "Ajout du menu ⋮ avec cinq fonctions supplémentaires d’édition de texte";
+"Added Options menu" = "Ajout du menu Options";
+"Clipboard history persistent across launches" = "L’historique du presse-papiers est conservé après redémarrage";
+"Source app and timestamp shown per item" = "Affichage de l’app source et de l’horodatage par élément";
+"Initial release" = "Version initiale";
+"ClipContext Options" = "Options de ClipContext";

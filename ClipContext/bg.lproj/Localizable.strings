@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Търсене в клипборда…";
+"Clear All" = "Изчисти всичко";
+"Copied to clipboard" = "Копирано в клипборда";
+"Remove" = "Премахни";
+"None" = "Няма";
+"Recording…" = "Записване…";
+"%lld words · %lld chars" = "%lld думи · %lld знака";
+
+/* Actions */
+"Trim Whitespace" = "Премахни интервалите в краищата";
+"Lowercase" = "Малки букви";
+"Capitalize" = "Главна начална буква";
+"Extract URL" = "Извлечи URL";
+"Remove extra spaces" = "Премахни излишните интервали";
+"Remove empty lines" = "Премахни празните редове";
+"Join lines into one" = "Обедини редовете";
+"Lines to CSV" = "Редове към CSV";
+"Remove tracking params" = "Премахни параметрите за проследяване";
+"Translate" = "Преведи";
+
+/* Behaviour tab */
+"General" = "Общи";
+"Language" = "Език";
+"System Default" = "По подразбиране за системата";
+"Restart ClipContext to apply the language change." = "Рестартирайте ClipContext, за да приложите промяната на езика.";
+"Launch at Login" = "Стартиране при влизане";
+"Auto-apply on Copy" = "Автоматично прилагане при копиране";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Избраните действия се прилагат автоматично при всяко копиране на нов текст в посочения ред.";
+"History" = "История";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Максимален брой записи в историята на клипборда. По-старите записи се премахват автоматично.";
+"History limit" = "Лимит на историята";
+"%lld items" = "%lld елемента";
+
+/* Customization tab */
+"Pinned" = "Закачени";
+"Shown as icon buttons on each item (max 4)" = "Показват се като бутони с икони за всеки елемент (макс. 4)";
+"More Options" = "Още опции";
+"Shown in the ⋮ menu" = "Показват се в менюто ⋮";
+"Drag items here" = "Плъзнете елементите тук";
+"Move to More" = "Премести в Още опции";
+"Pin" = "Закачи";
+
+/* Shortcuts tab */
+"Global" = "Глобални";
+"Works system-wide. Requires Accessibility permission." = "Работи в цялата система. Изисква разрешение за Достъпност.";
+"Actions" = "Действия";
+"Applied to the most recently copied item. Works system-wide." = "Прилага се към последния копиран елемент. Работи в цялата система.";
+"Open App" = "Отвори приложението";
+"Accessibility Permission Required" = "Изисква се разрешение за Достъпност";
+"Global shortcuts need Accessibility access to work system-wide." = "Глобалните клавишни комбинации изискват достъп до Достъпност, за да работят в цялата система.";
+"Grant Access" = "Предостави достъп";
+
+/* Options tabs */
+"Customization" = "Персонализиране";
+"Behaviour" = "Поведение";
+"Shortcuts" = "Клавишни комбинации";
+"About" = "Информация";
+
+/* Donate section */
+"Support ClipContext" = "Подкрепете ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext е проект на един човек. Дарението помага разработката да продължи.";
+"Thank you for your support!" = "Благодарим за подкрепата!";
+"Thank You!" = "Благодарим!";
+"You're welcome!" = "Моля!";
+"Your support means a lot and helps keep ClipContext going." = "Вашата подкрепа е много важна и помага за развитието на ClipContext.";
+"Purchase Failed" = "Покупката не бе успешна";
+"Something went wrong. Please try again." = "Възникна грешка. Опитайте отново.";
+"OK" = "Добре";
+"Support on Ko-fi" = "Подкрепете в Ko-fi";
+
+/* About tab */
+"What's New" = "Какво ново";
+"Made by %@" = "Създадено от %@";
+"Visit website" = "Посетете уебсайта";
+"Version %@" = "Версия %@";
+
+/* Menus */
+"Options" = "Опции";
+"Clear Clipboard" = "Изчисти клипборда";
+"Quit" = "Изход";
+"Quit ClipContext" = "Изход от ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Локализирано на още езици";
+"Migrated to SQLite database for better performance" = "Преминаване към SQLite база данни за по-добра производителност";
+"Implemented multiple memory optimizations" = "Внедрени са няколко оптимизации на паметта";
+"Various bug fixes" = "Различни корекции на грешки";
+"Bug fixes" = "Корекции на грешки";
+"Added localization" = "Добавена локализация";
+"Added right-click popup" = "Добавено изскачащо меню с десен бутон";
+"Fixed menubar icon right-click on macOS 27.0" = "Коригиран десен бутон върху иконата в лентата с менюта в macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Подобрен външен вид на светлия режим с по-добър контраст и видими рамки";
+"Added Launch at Login toggle" = "Добавен превключвател Стартиране при вход";
+"Open App shortcut now closes the popover if already open" = "Прякият път Отвори приложението сега затваря изскачащия прозорец, ако вече е отворен";
+"Added translation via Apple's system Translate" = "Добавен превод чрез системната функция Превод на Apple";
+"Added per-item Remove to the ⋮ menu" = "Добавено Премахни за всеки елемент в менюто ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Добавена настройка за ограничение на историята (по подразбиране 200, до 2000)";
+"Added global & action keyboard shortcuts" = "Добавени глобални и преки пътища за действия";
+"Added word & character count per item" = "Добавено броене на думи и знаци за всеки елемент";
+"Added ⋮ menu with five additional text-editing functions" = "Добавено меню ⋮ с пет допълнителни функции за редактиране на текст";
+"Added Options menu" = "Добавено меню Опции";
+"Clipboard history persistent across launches" = "Историята на клипборда се запазва след рестартиране";
+"Source app and timestamp shown per item" = "Показване на изходното приложение и времето за всеки елемент";
+"Initial release" = "Първа версия";
+"ClipContext Options" = "Опции на ClipContext";

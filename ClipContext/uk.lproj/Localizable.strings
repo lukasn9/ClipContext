@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Пошук у буфері обміну…";
+"Clear All" = "Очистити все";
+"Copied to clipboard" = "Скопійовано до буфера обміну";
+"Remove" = "Вилучити";
+"None" = "Немає";
+"Recording…" = "Запис…";
+"%lld words · %lld chars" = "%lld слів · %lld симв.";
+
+/* Actions */
+"Trim Whitespace" = "Прибрати пробіли з країв";
+"Lowercase" = "Малі літери";
+"Capitalize" = "Перша літера велика";
+"Extract URL" = "Витягти URL";
+"Remove extra spaces" = "Прибрати зайві пробіли";
+"Remove empty lines" = "Прибрати порожні рядки";
+"Join lines into one" = "Об’єднати рядки";
+"Lines to CSV" = "Рядки в CSV";
+"Remove tracking params" = "Прибрати параметри відстеження";
+"Translate" = "Перекласти";
+
+/* Behaviour tab */
+"General" = "Загальні";
+"Language" = "Мова";
+"System Default" = "За замовчуванням системи";
+"Restart ClipContext to apply the language change." = "Перезапустіть ClipContext, щоб застосувати зміну мови.";
+"Launch at Login" = "Запускати під час входу";
+"Auto-apply on Copy" = "Застосовувати під час копіювання";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Вибрані дії автоматично застосовуються під час копіювання нового тексту в зазначеному порядку.";
+"History" = "Історія";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Максимальна кількість записів в історії. Старіші записи видаляються автоматично.";
+"History limit" = "Ліміт історії";
+"%lld items" = "%lld елементів";
+
+/* Customization tab */
+"Pinned" = "Закріплені";
+"Shown as icon buttons on each item (max 4)" = "Відображаються як кнопки зі значками біля кожного елемента (макс. 4)";
+"More Options" = "Інші параметри";
+"Shown in the ⋮ menu" = "Відображаються в меню ⋮";
+"Drag items here" = "Перетягніть елементи сюди";
+"Move to More" = "Перемістити до інших параметрів";
+"Pin" = "Закріпити";
+
+/* Shortcuts tab */
+"Global" = "Глобальні";
+"Works system-wide. Requires Accessibility permission." = "Працює в усій системі. Потрібен дозвіл «Універсальний доступ».";
+"Actions" = "Дії";
+"Applied to the most recently copied item. Works system-wide." = "Застосовуються до останнього скопійованого елемента. Працюють в усій системі.";
+"Open App" = "Відкрити програму";
+"Accessibility Permission Required" = "Потрібен дозвіл «Універсальний доступ»";
+"Global shortcuts need Accessibility access to work system-wide." = "Для роботи глобальних скорочень клавіш у всій системі потрібен доступ до функції «Універсальний доступ».";
+"Grant Access" = "Надати доступ";
+
+/* Options tabs */
+"Customization" = "Налаштування";
+"Behaviour" = "Поведінка";
+"Shortcuts" = "Скорочення клавіш";
+"About" = "Про програму";
+
+/* Donate section */
+"Support ClipContext" = "Підтримати ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext — проєкт однієї людини. Чайові допомагають продовжувати розробку.";
+"Thank you for your support!" = "Дякуємо за підтримку!";
+"Thank You!" = "Дякуємо!";
+"You're welcome!" = "Будь ласка!";
+"Your support means a lot and helps keep ClipContext going." = "Ваша підтримка дуже важлива й допомагає розвивати ClipContext.";
+"Purchase Failed" = "Не вдалося здійснити покупку";
+"Something went wrong. Please try again." = "Щось пішло не так. Спробуйте ще раз.";
+"OK" = "OK";
+"Support on Ko-fi" = "Підтримати на Ko-fi";
+
+/* About tab */
+"What's New" = "Що нового";
+"Made by %@" = "Автор: %@";
+"Visit website" = "Відвідати вебсайт";
+"Version %@" = "Версія %@";
+
+/* Menus */
+"Options" = "Параметри";
+"Clear Clipboard" = "Очистити буфер обміну";
+"Quit" = "Вийти";
+"Quit ClipContext" = "Вийти з ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Додано локалізацію для нових мов";
+"Migrated to SQLite database for better performance" = "Перехід на базу даних SQLite для кращої продуктивності";
+"Implemented multiple memory optimizations" = "Впроваджено низку оптимізацій використання пам’яті";
+"Various bug fixes" = "Різні виправлення помилок";
+"Bug fixes" = "Виправлення помилок";
+"Added localization" = "Додано локалізацію";
+"Added right-click popup" = "Додано спливаюче меню за правим клацанням";
+"Fixed menubar icon right-click on macOS 27.0" = "Виправлено правий клік на піктограмі в панелі меню на macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Покращено вигляд світлого режиму: контраст і видимі рамки";
+"Added Launch at Login toggle" = "Додано перемикач «Запускати під час входу в систему»";
+"Open App shortcut now closes the popover if already open" = "Комбінація «Відкрити застосунок» тепер закриває вікно, якщо воно вже відкрите";
+"Added translation via Apple's system Translate" = "Додано переклад через системну функцію «Переклад» від Apple";
+"Added per-item Remove to the ⋮ menu" = "Додано видалення окремих елементів у меню ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Додано налаштування ліміту історії (за замовчуванням 200, не більше 2000)";
+"Added global & action keyboard shortcuts" = "Додано глобальні комбінації клавіш і комбінації для дій";
+"Added word & character count per item" = "Додано лічильник слів і символів для кожного елемента";
+"Added ⋮ menu with five additional text-editing functions" = "Додано меню ⋮ з п’ятьма додатковими функціями редагування тексту";
+"Added Options menu" = "Додано меню «Параметри»";
+"Clipboard history persistent across launches" = "Історія буфера обміну зберігається після перезапуску";
+"Source app and timestamp shown per item" = "Показ джерельного застосунку та часу для кожного елемента";
+"Initial release" = "Перший випуск";
+"ClipContext Options" = "Параметри ClipContext";

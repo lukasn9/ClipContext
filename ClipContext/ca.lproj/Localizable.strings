@@ -1,0 +1,106 @@
+/* Search & toolbar */
+"Search clipboard…" = "Cerca al porta-retalls…";
+"Clear All" = "Esborra-ho tot";
+"Copied to clipboard" = "Copiat al porta-retalls";
+"Remove" = "Elimina";
+"None" = "Cap";
+"Recording…" = "Enregistrant…";
+"%lld words · %lld chars" = "%lld paraules · %lld caràcters";
+
+/* Actions */
+"Trim Whitespace" = "Elimina els espais dels extrems";
+"Lowercase" = "Minúscules";
+"Capitalize" = "Posa la primera lletra en majúscula";
+"Extract URL" = "Extreu l'URL";
+"Remove extra spaces" = "Elimina els espais sobrants";
+"Remove empty lines" = "Elimina les línies buides";
+"Join lines into one" = "Uneix les línies";
+"Lines to CSV" = "Converteix les línies a CSV";
+"Remove tracking params" = "Elimina els paràmetres de seguiment";
+"Translate" = "Tradueix";
+
+/* Behaviour tab */
+"General" = "General";
+"Language" = "Idioma";
+"System Default" = "Valor per defecte del sistema";
+"Restart ClipContext to apply the language change." = "Reinicia ClipContext per aplicar el canvi d'idioma.";
+"Launch at Login" = "Obre en iniciar sessió";
+"Auto-apply on Copy" = "Aplica automàticament en copiar";
+"Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Les accions seleccionades s'apliquen automàticament cada vegada que es copia text nou, en l'ordre indicat.";
+"History" = "Historial";
+"Maximum number of clipboard entries to keep. Older items are removed automatically." = "Nombre màxim d'elements que es conserven a l'historial del porta-retalls. Els més antics s'eliminen automàticament.";
+"History limit" = "Límit de l'historial";
+"%lld items" = "%lld elements";
+
+/* Customization tab */
+"Pinned" = "Fixades";
+"Shown as icon buttons on each item (max 4)" = "Es mostren com a botons amb icones a cada element (màx. 4)";
+"More Options" = "Més opcions";
+"Shown in the ⋮ menu" = "Es mostren al menú ⋮";
+"Drag items here" = "Arrossega els elements aquí";
+"Move to More" = "Mou a Més opcions";
+"Pin" = "Fixa";
+
+/* Shortcuts tab */
+"Global" = "Globals";
+"Works system-wide. Requires Accessibility permission." = "Funciona a tot el sistema. Requereix permís d'Accessibilitat.";
+"Actions" = "Accions";
+"Applied to the most recently copied item. Works system-wide." = "S'apliquen a l'element copiat més recentment. Funcionen a tot el sistema.";
+"Open App" = "Obre l'app";
+"Accessibility Permission Required" = "Cal permís d'Accessibilitat";
+"Global shortcuts need Accessibility access to work system-wide." = "Les dreceres globals necessiten accés a Accessibilitat per funcionar a tot el sistema.";
+"Grant Access" = "Concedeix accés";
+
+/* Options tabs */
+"Customization" = "Personalització";
+"Behaviour" = "Comportament";
+"Shortcuts" = "Dreceres";
+"About" = "Quant a";
+
+/* Donate section */
+"Support ClipContext" = "Dona suport a ClipContext";
+"ClipContext is a one-person project. A tip helps keep development going." = "ClipContext és un projecte d'una sola persona. Una propina ajuda a mantenir-ne el desenvolupament.";
+"Thank you for your support!" = "Gràcies pel teu suport!";
+"Thank You!" = "Gràcies!";
+"You're welcome!" = "De res!";
+"Your support means a lot and helps keep ClipContext going." = "El teu suport significa molt i ajuda a mantenir ClipContext en desenvolupament.";
+"Purchase Failed" = "La compra ha fallat";
+"Something went wrong. Please try again." = "S'ha produït un error. Torna-ho a provar.";
+"OK" = "D'acord";
+"Support on Ko-fi" = "Dona suport a Ko-fi";
+
+/* About tab */
+"What's New" = "Novetats";
+"Made by %@" = "Creat per %@";
+"Visit website" = "Visita el lloc web";
+"Version %@" = "Versió %@";
+
+/* Menus */
+"Options" = "Opcions";
+"Clear Clipboard" = "Buida el porta-retalls";
+"Quit" = "Surt";
+"Quit ClipContext" = "Surt de ClipContext";
+
+/* Changelog & window title */
+"Localized to more languages" = "Localitzat a més idiomes";
+"Migrated to SQLite database for better performance" = "Migrat a base de dades SQLite per a un millor rendiment";
+"Implemented multiple memory optimizations" = "Implementades diverses optimitzacions de memòria";
+"Various bug fixes" = "Diverses correccions d'errors";
+"Bug fixes" = "Correccions d'errors";
+"Added localization" = "Afegida la localització";
+"Added right-click popup" = "Afegit un menú emergent amb clic dret";
+"Fixed menubar icon right-click on macOS 27.0" = "Corregit el clic dret a la icona de la barra de menús a macOS 27.0";
+"Improved light mode appearance with better contrast and visible borders" = "Millorat l'aspecte del mode clar, amb més contrast i vores visibles";
+"Added Launch at Login toggle" = "Afegit l'interruptor Obre en iniciar la sessió";
+"Open App shortcut now closes the popover if already open" = "La drecera Obre l'app ara tanca la finestra emergent si ja està oberta";
+"Added translation via Apple's system Translate" = "Afegida la traducció mitjançant la funció Tradueix del sistema d'Apple";
+"Added per-item Remove to the ⋮ menu" = "Afegit Elimina per element al menú ⋮";
+"Added history limit setting (default 200, up to 2000)" = "Afegida la configuració del límit de l'historial (per defecte 200, fins a 2000)";
+"Added global & action keyboard shortcuts" = "Afegides dreceres de teclat globals i per a accions";
+"Added word & character count per item" = "Afegit el recompte de paraules i caràcters per element";
+"Added ⋮ menu with five additional text-editing functions" = "Afegit el menú ⋮ amb cinc funcions addicionals d'edició de text";
+"Added Options menu" = "Afegit el menú Opcions";
+"Clipboard history persistent across launches" = "L'historial del porta-retalls es conserva en reiniciar";
+"Source app and timestamp shown per item" = "Mostra l'app d'origen i l'hora de cada element";
+"Initial release" = "Primera versió";
+"ClipContext Options" = "Opcions de ClipContext";

@@ -1,27 +1,40 @@
 import AppKit
 import SwiftUI
+import Combine
 
 extension Notification.Name {
     static let openOptionsRequest = Notification.Name("com.LukasNagy.ClipContext.openOptions")
 }
 
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
     var statusItem: NSStatusItem!
     var popover: NSPopover!
     var clipboardManager = ClipboardManager()
     private var optionsWindow: NSWindow?
     private var rightClickGlobalMonitor: Any?
     private var rightClickLocalMonitor: Any?
+    private var cancellables = Set<AnyCancellable>()
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         NotificationCenter.default.addObserver(self, selector: #selector(openOptions), name: .openOptionsRequest, object: nil)
+        SettingsStore.shared.$languageCode
+            .dropFirst()
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.optionsWindow?.title = NSLocalizedString("ClipContext Options", comment: "")
+            }
+            .store(in: &cancellables)
+
         popover = NSPopover()
         popover.contentSize = NSSize(width: 400, height: 250)
         popover.behavior = .transient
+        popover.delegate = self
         popover.contentViewController = NSHostingController(
-            rootView: ContentView()
-                .environmentObject(clipboardManager)
-                .environmentObject(SettingsStore.shared)
+            rootView: LocalizedRoot {
+                ContentView()
+                    .environmentObject(clipboardManager)
+                    .environmentObject(SettingsStore.shared)
+            }
         )
 
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
@@ -61,12 +74,31 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     self?.togglePopover(nil)
                 } else if let action = allActions.action(id: id),
                           let top = self?.clipboardManager.clipboardItems.first {
-                    let result = action.transform(top.content)
-                    NSPasteboard.general.clearContents()
-                    NSPasteboard.general.setString(result, forType: .string)
+                    if action.id == "translate" {
+                        self?.requestTranslation(for: top.id)
+                    } else {
+                        self?.clipboardManager.apply(action, to: top.id)
+                    }
                 }
             }
         }
+    }
+
+    private func requestTranslation(for itemID: UUID) {
+        let wasShown = popover.isShown
+        if !wasShown { togglePopover(nil) }
+        // Give a freshly shown popover time to attach before presenting the sheet
+        DispatchQueue.main.asyncAfter(deadline: .now() + (wasShown ? 0 : 0.3)) { [weak self] in
+            self?.clipboardManager.translationRequest = itemID
+        }
+    }
+
+    func popoverDidClose(_ notification: Notification) {
+        ClipboardManager.returnFreedMemory()
+    }
+
+    func applicationWillTerminate(_ notification: Notification) {
+        clipboardManager.prepareForTermination()
     }
 
     @objc func statusBarButtonClicked(_ sender: NSStatusBarButton) {
@@ -102,9 +134,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         quitItem.target = self
         menu.addItem(quitItem)
 
-        if let button = statusItem.button {
-            menu.popUp(positioning: nil, at: NSPoint(x: 0, y: button.bounds.height), in: button)
-        }
+        // Attaching the menu and clicking the button lets AppKit place it below the menu bar;
+        // popUp(at:in:) positioned it under the bar's edge, hiding the first item behind a scroll arrow.
+        statusItem.menu = menu
+        statusItem.button?.performClick(nil)
+        statusItem.menu = nil
     }
 
     @objc func togglePopover(_ sender: Any?) {
@@ -124,7 +158,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func openOptions() {
         if optionsWindow == nil {
             let hosting = NSHostingController(
-                rootView: OptionsView().environmentObject(SettingsStore.shared)
+                rootView: LocalizedRoot { OptionsView().environmentObject(SettingsStore.shared) }
             )
             let win = NSPanel(
                 contentRect: NSRect(x: 0, y: 0, width: 520, height: 500),
@@ -132,7 +166,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 backing: .buffered,
                 defer: false
             )
-            win.title = "ClipContext Options"
+            win.title = NSLocalizedString("ClipContext Options", comment: "")
             win.titlebarAppearsTransparent = true
             win.isMovableByWindowBackground = true
             win.isReleasedWhenClosed = false

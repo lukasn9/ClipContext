@@ -80,3 +80,27 @@
 "Clear Clipboard" = "Zwischenablage leeren";
 "Quit" = "Beenden";
 "Quit ClipContext" = "ClipContext beenden";
+
+/* Changelog & window title */
+"Localized to more languages" = "Auf weitere Sprachen lokalisiert";
+"Migrated to SQLite database for better performance" = "Auf SQLite-Datenbank umgestellt für bessere Leistung";
+"Implemented multiple memory optimizations" = "Mehrere Speicheroptimierungen umgesetzt";
+"Various bug fixes" = "Verschiedene Fehlerbehebungen";
+"Bug fixes" = "Fehlerbehebungen";
+"Added localization" = "Lokalisierung hinzugefügt";
+"Added right-click popup" = "Rechtsklick-Menü hinzugefügt";
+"Fixed menubar icon right-click on macOS 27.0" = "Rechtsklick auf das Menüleistensymbol unter macOS 27.0 behoben";
+"Improved light mode appearance with better contrast and visible borders" = "Helles Erscheinungsbild mit besserem Kontrast und sichtbaren Rahmen verbessert";
+"Added Launch at Login toggle" = "Option „Beim Anmelden starten“ hinzugefügt";
+"Open App shortcut now closes the popover if already open" = "Kurzbefehl „App öffnen“ schließt das Popover jetzt, falls es bereits geöffnet ist";
+"Added translation via Apple's system Translate" = "Übersetzung über die systemeigene Übersetzungsfunktion von Apple hinzugefügt";
+"Added per-item Remove to the ⋮ menu" = "Entfernen-Option pro Eintrag im ⋮-Menü hinzugefügt";
+"Added history limit setting (default 200, up to 2000)" = "Einstellung für das Verlaufslimit hinzugefügt (Standard 200, maximal 2000)";
+"Added global & action keyboard shortcuts" = "Globale Tastenkürzel und Kurzbefehle für Aktionen hinzugefügt";
+"Added word & character count per item" = "Wort- und Zeichenanzahl pro Eintrag hinzugefügt";
+"Added ⋮ menu with five additional text-editing functions" = "⋮-Menü mit fünf zusätzlichen Textbearbeitungsfunktionen hinzugefügt";
+"Added Options menu" = "Optionen-Menü hinzugefügt";
+"Clipboard history persistent across launches" = "Zwischenablage-Verlauf bleibt über Neustarts hinweg erhalten";
+"Source app and timestamp shown per item" = "Quell-App und Zeitstempel pro Eintrag angezeigt";
+"Initial release" = "Erste Version";
+"ClipContext Options" = "ClipContext-Optionen";
