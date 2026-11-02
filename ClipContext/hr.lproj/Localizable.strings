@@ -23,7 +23,6 @@
 "General" = "Općenito";
 "Language" = "Jezik";
 "System Default" = "Zadano u sustavu";
-"Restart ClipContext to apply the language change." = "Ponovno pokrenite ClipContext da biste primijenili promjenu jezika.";
 "Launch at Login" = "Pokreni pri prijavi";
 "Auto-apply on Copy" = "Automatski primijeni pri kopiranju";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Odabrane radnje automatski se primjenjuju svaki put kada se kopira novi tekst, navedenim redoslijedom.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Globalno";
-"Works system-wide. Requires Accessibility permission." = "Radi u cijelom sustavu. Potrebno je dopuštenje za Pristupačnost.";
 "Actions" = "Radnje";
 "Applied to the most recently copied item. Works system-wide." = "Primjenjuje se na posljednju kopiranu stavku. Radi u cijelom sustavu.";
 "Open App" = "Otvori aplikaciju";
-"Accessibility Permission Required" = "Potrebno je dopuštenje za Pristupačnost";
-"Global shortcuts need Accessibility access to work system-wide." = "Globalni prečaci zahtijevaju pristup značajci Pristupačnost kako bi radili u cijelom sustavu.";
-"Grant Access" = "Dopusti pristup";
 
 /* Options tabs */
 "Customization" = "Prilagodba";

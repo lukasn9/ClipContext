@@ -23,7 +23,6 @@
 "General" = "Γενικά";
 "Language" = "Γλώσσα";
 "System Default" = "Προεπιλογή συστήματος";
-"Restart ClipContext to apply the language change." = "Επανεκκινήστε το ClipContext για να εφαρμοστεί η αλλαγή γλώσσας.";
 "Launch at Login" = "Εκκίνηση κατά τη σύνδεση";
 "Auto-apply on Copy" = "Αυτόματη εφαρμογή κατά την αντιγραφή";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Οι επιλεγμένες ενέργειες εφαρμόζονται αυτόματα κάθε φορά που αντιγράφεται νέο κείμενο, με τη σειρά που εμφανίζονται.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Καθολικές";
-"Works system-wide. Requires Accessibility permission." = "Λειτουργεί σε όλο το σύστημα. Απαιτείται άδεια για την Προσβασιμότητα.";
 "Actions" = "Ενέργειες";
 "Applied to the most recently copied item. Works system-wide." = "Εφαρμόζονται στο πιο πρόσφατο αντιγραμμένο στοιχείο. Λειτουργούν σε όλο το σύστημα.";
 "Open App" = "Άνοιγμα εφαρμογής";
-"Accessibility Permission Required" = "Απαιτείται άδεια Προσβασιμότητας";
-"Global shortcuts need Accessibility access to work system-wide." = "Οι καθολικές συντομεύσεις χρειάζονται πρόσβαση στην Προσβασιμότητα για να λειτουργούν σε όλο το σύστημα.";
-"Grant Access" = "Παροχή πρόσβασης";
 
 /* Options tabs */
 "Customization" = "Προσαρμογή";

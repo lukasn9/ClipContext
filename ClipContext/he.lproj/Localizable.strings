@@ -23,7 +23,6 @@
 "General" = "כללי";
 "Language" = "שפה";
 "System Default" = "ברירת מחדל של המערכת";
-"Restart ClipContext to apply the language change." = "יש להפעיל מחדש את ClipContext כדי להחיל את שינוי השפה.";
 "Launch at Login" = "הפעלה בעת ההתחברות";
 "Auto-apply on Copy" = "החלה אוטומטית בעת העתקה";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "הפעולות שנבחרו מוחלות אוטומטית בכל העתקת טקסט חדש, לפי הסדר ברשימה.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "כלליים";
-"Works system-wide. Requires Accessibility permission." = "פועל בכל המערכת. נדרשת הרשאת נגישות.";
 "Actions" = "פעולות";
 "Applied to the most recently copied item. Works system-wide." = "מוחלות על הפריט שהועתק לאחרונה. פועלות בכל המערכת.";
 "Open App" = "פתיחת היישום";
-"Accessibility Permission Required" = "נדרשת הרשאת נגישות";
-"Global shortcuts need Accessibility access to work system-wide." = "קיצורי דרך כלליים זקוקים לגישה לנגישות כדי לפעול בכל המערכת.";
-"Grant Access" = "מתן גישה";
 
 /* Options tabs */
 "Customization" = "התאמה אישית";

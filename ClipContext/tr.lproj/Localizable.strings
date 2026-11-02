@@ -23,7 +23,6 @@
 "General" = "Genel";
 "Language" = "Dil";
 "System Default" = "Sistem varsayılanı";
-"Restart ClipContext to apply the language change." = "Dil değişikliğini uygulamak için ClipContext'i yeniden başlatın.";
 "Launch at Login" = "Girişte başlat";
 "Auto-apply on Copy" = "Kopyalayınca otomatik uygula";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Seçilen işlemler yeni metin kopyalandığında listelenen sırayla otomatik uygulanır.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Genel";
-"Works system-wide. Requires Accessibility permission." = "Sistem genelinde çalışır. Erişilebilirlik izni gerekir.";
 "Actions" = "İşlemler";
 "Applied to the most recently copied item. Works system-wide." = "En son kopyalanan öğeye uygulanır. Sistem genelinde çalışır.";
 "Open App" = "Uygulamayı Aç";
-"Accessibility Permission Required" = "Erişilebilirlik İzni Gerekli";
-"Global shortcuts need Accessibility access to work system-wide." = "Genel kısayolların sistem genelinde çalışması için Erişilebilirlik erişimi gerekir.";
-"Grant Access" = "Erişim Ver";
 
 /* Options tabs */
 "Customization" = "Özelleştirme";

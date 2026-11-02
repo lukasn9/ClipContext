@@ -23,7 +23,6 @@
 "General" = "Загальні";
 "Language" = "Мова";
 "System Default" = "За замовчуванням системи";
-"Restart ClipContext to apply the language change." = "Перезапустіть ClipContext, щоб застосувати зміну мови.";
 "Launch at Login" = "Запускати під час входу";
 "Auto-apply on Copy" = "Застосовувати під час копіювання";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Вибрані дії автоматично застосовуються під час копіювання нового тексту в зазначеному порядку.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Глобальні";
-"Works system-wide. Requires Accessibility permission." = "Працює в усій системі. Потрібен дозвіл «Універсальний доступ».";
 "Actions" = "Дії";
 "Applied to the most recently copied item. Works system-wide." = "Застосовуються до останнього скопійованого елемента. Працюють в усій системі.";
 "Open App" = "Відкрити програму";
-"Accessibility Permission Required" = "Потрібен дозвіл «Універсальний доступ»";
-"Global shortcuts need Accessibility access to work system-wide." = "Для роботи глобальних скорочень клавіш у всій системі потрібен доступ до функції «Універсальний доступ».";
-"Grant Access" = "Надати доступ";
 
 /* Options tabs */
 "Customization" = "Налаштування";

@@ -23,7 +23,6 @@
 "General" = "Generali";
 "Language" = "Lingua";
 "System Default" = "Predefinita di sistema";
-"Restart ClipContext to apply the language change." = "Riavvia ClipContext per applicare la modifica della lingua.";
 "Launch at Login" = "Apri al login";
 "Auto-apply on Copy" = "Applica automaticamente alla copia";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Le azioni selezionate vengono applicate automaticamente quando copi nuovo testo, nell'ordine indicato.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Globali";
-"Works system-wide. Requires Accessibility permission." = "Funziona a livello di sistema. Richiede il permesso di Accessibilità.";
 "Actions" = "Azioni";
 "Applied to the most recently copied item. Works system-wide." = "Applicate all'elemento copiato più di recente. Funziona a livello di sistema.";
 "Open App" = "Apri app";
-"Accessibility Permission Required" = "È richiesta l'autorizzazione di Accessibilità";
-"Global shortcuts need Accessibility access to work system-wide." = "Le scorciatoie globali richiedono l'accesso ad Accessibilità per funzionare a livello di sistema.";
-"Grant Access" = "Concedi accesso";
 
 /* Options tabs */
 "Customization" = "Personalizzazione";

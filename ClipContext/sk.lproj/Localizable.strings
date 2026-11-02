@@ -23,7 +23,6 @@
 "General" = "Všeobecné";
 "Language" = "Jazyk";
 "System Default" = "Predvolené systémové";
-"Restart ClipContext to apply the language change." = "Reštartujte ClipContext, aby sa zmena jazyka prejavila.";
 "Launch at Login" = "Spustiť pri prihlásení";
 "Auto-apply on Copy" = "Automaticky použiť pri kopírovaní";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Vybrané akcie sa automaticky použijú pri každom kopírovaní textu. Vykonávajú sa v uvedenom poradí.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Globálne";
-"Works system-wide. Requires Accessibility permission." = "Funguje v celom systéme. Vyžaduje povolenie Prístupnosti.";
 "Actions" = "Akcie";
 "Applied to the most recently copied item. Works system-wide." = "Aplikované na naposledy skopírovanú položku. Funguje v celom systéme.";
 "Open App" = "Otvoriť aplikáciu";
-"Accessibility Permission Required" = "Vyžaduje sa povolenie Prístupnosti";
-"Global shortcuts need Accessibility access to work system-wide." = "Globálne skratky potrebujú prístup k Prístupnosti, aby fungovali v celom systéme.";
-"Grant Access" = "Udeliť prístup";
 
 /* Options tabs */
 "Customization" = "Prispôsobenie";

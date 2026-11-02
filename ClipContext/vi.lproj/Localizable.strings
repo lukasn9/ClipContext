@@ -23,7 +23,6 @@
 "General" = "Chung";
 "Language" = "Ngôn ngữ";
 "System Default" = "Mặc định hệ thống";
-"Restart ClipContext to apply the language change." = "Khởi động lại ClipContext để áp dụng thay đổi ngôn ngữ.";
 "Launch at Login" = "Mở khi đăng nhập";
 "Auto-apply on Copy" = "Tự động áp dụng khi sao chép";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Các thao tác đã chọn sẽ tự động áp dụng mỗi khi sao chép văn bản mới, theo thứ tự trong danh sách.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Toàn hệ thống";
-"Works system-wide. Requires Accessibility permission." = "Hoạt động trên toàn hệ thống. Cần quyền Trợ năng.";
 "Actions" = "Thao tác";
 "Applied to the most recently copied item. Works system-wide." = "Áp dụng cho mục vừa sao chép gần nhất. Hoạt động trên toàn hệ thống.";
 "Open App" = "Mở ứng dụng";
-"Accessibility Permission Required" = "Cần quyền Trợ năng";
-"Global shortcuts need Accessibility access to work system-wide." = "Phím tắt toàn hệ thống cần quyền Trợ năng để hoạt động.";
-"Grant Access" = "Cấp quyền truy cập";
 
 /* Options tabs */
 "Customization" = "Tùy chỉnh";

@@ -23,7 +23,6 @@
 "General" = "一般";
 "Language" = "言語";
 "System Default" = "システムデフォルト";
-"Restart ClipContext to apply the language change." = "言語の変更を適用するにはClipContextを再起動してください。";
 "Launch at Login" = "ログイン時に起動";
 "Auto-apply on Copy" = "コピー時に自動適用";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "新しいテキストをコピーすると、選択したアクションが表示順に自動適用されます。";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "グローバル";
-"Works system-wide. Requires Accessibility permission." = "システム全体で動作します。「アクセシビリティ」の許可が必要です。";
 "Actions" = "アクション";
 "Applied to the most recently copied item. Works system-wide." = "最後にコピーした項目に適用されます。システム全体で動作します。";
 "Open App" = "アプリを開く";
-"Accessibility Permission Required" = "アクセシビリティの許可が必要です";
-"Global shortcuts need Accessibility access to work system-wide." = "グローバルショートカットをシステム全体で使うには、アクセシビリティへのアクセスが必要です。";
-"Grant Access" = "アクセスを許可";
 
 /* Options tabs */
 "Customization" = "カスタマイズ";

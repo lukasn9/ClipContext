@@ -23,7 +23,6 @@
 "General" = "일반";
 "Language" = "언어";
 "System Default" = "시스템 기본값";
-"Restart ClipContext to apply the language change." = "언어 변경을 적용하려면 ClipContext를 재시동하세요.";
 "Launch at Login" = "로그인 시 실행";
 "Auto-apply on Copy" = "복사 시 자동 적용";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "새 텍스트를 복사할 때마다 선택한 작업이 표시된 순서대로 자동 적용됩니다.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "전역";
-"Works system-wide. Requires Accessibility permission." = "시스템 전체에서 작동합니다. 손쉬운 사용 권한이 필요합니다.";
 "Actions" = "작업";
 "Applied to the most recently copied item. Works system-wide." = "가장 최근에 복사한 항목에 적용됩니다. 시스템 전체에서 작동합니다.";
 "Open App" = "앱 열기";
-"Accessibility Permission Required" = "손쉬운 사용 권한 필요";
-"Global shortcuts need Accessibility access to work system-wide." = "전역 단축키를 시스템 전체에서 사용하려면 손쉬운 사용 접근 권한이 필요합니다.";
-"Grant Access" = "접근 권한 허용";
 
 /* Options tabs */
 "Customization" = "사용자화";

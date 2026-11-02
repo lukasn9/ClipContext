@@ -23,7 +23,6 @@
 "General" = "Generelt";
 "Language" = "Språk";
 "System Default" = "Systemstandard";
-"Restart ClipContext to apply the language change." = "Start ClipContext på nytt for å bruke språkendringen.";
 "Launch at Login" = "Start ved innlogging";
 "Auto-apply on Copy" = "Bruk automatisk ved kopiering";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Valgte handlinger brukes automatisk når ny tekst kopieres, i oppført rekkefølge.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Globale";
-"Works system-wide. Requires Accessibility permission." = "Fungerer i hele systemet. Krever tilgang til Tilgjengelighet.";
 "Actions" = "Handlinger";
 "Applied to the most recently copied item. Works system-wide." = "Brukes på det sist kopierte elementet. Fungerer i hele systemet.";
 "Open App" = "Åpne app";
-"Accessibility Permission Required" = "Tilgang til Tilgjengelighet kreves";
-"Global shortcuts need Accessibility access to work system-wide." = "Globale snarveier trenger tilgang til Tilgjengelighet for å fungere i hele systemet.";
-"Grant Access" = "Gi tilgang";
 
 /* Options tabs */
 "Customization" = "Tilpasning";

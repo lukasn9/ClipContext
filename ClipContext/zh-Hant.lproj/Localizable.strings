@@ -23,7 +23,6 @@
 "General" = "一般";
 "Language" = "語言";
 "System Default" = "系統預設";
-"Restart ClipContext to apply the language change." = "重新啟動 ClipContext 以套用語言變更。";
 "Launch at Login" = "登入時啟動";
 "Auto-apply on Copy" = "複製時自動套用";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "每次複製新文字時，都會依清單順序自動執行所選動作。";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "全域";
-"Works system-wide. Requires Accessibility permission." = "可在整個系統中運作。需要「輔助使用」權限。";
 "Actions" = "動作";
 "Applied to the most recently copied item. Works system-wide." = "套用至最近複製的項目。可在整個系統中運作。";
 "Open App" = "打開 App";
-"Accessibility Permission Required" = "需要「輔助使用」權限";
-"Global shortcuts need Accessibility access to work system-wide." = "全域快速鍵需要「輔助使用」權限才能在整個系統中運作。";
-"Grant Access" = "授予存取權限";
 
 /* Options tabs */
 "Customization" = "自訂";

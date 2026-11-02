@@ -23,7 +23,6 @@
 "General" = "Umum";
 "Language" = "Bahasa";
 "System Default" = "Default sistem";
-"Restart ClipContext to apply the language change." = "Mulai ulang ClipContext untuk menerapkan perubahan bahasa.";
 "Launch at Login" = "Buka saat login";
 "Auto-apply on Copy" = "Terapkan otomatis saat menyalin";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Tindakan yang dipilih otomatis diterapkan setiap kali teks baru disalin, sesuai urutan yang tercantum.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Global";
-"Works system-wide. Requires Accessibility permission." = "Berfungsi di seluruh sistem. Memerlukan izin Aksesibilitas.";
 "Actions" = "Tindakan";
 "Applied to the most recently copied item. Works system-wide." = "Diterapkan pada item yang terakhir disalin. Berfungsi di seluruh sistem.";
 "Open App" = "Buka App";
-"Accessibility Permission Required" = "Izin Aksesibilitas Diperlukan";
-"Global shortcuts need Accessibility access to work system-wide." = "Pintasan global memerlukan akses Aksesibilitas agar berfungsi di seluruh sistem.";
-"Grant Access" = "Berikan Akses";
 
 /* Options tabs */
 "Customization" = "Kustomisasi";

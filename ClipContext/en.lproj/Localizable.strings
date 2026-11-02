@@ -23,7 +23,6 @@
 "General" = "General";
 "Language" = "Language";
 "System Default" = "System Default";
-"Restart ClipContext to apply the language change." = "Restart ClipContext to apply the language change.";
 "Launch at Login" = "Launch at Login";
 "Auto-apply on Copy" = "Auto-apply on Copy";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Selected actions are automatically applied whenever new text is copied. They run in the order listed.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Global";
-"Works system-wide. Requires Accessibility permission." = "Works system-wide. Requires Accessibility permission.";
 "Actions" = "Actions";
 "Applied to the most recently copied item. Works system-wide." = "Applied to the most recently copied item. Works system-wide.";
 "Open App" = "Open App";
-"Accessibility Permission Required" = "Accessibility Permission Required";
-"Global shortcuts need Accessibility access to work system-wide." = "Global shortcuts need Accessibility access to work system-wide.";
-"Grant Access" = "Grant Access";
 
 /* Options tabs */
 "Customization" = "Customization";

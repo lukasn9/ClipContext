@@ -23,7 +23,6 @@
 "General" = "عام";
 "Language" = "اللغة";
 "System Default" = "الإعداد الافتراضي للنظام";
-"Restart ClipContext to apply the language change." = "أعد تشغيل ClipContext لتطبيق تغيير اللغة.";
 "Launch at Login" = "التشغيل عند تسجيل الدخول";
 "Auto-apply on Copy" = "تطبيق تلقائي عند النسخ";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "تُطبّق الإجراءات المحددة تلقائيًا عند نسخ نص جديد، وفق الترتيب المعروض.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "عامة";
-"Works system-wide. Requires Accessibility permission." = "تعمل على مستوى النظام. تتطلب إذن تسهيلات الاستخدام.";
 "Actions" = "الإجراءات";
 "Applied to the most recently copied item. Works system-wide." = "تُطبّق على العنصر المنسوخ مؤخرًا. تعمل على مستوى النظام.";
 "Open App" = "فتح التطبيق";
-"Accessibility Permission Required" = "يلزم إذن تسهيلات الاستخدام";
-"Global shortcuts need Accessibility access to work system-wide." = "تحتاج الاختصارات العامة إلى الوصول إلى تسهيلات الاستخدام لتعمل على مستوى النظام.";
-"Grant Access" = "منح الوصول";
 
 /* Options tabs */
 "Customization" = "التخصيص";

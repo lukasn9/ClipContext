@@ -23,7 +23,6 @@
 "General" = "General";
 "Language" = "Limbă";
 "System Default" = "Implicit în sistem";
-"Restart ClipContext to apply the language change." = "Repornește ClipContext pentru a aplica schimbarea limbii.";
 "Launch at Login" = "Deschide la autentificare";
 "Auto-apply on Copy" = "Aplică automat la copiere";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Acțiunile selectate se aplică automat la copierea unui text nou, în ordinea afișată.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Globale";
-"Works system-wide. Requires Accessibility permission." = "Funcționează în întregul sistem. Necesită permisiunea Accesibilitate.";
 "Actions" = "Acțiuni";
 "Applied to the most recently copied item. Works system-wide." = "Se aplică ultimului element copiat. Funcționează în întregul sistem.";
 "Open App" = "Deschide aplicația";
-"Accessibility Permission Required" = "Este necesară permisiunea Accesibilitate";
-"Global shortcuts need Accessibility access to work system-wide." = "Scurtăturile globale necesită acces la Accesibilitate pentru a funcționa în întregul sistem.";
-"Grant Access" = "Acordă acces";
 
 /* Options tabs */
 "Customization" = "Personalizare";

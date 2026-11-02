@@ -23,7 +23,6 @@
 "General" = "Általános";
 "Language" = "Nyelv";
 "System Default" = "Rendszer alapértelmezése";
-"Restart ClipContext to apply the language change." = "A nyelv módosításának alkalmazásához indítsa újra a ClipContext alkalmazást.";
 "Launch at Login" = "Indítás bejelentkezéskor";
 "Auto-apply on Copy" = "Automatikus alkalmazás másoláskor";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "A kiválasztott műveletek új szöveg másolásakor automatikusan, a felsorolt sorrendben futnak.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Globális";
-"Works system-wide. Requires Accessibility permission." = "A teljes rendszerben működik. Kisegítő lehetőségek engedély szükséges.";
 "Actions" = "Műveletek";
 "Applied to the most recently copied item. Works system-wide." = "A legutóbb másolt elemre alkalmazza. A teljes rendszerben működik.";
 "Open App" = "Alkalmazás megnyitása";
-"Accessibility Permission Required" = "Kisegítő lehetőségek engedély szükséges";
-"Global shortcuts need Accessibility access to work system-wide." = "A globális billentyűparancsok teljes rendszerű működéséhez hozzáférés szükséges a Kisegítő lehetőségekhez.";
-"Grant Access" = "Hozzáférés engedélyezése";
 
 /* Options tabs */
 "Customization" = "Testreszabás";

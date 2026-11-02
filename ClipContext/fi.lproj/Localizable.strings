@@ -23,7 +23,6 @@
 "General" = "Yleiset";
 "Language" = "Kieli";
 "System Default" = "Järjestelmän oletus";
-"Restart ClipContext to apply the language change." = "Käynnistä ClipContext uudelleen ottaaksesi kielimuutoksen käyttöön.";
 "Launch at Login" = "Käynnistä sisäänkirjautumisen yhteydessä";
 "Auto-apply on Copy" = "Käytä automaattisesti kopioitaessa";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "Valitut toiminnot suoritetaan automaattisesti aina, kun uutta tekstiä kopioidaan, luetellussa järjestyksessä.";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "Yleiset";
-"Works system-wide. Requires Accessibility permission." = "Toimii koko järjestelmässä. Vaatii Käyttöapu-oikeuden.";
 "Actions" = "Toiminnot";
 "Applied to the most recently copied item. Works system-wide." = "Käytetään viimeksi kopioituun kohteeseen. Toimii koko järjestelmässä.";
 "Open App" = "Avaa appi";
-"Accessibility Permission Required" = "Käyttöapu-oikeus vaaditaan";
-"Global shortcuts need Accessibility access to work system-wide." = "Yleiset pikanäppäimet tarvitsevat Käyttöapu-oikeuden toimiakseen koko järjestelmässä.";
-"Grant Access" = "Myönnä käyttöoikeus";
 
 /* Options tabs */
 "Customization" = "Mukautus";

@@ -23,7 +23,6 @@
 "General" = "ทั่วไป";
 "Language" = "ภาษา";
 "System Default" = "ค่าเริ่มต้นของระบบ";
-"Restart ClipContext to apply the language change." = "เริ่ม ClipContext ใหม่เพื่อใช้การเปลี่ยนภาษา";
 "Launch at Login" = "เปิดเมื่อเข้าสู่ระบบ";
 "Auto-apply on Copy" = "ใช้โดยอัตโนมัติเมื่อคัดลอก";
 "Selected actions are automatically applied whenever new text is copied. They run in the order listed." = "การดำเนินการที่เลือกจะทำงานโดยอัตโนมัติทุกครั้งที่คัดลอกข้อความใหม่ ตามลำดับที่แสดง";
@@ -43,13 +42,9 @@
 
 /* Shortcuts tab */
 "Global" = "ทั่วทั้งระบบ";
-"Works system-wide. Requires Accessibility permission." = "ทำงานทั่วทั้งระบบ ต้องได้รับอนุญาตการช่วยการเข้าถึง";
 "Actions" = "การดำเนินการ";
 "Applied to the most recently copied item. Works system-wide." = "ใช้กับรายการที่คัดลอกล่าสุด ทำงานทั่วทั้งระบบ";
 "Open App" = "เปิดแอป";
-"Accessibility Permission Required" = "ต้องได้รับอนุญาตการช่วยการเข้าถึง";
-"Global shortcuts need Accessibility access to work system-wide." = "ปุ่มลัดทั่วทั้งระบบต้องเข้าถึงการช่วยการเข้าถึงเพื่อให้ทำงานได้";
-"Grant Access" = "อนุญาตการเข้าถึง";
 
 /* Options tabs */
 "Customization" = "การปรับแต่ง";

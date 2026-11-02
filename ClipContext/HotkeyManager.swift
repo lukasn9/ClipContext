@@ -2,112 +2,125 @@ import AppKit
 import Carbon.HIToolbox
 import Combine
 
+/// Global shortcuts via Carbon's RegisterEventHotKey: works system-wide, inside the sandbox,
+/// and needs no Accessibility or Input Monitoring permission.
 final class HotkeyManager {
     static let shared = HotkeyManager()
 
     var onTriggered: ((String) -> Void)?
 
-    private var monitor: Any?
-    private var localMonitor: Any?
-    private var shortcutMap: [ShortcutKey: String] = [:]
+    private static let signature: OSType = 0x434C5043  // 'CLPC'
+
+    private weak var store: SettingsStore?
     private var cancellables = Set<AnyCancellable>()
-    private var pollTimer: Timer?
+    private var hotKeyRefs: [EventHotKeyRef] = []
+    private var actionIDs: [UInt32: String] = [:]
+    private var handlerInstalled = false
+    private var suspendCount = 0
 
     private init() {}
 
     func start(with store: SettingsStore) {
-        rebuildMap(from: store)
+        self.store = store
+        installHandler()
+        register()
 
         store.$actionShortcuts
             .dropFirst()
             .receive(on: DispatchQueue.main)
-            .sink { [weak self, weak store] _ in
-                guard let store else { return }
-                self?.rebuildMap(from: store)
-            }.store(in: &cancellables)
+            .sink { [weak self] _ in self?.register() }
+            .store(in: &cancellables)
 
         store.$openAppShortcut
             .dropFirst()
             .receive(on: DispatchQueue.main)
-            .sink { [weak self, weak store] _ in
-                guard let store else { return }
-                self?.rebuildMap(from: store)
-            }.store(in: &cancellables)
-
-        installMonitor()
+            .sink { [weak self] _ in self?.register() }
+            .store(in: &cancellables)
     }
 
-    private func rebuildMap(from store: SettingsStore) {
-        var map: [ShortcutKey: String] = [:]
-        for (id, sc) in store.actionShortcuts {
-            map[ShortcutKey(sc)] = id
-        }
-        if let sc = store.openAppShortcut {
-            map[ShortcutKey(sc)] = "openApp"
-        }
-        shortcutMap = map
+    /// Unregisters every shortcut (used while recording a new one, so an existing combo can be captured instead of fired).
+    func suspend() {
+        suspendCount += 1
+        unregisterAll()
     }
 
-    private func installMonitor() {
-        guard monitor == nil else { return }
-        guard AXIsProcessTrusted() else {
-            startPolling()
-            return
-        }
-        stopPolling()
-        monitor = NSEvent.addGlobalMonitorForEvents(matching: .keyDown) { [weak self] event in
-            self?.handle(event)
-        }
-        localMonitor = NSEvent.addLocalMonitorForEvents(matching: .keyDown) { [weak self] event in
-            guard let self else { return event }
-            let relevant = event.modifierFlags.intersection([.command, .shift, .option, .control])
-            let key = ShortcutKey(keyCode: event.keyCode, modifierFlags: relevant.rawValue)
-            if shortcutMap[key] != nil {
-                self.handle(event)
-                return nil  // consume the event so it doesn't propagate
+    func resume() {
+        suspendCount = max(0, suspendCount - 1)
+        if suspendCount == 0 { register() }
+    }
+
+    // MARK: - Registration
+
+    private func register() {
+        unregisterAll()
+        guard suspendCount == 0, let store else { return }
+
+        var entries: [(id: String, shortcut: KeyShortcut)] = store.actionShortcuts.map { ($0.key, $0.value) }
+        if let open = store.openAppShortcut { entries.append(("openApp", open)) }
+
+        var nextID: UInt32 = 1
+        for entry in entries {
+            let hotKeyID = EventHotKeyID(signature: Self.signature, id: nextID)
+            var ref: EventHotKeyRef?
+            let status = RegisterEventHotKey(
+                UInt32(entry.shortcut.keyCode),
+                Self.carbonModifiers(from: entry.shortcut.modifierFlags),
+                hotKeyID,
+                GetApplicationEventTarget(),
+                0,
+                &ref
+            )
+            // Fails if another app already owns the combination; that shortcut simply stays inactive.
+            if status == noErr, let ref {
+                hotKeyRefs.append(ref)
+                actionIDs[nextID] = entry.id
             }
-            return event
+            nextID += 1
         }
     }
 
-    private func startPolling() {
-        guard pollTimer == nil else { return }
-        pollTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { [weak self] _ in
-            guard AXIsProcessTrusted() else { return }
-            self?.installMonitor()
-        }
+    private func unregisterAll() {
+        hotKeyRefs.forEach { UnregisterEventHotKey($0) }
+        hotKeyRefs.removeAll()
+        actionIDs.removeAll()
     }
 
-    private func stopPolling() {
-        pollTimer?.invalidate()
-        pollTimer = nil
+    private static func carbonModifiers(from rawFlags: UInt) -> UInt32 {
+        let flags = NSEvent.ModifierFlags(rawValue: rawFlags)
+        var result = 0
+        if flags.contains(.command) { result |= cmdKey }
+        if flags.contains(.shift)   { result |= shiftKey }
+        if flags.contains(.option)  { result |= optionKey }
+        if flags.contains(.control) { result |= controlKey }
+        return UInt32(result)
     }
 
-    private func handle(_ event: NSEvent) {
-        let relevant = event.modifierFlags.intersection([.command, .shift, .option, .control])
-        guard !relevant.isEmpty else { return }
+    // MARK: - Event handling
 
-        let key = ShortcutKey(keyCode: event.keyCode, modifierFlags: relevant.rawValue)
-        guard let actionID = shortcutMap[key] else { return }
+    private func installHandler() {
+        guard !handlerInstalled else { return }
+        handlerInstalled = true
+        var spec = EventTypeSpec(eventClass: OSType(kEventClassKeyboard), eventKind: UInt32(kEventHotKeyPressed))
+        InstallEventHandler(GetApplicationEventTarget(), { _, event, _ in
+            var hotKeyID = EventHotKeyID()
+            let status = GetEventParameter(
+                event,
+                EventParamName(kEventParamDirectObject),
+                EventParamType(typeEventHotKeyID),
+                nil,
+                MemoryLayout<EventHotKeyID>.size,
+                nil,
+                &hotKeyID
+            )
+            guard status == noErr else { return status }
+            // Carbon delivers hot key events on the main thread
+            MainActor.assumeIsolated { HotkeyManager.shared.handle(hotKeyID: hotKeyID.id) }
+            return noErr
+        }, 1, &spec, nil, nil)
+    }
+
+    private func handle(hotKeyID: UInt32) {
+        guard let actionID = actionIDs[hotKeyID] else { return }
         onTriggered?(actionID)
-    }
-}
-
-private struct ShortcutKey: Hashable {
-    let keyCode: UInt16
-    let modifierFlags: UInt  // NSEventModifierFlags.rawValue masked to ⌘⌥⇧⌃
-
-    init(_ sc: KeyShortcut) {
-        self.keyCode = sc.keyCode
-        let masked = NSEvent.ModifierFlags(rawValue: sc.modifierFlags)
-            .intersection([.command, .shift, .option, .control])
-        self.modifierFlags = masked.rawValue
-    }
-
-    init(keyCode: UInt16, modifierFlags: UInt) {
-        self.keyCode = keyCode
-        self.modifierFlags = NSEvent.ModifierFlags(rawValue: modifierFlags)
-            .intersection([.command, .shift, .option, .control])
-            .rawValue
     }
 }

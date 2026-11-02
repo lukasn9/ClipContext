@@ -78,7 +78,14 @@ struct ShortcutRecorderField: View {
             }
         }
         .onChange(of: isRecording) { _, recording in
-            if !recording { }
+            // Registered global shortcuts would swallow the keys being recorded
+            if recording { HotkeyManager.shared.suspend() } else { HotkeyManager.shared.resume() }
+        }
+        .onDisappear {
+            if isRecording {
+                isRecording = false
+                HotkeyManager.shared.resume()
+            }
         }
     }
 
